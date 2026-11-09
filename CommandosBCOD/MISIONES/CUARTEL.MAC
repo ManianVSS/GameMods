@@ -1,0 +1,27 @@
+.CLASS BICHO
+.VARIABLES [ CNumRegenSoldiers AAcCasaLogica PPuntoSalida ]
+.BANDO NEUTRAL
+.BUILDING 1
+.VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+.BOXSELECCIONREL [ -15 -45 31 40 ]
+.LISTAS [ EJEC CHOC TIP ]
+.CONTENEDOR 1
+.SEHUNDE 0
+.NOSOLIDO 1
+.DETECTAEXPLOSION 1
+.ACCIONES
+[
+  [
+    acCasa
+    [
+      .CARISMA 100
+      .XYZENTRADA $PuntoSalida
+      .XYZSALIDA $PuntoSalida
+      .DOOR 10
+      .RADIO 30
+      .CARCEL 0
+      .NUMREGENSOLDIERS $NumRegenSoldiers
+    ]
+  ]
+  [ $acCasaLogica [ .CARISMA 900 ] ]
+]

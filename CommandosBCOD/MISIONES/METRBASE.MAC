@@ -1,0 +1,6 @@
+      .CLASS BICHO
+      .BANDO NEUTRAL
+      .GRAPH [ .ANIM METRBASE .RENDERVOL [ CILINDRO [ .R 1 .H 1 ] ] ]
+      .BANDO NEUTRAL
+      .ANGULO 0
+      .MASA 0

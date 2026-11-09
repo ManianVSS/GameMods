@@ -1,0 +1,208 @@
+.MISSION [
+  .DATOSFICHEROSMISION [
+    .VOLUMENES MAPA0008.VOL
+    .SECTORES TUT.SEC
+    .ESTATICODINAMICOS CHOQ0008.VOL
+    .TEXTOSMISSION MAPA0008.STR
+    .WADMAP FASE0008.WAD
+  ]
+  .MAP [ .SCALE 0.050823 .XY [ 22 25 ] .BITMAP LIBR0008.BMP ]
+  .INTENDENCIA 8
+  .INTENDENCIAINFO [ 
+    .PUNTUACIONES [ .PAR_TICKS 38000 ]
+    .OBJETIVOS [ [ .OBJETIVO ALEMAN1 .VOLUMEN 0 ] ]
+    .PUNTOHUIDA [ 2776 3486 ]
+    .MENSAJESDEDESTRUCCION 0
+    .AMBIENTE [ ]
+    .VEHICULOHUIDA ALEMAN1
+  ]
+  .XY [ 836 310 ]
+  .PATRULLAS [ ]
+  .ELEMENTOS [ 
+    [ 
+      .CLASS BICHOALIADO
+      .TOKEN COMANDO
+      .BANDO ALIADO
+      .XYZ [ 1008 698 0 ]
+      .ANGULO 135
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .ACCIONES [ 
+        [ acMuerte [ .CARISMA 999 ] ]
+        [ acUsaHab [ .CARISMA 300 ] ]
+        [ auAcuchillar [ .CARISMA 200 ] ]
+        [ auUsar [ .CARISMA 200 ] ]
+        [ auCoger [ .CARISMA 200 ] ]
+        [ auUsarVehiculo [ .CARISMA 200 ] ]
+        [ auBeHome [ .CARISMA 200 ] ]
+        [ 
+          auDisparar
+          [ 
+            .CARISMA 200
+            .ARMAS [ PISTOLA PIEDRA ]
+            .PIEDRAS 100
+          ]
+        ]
+        [ auEscalar [ .CARISMA 200 .ESCALAMUROS SI ] ]
+        [ auGoto [ .CARISMA 200 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuGarfio [ .CARISMA 200 ] ]
+        [ 
+          auManejaSegnuelo
+          [ 
+            .CARISMA 200
+            .OBJETOS [ [ .TOKEN SEGNUELOUNO .ACTIVABLE SI ] ]
+          ]
+        ]
+        [ AuEsposas [ .CARISMA 200 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AuTomarControlAleman [ .CARISMA 200 ] ]
+        [ AuCamuflarse [ .CARISMA 200 ] ]
+        [ AcDejarRastro [ .CARISMA 1 ] ]
+        [ AuCogeBarril [ .CARISMA 200 ] ]
+        [ AcPisar [ .CARISMA 1 ] ]
+        [ AuCachiporra [ .CARISMA 200 ] ]
+        [ AuEmpujar [ .CARISMA 200 ] ]
+      ]
+      .MASA 100
+      .SEHUNDE 1
+      .GRAPH [ .ANIM COMANDO .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .CONTENEDOR 1
+      .OCLU 0
+      .DETECTAEXPLOSION 0
+      .ELEMENTOS [ [ .CLASS MACRO .MACRO SEGNUELO .TOKEN SEGNUELOUNO ] ]
+      .NOAGACHA 0
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN TESTIGO
+      .MACRO TESTIGO
+      .XYZ [ 421 346 0 ]
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN ESCALA1
+      .MACRO ESCALA
+      .NIVEL TODOS
+      .PUNTOBAJO [ 251 656 0 ]
+      .PUNTOALTO [ 243 631 51 ]
+      .ESCALAUSABLEPORBUZO 0
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN BARRIL1
+      .MACRO BARRIL
+      .NIVEL TODOS
+      .XYZ [ 518 206 0 ]
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN BARRIL2
+      .MACRO BARRIL
+      .NIVEL TODOS
+      .XYZ [ 477 269 0 ]
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN DEPEMP
+      .MACRO DEPOSEMP
+      .AcEmpujable [ AcEmpujable [ ] ]
+      .NIVEL TODOS
+      .XYZ [ 657 234 0 ]
+      .Angulo 54
+      .Grafico DEPOSITO
+      .P0 [ 624 169 0 ]
+      .P1 [ 803 513 0 ]
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN EMP_DELANTE
+      .MACRO PEMPUJE
+      .NIVEL TODOS
+      .XYZ [ 592 171 0 ]
+      .BOXSELECCIONREL [ -15 -30 30 40 ]
+      .Vehiculo DEPEMP
+      .DireccionEmpuje DELANTE
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN PEMPUJE_ATRAS
+      .MACRO PEMPUJE
+      .NIVEL TODOS
+      .XYZ [ 636 345 0 ]
+      .BOXSELECCIONREL [ -15 -30 30 40 ]
+      .Vehiculo DEPEMP
+      .DireccionEmpuje DETRAS
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN TOLAI
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 628 289 0 ]
+      .Angulo 223
+      .AngBarrido 1
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN OTRO_TOLAI
+      .MACRO BANPE2
+      .NIVEL TODOS
+      .XYZ [ 559 539 0 ]
+      .Angulo 132
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN MAS_TOLAI_TODAVIA
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 601 328 0 ]
+      .Angulo 194
+      .AngBarrido 1
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+  ]
+  .INTERFACE [ 
+    .SUBINTERFACES [ 
+      [ 
+        SUBINTERFACEMULTIPLE
+        [ .TOKEN MULTIPLE .ELEMUSABLES [ KUBE FURGO_HUIDA ] ]
+      ]
+      [ 
+        SUBINTERFACEALIADO
+        [ 
+          .TOKEN COMANDO
+          .CARETO CARA0001.RLE
+          .ITEMS [ 
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_CUCHILLO ]
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_SEGNUELO ]
+            [ .TOKEN IT_ACTSENUELOOFF .DISPONIBLE NO ]
+            [ .TOKEN IT_ACTSENUELOON .DISPONIBLE NO ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_ESPOSAS ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+            [ 
+              .TOKEN IT_CAMUFLARSE
+              .ACCION AuCamuflarse
+              .DISPONIBLE SI
+            ]
+            [ .TOKEN IT_GOLPEAR .DISPONIBLE SI ]
+          ]
+        ]
+      ]
+    ]
+    .INFOCARAS [ [ CARA [ .TOKEN COMANDO .ACCESIBLE 1 ] ] ]
+  ]
+  .TRIPLINES [ ]
+  .SENSORES_SND_ZONA [ ]
+]

@@ -1,0 +1,116 @@
+      .VARIABLES [ EAngulo.180 TPiloto GGrafico NReactividades AAcPatrulla CDisparos CAngMarchaAtras ]
+      .CLASS BICHO
+      .BANDO NEUTRAL
+      .ANGULO $ANGULO
+      .VOLCOLISION [
+        POLY
+        [
+          .H 41
+          .VERT [ [ 70 30 ] [ -70 30 ] [ -70 -30 ] [ 70 -30 ] ]
+        ]
+      ]
+      .BOXSELECCIONREL [ -35 -45 70 60 ]
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .TIP 2BLI
+      .MASA 500
+      .ENEGIA 300
+      .GRAPH [
+        .ANIM CISTERNA
+        .RENDERVOL [
+          POLY
+          [
+            .H 40
+            .VERT [ [ 65 30 ] [ -65 30 ] [ -65 -30 ] [ 65 -30 ] ]
+          ]
+        ]
+      ]
+      .ORGANOS [
+        .VISTA [
+          Vista02
+          [
+            .VOL [
+              POLY
+              [
+                .H 60
+                .VERT [ [ 50 30 ] [ 50 -30 ] [ 125 -30 ] [ 125 30 ] ]
+              ]
+            ]
+          ]
+        ]
+        .MOTOR [
+          MotorAuto
+          [
+            .VELMAX 5
+            .ACBASE 1
+            .WAV CAMN
+            .ANGREV $AngMarchaAtras
+          ]
+        ]
+      ]
+      .ACCIONES [
+        [
+          acExplotaVeh
+          [
+            .CARISMA 200 .RADIO 200 .DANO 200 .TIEMPO 200 .TIPOIMPACTO BOMBA
+            .IMPACTOS [ .BOMBA 1 .GRANADA 1 .DISPARO $DISPAROS .ATROPELLO 1 .PEPINAZOTANQUE 1 ]
+            .SONFIS XPLO
+          ]
+        ]
+        [
+          acPilotaje
+          [
+            .CARISMA 100
+            .TIPOVEH TIERRA
+            .FUERZA 150
+            .CHIVABANDO 1
+            .INFO [
+              [ .ENTRADA [ 35 -30 0 ] .SALIDA [ 35 -30 0 ] ]
+              [ .ENTRADA [ 35 30 0 ] .SALIDA [ 35 30 0 ] ]
+              [ .ENTRADA [ -55 0 0 ] .SALIDA [ -55 0 0 ] ]
+              [ .ENTRADA [ -55 0 0 ] .SALIDA [ -55 0 0 ] ]
+              [ .ENTRADA [ -55 0 0 ] .SALIDA [ -55 0 0 ] ]
+              [ .ENTRADA [ -55 0 0 ] .SALIDA [ -55 0 0 ] ]
+            ]
+          ]
+        ]
+        [
+          acPisar
+          [
+            .CARISMA 50
+            .VEHICLE [
+              [ .POS [ 55 16 ] ]
+              [ .POS [ -45 16 ] ]
+              [ .POS [ -45 -19 ] ]
+              [ .POS [ 55 -19 ] ]
+            ]
+          ]
+        ]
+      ]
+      .ELEMENTOS [
+        [
+          .CLASS BICHO
+          .TOKEN $PILOTO
+          .BANDO ALEMAN
+          .REACTIVIDADES $REACTIVIDADES
+          .XYZ $XYZ
+          .ANGULO 0
+          .VOLCOLISION [ CILINDRO [ .R 10 .H 29 ] ]
+          .LISTAS [ EJEC CHOC SELE ]
+          .ACCIONES [
+            [ acMuerte [ .CARISMA 400 ] ]
+            [ acUsaHab [ .CARISMA 300 .HABILIDAD TIERRA ] ]
+            [ $acPatrulla [ .CARISMA 200 ] ]
+            [ acPisar [ .CARISMA 100 ] ]
+          ]
+          .MASA 100
+          .SEHUNDE 1
+          .ESCONDUCTOR 1
+          .GRAPH [
+            .ANIM $GRAFICO
+            .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ]
+          ]
+          .ORGANOS [ .MOTOR [ MotorAndante [ .STDVEL 1.5 ] ] ]
+        ]
+      ]
+      .CONTENEDOR 1
+      .OCLU 1

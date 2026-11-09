@@ -1,0 +1,39 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+.CLASS BICHO
+.VARIABLES
+[
+ EAngulo.180 
+ GGrafico.PRESO1 NReactividades.CHES AAcPatrulla EAnguloJugar.0 PPosJugar NTEntreJuegos NTJugando ]
+.BANDO NEUTRAL
+.ANGULO $Angulo
+.VOLCOLISION [ CILINDRO [ .R 10 .H 29 ] ]
+.GRAPH [ .ANIM $Grafico .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] ]
+.LISTAS [ EJEC CHOC VISI SELE ]
+.REACTIVIDADES $Reactividades
+.MASA 100
+.ENEGIA 50
+.SEHUNDE 1
+.ACCIONES [
+  [ AcMuerte [ .CARISMA 999 ] ]
+  [ AcPresoChusma [ 
+			.CARISMA 400 
+			.POSICIONJUGAR $PosJugar
+			.ANGULOJUGAR $AnguloJugar
+			.TIEMPOENTREJUEGOS $TEntreJuegos
+			.TIEMPOJUGANDO $TJugando
+			] 
+  ]
+  [ AcBuscador [ .CARISMA 300 ] ]
+  [ $AcPatrulla [ .CARISMA 200 ] ]
+  [ AcPisar [ .CARISMA 100 ] ]
+  [ AcUsahab [ .CARISMA 200 ] ]
+  ]
+.ORGANOS [
+  .MOTOR [ MotorAndante [ ] ]
+]

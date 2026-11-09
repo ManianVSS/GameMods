@@ -1,0 +1,293 @@
+.MISSION [
+  .DATOSFICHEROSMISION [
+    .VOLUMENES MAPA0008.VOL
+    .SECTORES TUT.SEC
+    .ESTATICODINAMICOS CHOQ0008.VOL
+    .TEXTOSMISSION MAPA0008.STR
+    .WADMAP FASE0008.WAD
+  ]
+  .MAP [ .SCALE 0.050823 .XY [ 22 25 ] .BITMAP LIBR0008.BMP ]
+  .INTENDENCIA 8
+  .AUTOEXPCASAS
+  [
+    [ .MAP TIEN01 .TILES [ FCAS0002.RLE CADE0002.RLE ] ]
+    [ .MAP TIEN07 .TILES [ FCAS0000.RLE CADE0000.RLE ] ]
+    [ .MAP TIEN04 .TILES [ FCAS0001.RLE CADE0001.RLE ] ]
+    [ .MAP TIEN05 .TILES [ FCAS0000.RLE CADE0000.RLE ] ]
+    [ .MAP TIEN03 .TILES [ FCAS0001.RLE CADE0001.RLE ] ]
+    [ .MAP TIEN10 .TILES [ FCAS0001.RLE CADE0001.RLE ] ]
+    [ .MAP TANQ06 .TILES [ TANQ0001.RLE TAND0001.RLE ] ]
+    [ .MAP TANQ09 .TILES [ TANQ0001.RLE TAND0001.RLE ] ]
+  ]
+  .INTENDENCIAINFO [
+    .PUNTUACIONES [ .PAR_TICKS 38000 ]
+    .OBJETIVOS [ [ .OBJETIVO ALEMAN1 .VOLUMEN 0 ] ]
+    .PUNTOHUIDA [ 2776 3486 ]
+    .MENSAJESDEDESTRUCCION 0
+    .AMBIENTE [ ]
+    .VEHICULOHUIDA ALEMAN1
+  ]
+  .XY [ 1281 919 ]
+  .PATRULLAS [ ]
+  .ELEMENTOS [
+    [
+      .CLASS BICHO
+      .BANDO NEUTRAL
+      .TOKEN TANQ02
+      .XYZ [ 308 351 0 ]
+      .NOSOLIDO 1
+      .DETECTAEXPLOSION 1
+      .VOLCOLISION [ CILINDRO [ .R 70 .H 30 ] ]
+      .ACCIONES [
+        [
+          acExplotaCasa
+          [
+            .CARISMA 100
+            .TIEMPO 200
+            .IMPACTOS [
+              .DISPARO -1
+              .BOMBA 1
+              .PEPINAZOTANQUE 1
+              .EXPLOSIONMENOR 1
+            ]
+            .CAMBIATILES [
+              [
+                .MAPA TANQ02
+                .TILES [ TANQ0000.RLE TAND0000.RLE ]
+              ]
+              [
+                .MAPA BASE
+                .TILES [ TANS0001.RLE TADS0001.RLE ]
+              ]
+            ]
+            .VOLESTATICO SI
+            .VOLTOKENLLAMAS [ TANQ02EXP1 ]
+          ]
+        ]
+      ]
+    ]
+    [
+      .CLASS BICHO
+      .BANDO NEUTRAL
+      .TOKEN TIEN08
+      .XYZ [ 1394 274 0 ]
+      .NOSOLIDO 1
+      .DETECTAEXPLOSION 1
+      .VOLCOLISION [ CILINDRO [ .R 70 .H 30 ] ]
+      .ACCIONES [
+        [
+          acExplotaCasa
+          [
+            .CARISMA 100
+            .TIEMPO 200
+            .IMPACTOS [
+              .DISPARO -1
+              .BOMBA 1
+              .PEPINAZOTANQUE 1
+              .EXPLOSIONMENOR 1
+            ]
+            .CAMBIATILES [
+              [
+                .MAPA TIEN08A
+                .TILES [ FBAR0001.RLE BADE0001.RLE ]
+              ]
+              [
+                .MAPA TIEN08B
+                .TILES [ FBAR0000.RLE BADE0000.RLE ]
+              ]
+            ]
+            .VOLESTATICO SI
+            .VOLTOKENLLAMAS [ TIEN08EXP1 ]
+          ]
+        ]
+      ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN TESTIGO
+      .MACRO TESTIGO
+      .XYZ [ 421 346 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN SDK222
+      .MACRO SDK222_V
+      .NIVEL TODOS
+      .XYZ [ 425 882 0 ]
+      .BOXSELECCIONREL [ -35 -35 70 60 ]
+      .Angulo 45
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN ESCALA_01
+      .MACRO ESCALA
+      .NIVEL TODOS
+      .PUNTOBAJO [ 212 631 0 ]
+      .PUNTOALTO [ 221 614 51 ]
+      .ESCALAUSABLEPORBUZO 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN ESCALA_02
+      .MACRO ESCALA
+      .NIVEL TODOS
+      .PUNTOBAJO [ 260 555 0 ]
+      .PUNTOALTO [ 242 616 51 ]
+      .ESCALAUSABLEPORBUZO 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN KUBE_1
+      .MACRO KUBE_V
+      .NIVEL TODOS
+      .XYZ [ 466 835 0 ]
+      .BOXSELECCIONREL [ -25 -25 50 40 ]
+      .Angulo 45
+      .NoPilotableAliado 0
+      .ATROPELLA 0
+      .NosigueChivando 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN KUBE_2
+      .MACRO KUBE_V
+      .NIVEL TODOS
+      .XYZ [ 372 922 0 ]
+      .BOXSELECCIONREL [ -25 -25 50 40 ]
+      .Angulo 45
+      .NoPilotableAliado 0
+      .ATROPELLA 0
+      .NosigueChivando 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN KUBE_3
+      .MACRO KUBE_V
+      .NIVEL TODOS
+      .XYZ [ 632 961 0 ]
+      .BOXSELECCIONREL [ -25 -25 50 40 ]
+      .Angulo 136
+      .NoPilotableAliado 0
+      .ATROPELLA 0
+      .NosigueChivando 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN NIDO_1
+      .MACRO NIDOMET
+      .NIVEL TODOS
+      .XYZ [ 570 247 0 ]
+      .BOXSELECCIONREL [ -18 -28 36 32 ]
+      .Angulo 37
+      .TokenArtillero AMET_NIDO1
+      .AngBarrido 60
+      .grafico CABO
+      .Giro 180
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN METRBASE
+      .MACRO METRBASE
+      .NIVEL TODOS
+      .XYZ [ 574 252 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BARRIL_1
+      .MACRO BARRIL
+      .NIVEL TODOS
+      .XYZ [ 843 406 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BARRIL_2
+      .MACRO BARRIL
+      .NIVEL TODOS
+      .XYZ [ 712 488 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE1_AMETRA
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 1620 583 0 ]
+      .Angulo 239
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE1_SALIDA
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 1542 630 0 ]
+      .Angulo 223
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE1_MUELLE
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 1526 309 0 ]
+      .Angulo 239
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [
+      .CLASS BICHOALIADO
+      .BANDO ALIADO
+      .TOKEN FRANCOT
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .MASA 100
+      .GRAPH [ .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] .ANIM FRANCO ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ACCIONES [
+        [ AcMuerte [ .CARISMA 999 ] ]
+        [ AcUsaHab [ .CARISMA 300 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuUsar [ .CARISMA 200 ] ]
+        [ AuCoger [ .CARISMA 200 ] ]
+        [ AuBeHome [ .CARISMA 200 ] ]
+        [ AuUsarVehiculo [ .CARISMA 200 ] ]
+        [ AuEscalar [ .CARISMA 200 ] ]
+        [ AuGoTo [ .CARISMA 200 ] ]
+        [
+          AuDisparar
+          [ .CARISMA 200 .ARMAS MIRILLA .MUNMIRILLA 100 ]
+        ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AutomarControlAleman [ .CARISMA 200 ] ]
+      ]
+      .SEHUNDE 1
+      .CONTENEDOR 0
+      .XYZ [ 1238 1549 0 ]
+      .NOAGACHA 0
+    ]
+  ]
+  .INTERFACE [
+    .SUBINTERFACES [
+      [
+        SUBINTERFACEMULTIPLE
+        [ .TOKEN MULTIPLE .ELEMUSABLES [ ] ]
+      ]
+      [
+        SUBINTERFACEALIADO
+        [
+          .TOKEN FRANCOT
+          .ITEMS [
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_MIRILLA ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+          ]
+        ]
+      ]
+    ]
+    .INFOCARAS [ [ CARA [ .TOKEN FRANCOT .ACCESIBLE 1 ] ] ]
+  ]
+  .TRIPLINES [ ]
+  .SENSORES_SND_ZONA [ ]
+]

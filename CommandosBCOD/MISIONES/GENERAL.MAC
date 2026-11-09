@@ -1,0 +1,57 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+.CLASS BICHO
+.VARIABLES
+[
+ EAngulo.180
+ GGrafico.OFICIAL NReactividades AAcPatrulla
+ CUmbralNerviosismo CAngBarrido
+ NReacDesac
+ NReacActiv
+ NEv_Huida
+ NEv_ExitPoint
+ VVolverOrigen
+ VHuirPorExitPoint
+ CExitPointPrefijado
+]
+.BANDO ALEMAN
+.ANGULO $Angulo
+.VOLCOLISION [ CILINDRO [ .R 10 .H 29 ] ]
+.GRAPH [ .ANIM $Grafico .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] ]
+.LISTAS [ EJEC CHOC SELE ]
+.REACTIVIDADES $Reactividades
+.MASA 100
+.SEHUNDE 1
+.TIP 1GEN
+.ACCIONES [
+  [ AcMuerte [ .CARISMA 999 ] ]
+  [ $AcPatrulla [ .CARISMA 200 ] ]
+  [ AcPisar [ .CARISMA 100 ] ]
+  [ AcGeneral
+    [
+      .CARISMA 600 .NERVIOSISMO $UmbralNerviosismo
+      .EVENTOS_DESACTIVADORES $ReacDesac
+      .EVENTOS_ACTIVADORES $ReacActiv
+      .EV_HUIDA $Ev_Huida
+      .EV_EXITPOINT $Ev_ExitPoint
+      .VOLVERORIGEN $VolverOrigen
+      .HUIRPOREXITPOINT $HuirPorExitPoint
+      .VELVOLVERPATRULLA 3
+      .EXITPOINTPREFIJADO $ExitPointPrefijado
+    ]
+  ]
+  [ AcDisparar [ .CARISMA 500 .TIPOARMA PISTOLA ] ]
+  [ AcVigilar [ .CARISMA 400 .ANGBARRIDO $AngBarrido ] ]
+  [ acUsaHab [ .CARISMA 300 .HABILIDAD TIERRA ] ]
+  [ AcBuscador [ .CARISMA 250 ] ]
+]
+.ORGANOS [
+  .MOTOR [ MotorAndante [ ] ]
+  .VISTA [ Vista01 [ ] ]
+  .OIDO [ Oido01 [ ] ]
+]

@@ -1,0 +1,134 @@
+*************** ANTENA DE RADIO ******************
+0 VIDEO #0
+****************        HISTORIA     ********************
+
+
+**0 STARTBLENDFADE #BR_BLACK.BMP BR01_01.BMP $100
+**0 STARTZOOMBITMAP #M1.ZOM M00_INI.BMP 11 29 378 437    250    225 225 225 225      1.0 1.0
+**200 WAITZOOMBITMAP
+
+**0 STARTZOOMBITMAP #M1.ZOM M00_INI.BMP 11 29 378 437    250    195 240 195 240      4.0 4.0
+**200 WAITZOOMBITMAP
+
+0 STARTBLENDFADE #BR_BLACK.BMP BR01_01.BMP $100
+0 STARTWAVEM #BRIEF02.wav
+50 STARTWAVELEVELM #.35
+0 STARTWAVE #BR01H.WAV %Texto briefing I
+280 WAITFADE
+0 STARTBLENDFADE #BR01_01.BMP BR01_02.bmp $100
+0 WAITFADE
+0 WAITWAVE
+****************        RENDER     ********************
+0 STARTWAVE #BR01B.WAV %Texto briefing III
+
+0 STARTBLENDFADE #BR01_02.BMP ZOOMIN1.bmp $50
+0 WAITFADE
+
+**Formato         mapa    BMP FONDO   pos en pantalla  #frames  centro inicial y final  zoom inicial y final
+0 STARTZOOMBITMAP #M1.ZOM ZOOMIN1.BMP 11 29 378 437    50    225 225 195 240      1.0 4.0
+150 WAITZOOMBITMAP
+
+0 STARTBLENDFADE #ZOOMOUT1.BMP BR01_04.BMP $100
+0 WAITFADE
+0 WAITWAVE
+
+
+0 STARTBLENDFADE #BR01_04.bmp BR_BLACK.BMP $30
+***********************
+10 STARTWAVELEVELM #.35
+10 STARTWAVELEVELM #.25
+10 STARTWAVELEVELM #.15
+10 STARTWAVELEVELM #.05
+10 STARTWAVELEVELM #.00
+***********************
+0 WAITFADE
+0 BREAK
+****************        PASO 1     ********************
+0 SETZOOM #1
+0 STARTWAVEM #TACTIC02.wav
+0 STARTWAVELEVELM #.30
+0 SETPOS #B FRANCOT
+0 VIDEO #1
+0 STARTWAVE #B01T01.WAV %Bienvenido oficial.
+60 WAITWAVE
+****************        PASO 2     ********************
+30 STARTGOTO #[133 1338]
+0 STARTWAVE #B01T02.WAV %Su mision consistira en introducirse en el recinto amurallado.
+0 WAITGOTO
+0 STARTGOTO #[1334 2100]
+0 WAITGOTO
+0 STARTGOTO #[2050 2200]
+0 WAITGOTO
+40 STARTGOTO #[2421 1900]
+0 WAITGOTO
+0 WAITWAVE
+
+****************        PASO 3     ********************
+0 STARTWAVE #B01T03.WAV %Capturar al general aleman.
+0 STARTGOTO #B GENERAL
+0 WAITGOTO
+0 STARTZOOM #1.3 L
+0 WAITZOOM
+0 WAITWAVE
+0 STARTZOOM #1 L
+0 WAITZOOM
+
+****************        PASO 4     ********************
+0 STARTWAVE #B01T04.WAV %introducirlo en una tanqueta.
+0 STARTGOTO #B PANZER2
+0 WAITGOTO
+0 STARTZOOM #1.3 L
+0 WAITZOOM
+0 WAITWAVE
+0 STARTZOOM #1 L
+40 WAITZOOM
+
+
+****************        PASO 5     ********************
+0 STARTWAVE #B01T05.WAV %y huir por la carretera del Este.
+0 STARTGOTO #[2508 2050] $50
+0 WAITGOTO
+50 WAITWAVE
+
+****************        PASO 6     ********************
+0 STARTWAVE #B01T06.WAV %Por culpa de una imprudencia, uno de nuestros hombres ha sido capturado, liberelo.
+0 STARTGOTO  #[1000 179] $50
+0 WAITGOTO
+0 WAITWAVE
+
+****************        PASO 7     ********************
+0 STARTWAVE #B01T07.WAV %Libérelo y cumpla su objetivo.
+0 STARTGOTO #B GENERAL
+0 STARTZOOM #0.8 L
+0 WAITZOOM
+0 WAITGOTO
+0 WAITWAVE
+
+***************        PASO 8     ********************
+0 STARTWAVE #B01T08.WAV %Una cosa más.
+0 STARTGOTO  #[2093 528] $50
+0 STARTZOOM #0.5 L
+0 WAITZOOM
+0 WAITGOTO
+0 STARTGOTO #B GENERAL
+0 STARTZOOM #0.8 L
+0 WAITZOOM
+0 WAITGOTO
+0 WAITWAVE
+
+***************        PASO 9     ********************
+0 STARTWAVE #B01T09.WAV %Eso es todo.
+0 STARTZOOM #1 L
+0 STARTGOTO  #[305 2214] $50
+0 WAITZOOM
+0 WAITGOTO
+***********************
+10 STARTWAVELEVELM #.30
+10 STARTWAVELEVELM #.25
+10 STARTWAVELEVELM #.15
+10 STARTWAVELEVELM #.05
+10 STARTWAVELEVELM #.00
+***********************
+0 WAITWAVE
+
+**************** FINAL *******************

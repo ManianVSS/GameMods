@@ -1,0 +1,23 @@
+.VARIABLES [ CGRANADAS ]
+      .TIP GRN0
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 5 ] ]
+      .LISTAS [ CHOC SELE ]
+      .GRAPH [ .ANIM CAJ1MUN .RENDERVOL [ CILINDRO [ .R 10 .H 5 ] ] ]
+      .ACCIONES [ 
+        [ 
+          acRecogeArma
+          [ 
+            .TOLTIP_LLENO GRN0
+            .TOLTIP_VACIO EMPT
+            .TOKENARMA GRANADA
+            .NUMARMAS 1
+            .BALASINICIALES $GRANADAS
+            .FLAGSRECOGER FL_GRANADAS
+            .CARISMA 100
+          ]
+        ]
+      ]
+      .BANDO NEUTRAL
+      .ANGULO 0
+      .MASA 0
+      .SEHUNDE 0

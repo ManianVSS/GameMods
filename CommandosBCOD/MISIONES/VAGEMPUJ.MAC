@@ -1,0 +1,64 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto
+# G-Grafico A-Accion Concreta X-Accion elegible
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+.VARIABLES
+[
+  EAngulo.135 GGrafico.MOVIL0 PP0 PP1
+  AAcEmpujable
+]
+.CLASS BICHO
+.BANDO NEUTRAL
+.ANGULO $ANGULO
+.VOLCOLISION
+[
+  POLY
+  [
+    .H 41
+    .VERT [ [ 45 30 ] [ -50 30 ] [ -50 -30 ] [ 45 -30 ] ]
+  ]
+]
+.LISTAS [ EJEC CHOC VISI ]
+.MASA 500
+.ENEGIA 300
+.GRAPH
+[
+  .ANIM $GRAFICO
+  .RENDERVOL
+  [
+    POLY
+    [
+      .H 61
+      .VERT [ [ 45 30 ] [ -50 30 ] [ -50 -30 ] [ 45 -30 ] ]
+    ]
+  ]
+]
+.ORGANOS
+[
+  .MOTOR
+  [
+    MotorRail
+    [
+      .RAIL [ .P0 $P0 .P1 $P1 ]
+      .CLASE CONSTRUCCION
+    ]
+  ]
+]
+.ACCIONES
+[
+  [
+    acExplotaVeh
+    [
+      .CARISMA 200 .RADIO 200 .DANO 180 .TIEMPO 200
+      .IMPACTOS [ .ATROPELLO -1 .DISPARO -1 .BOMBA 1 .PEPINAZOTANQUE 1 .EXPLOSIONMENOR 1 ]
+      .SONFIS XPLO
+    ]
+  ]
+  [ $AcEmpujable [ .CARISMA 100 ] ]
+]
+.OCLU 1
+.TIP VAEM

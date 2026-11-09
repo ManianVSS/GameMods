@@ -1,0 +1,9 @@
+	.VARIABLES [ ]
+      .CLASS BICHO
+      .VOLCOLISION [ CILINDRO [ .H 5 .R 10 .VERT [ ] ] ]
+      .LISTAS CHOC
+      .ORGANOS [ .MOTOR [ MotorObjeto [ .EXPLOTA 1 .FIJO 1 ] ] ]
+      .ACCIONES [ [ AcMina [ .ACTIVA 1 .CARISMA 100 ] ] ]
+      .BANDO NEUTRAL
+      .ANGULO 0
+      .MASA 0

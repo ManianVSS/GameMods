@@ -1,0 +1,597 @@
+.MISSION [ 
+  .DATOSFICHEROSMISION [ 
+    .VOLUMENES MAPA0008.VOL
+    .SECTORES MAPA0008.SEC
+    .ESTATICODINAMICOS CHOQ0008.VOL
+    .TEXTOSMISSION MAPA0008.STR
+    .WADMAP FASE0008.WAD
+  ]
+  .MAP [ .SCALE 0.050823 .XY [ 22 25 ] .BITMAP LIBR0008.BMP ]
+  .INTENDENCIA 8
+  .INTENDENCIAINFO [ 
+    .PUNTUACIONES [ .PAR_TICKS 38000 ]
+    .OBJETIVOS [ [ .OBJETIVO ALEMAN1 .VOLUMEN 0 ] ]
+    .PUNTOHUIDA [ 2776 3486 ]
+    .MENSAJESDEDESTRUCCION 0
+    .AMBIENTE [ ]
+    .VEHICULOHUIDA ALEMAN1
+  ]
+  .XY [ 1345 907 ]
+  .PATRULLAS [ ]
+  .ELEMENTOS [ 
+    [ 
+      .CLASS BICHOALIADO
+      .TOKEN COMANDO
+      .BANDO ALIADO
+      .XYZ [ 1268 1362 0 ]
+      .ANGULO 135
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .ACCIONES [ 
+        [ acMuerte [ .CARISMA 999 ] ]
+        [ acUsaHab [ .CARISMA 300 ] ]
+        [ auAcuchillar [ .CARISMA 200 ] ]
+        [ auUsar [ .CARISMA 200 ] ]
+        [ auCoger [ .CARISMA 200 ] ]
+        [ auUsarVehiculo [ .CARISMA 200 ] ]
+        [ auBeHome [ .CARISMA 200 ] ]
+        [ 
+          auDisparar
+          [ 
+            .CARISMA 200
+            .ARMAS [ PISTOLA PIEDRA ]
+            .PIEDRAS 100
+          ]
+        ]
+        [ auEscalar [ .CARISMA 200 .ESCALAMUROS SI ] ]
+        [ auGoto [ .CARISMA 200 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuGarfio [ .CARISMA 200 ] ]
+        [ 
+          auManejaSegnuelo
+          [ 
+            .CARISMA 200
+            .OBJETOS [ [ .TOKEN SEGNUELOUNO .ACTIVABLE SI ] ]
+          ]
+        ]
+        [ AuEsposas [ .CARISMA 200 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AuTomarControlAleman [ .CARISMA 200 ] ]
+        [ AuCamuflarse [ .CARISMA 200 ] ]
+        [ AcDejarRastro [ .CARISMA 1 ] ]
+        [ AuCogeBarril [ .CARISMA 200 ] ]
+        [ AcPisar [ .CARISMA 1 ] ]
+        [ AuCachiporra [ .CARISMA 200 ] ]
+        [ AuEmpujar [ .CARISMA 200 ] ]
+      ]
+      .MASA 100
+      .SEHUNDE 1
+      .GRAPH [ .ANIM COMANDO .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .CONTENEDOR 1
+      .OCLU 0
+      .DETECTAEXPLOSION 0
+      .ELEMENTOS [ [ .CLASS MACRO .MACRO SEGNUELO .TOKEN SEGNUELOUNO ] ]
+      .NOAGACHA 0
+    ]
+    [ 
+      .CLASS BICHOALIADO
+      .TOKEN FRANCOT
+      .BANDO ALIADO
+      .XYZ [ 1237 1446 0 ]
+      .ANGULO 330
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .ACCIONES [ 
+        [ acMuerte [ .CARISMA 999 ] ]
+        [ acUsaHab [ .CARISMA 300 ] ]
+        [ auEscalar [ .CARISMA 200 ] ]
+        [ auUsarVehiculo [ .CARISMA 200 ] ]
+        [ 
+          auDisparar
+          [ 
+            .CARISMA 200
+            .ARMAS [ MIRILLA PISTOLA PIEDRA ]
+            .MUNMIRILLA 100
+            .MUNFUSIL 10
+            .PIEDRAS 50
+          ]
+        ]
+        [ auBeHome [ .CARISMA 200 ] ]
+        [ auUsar [ .CARISMA 200 .FLAGSUSAR FL_BALASFRANCOT ] ]
+        [ 
+          auCoger
+          [ .CARISMA 200 .FLAGSRECOGER FL_BALASFRANCOT ]
+        ]
+        [ auGoto [ .CARISMA 200 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AuTomarControlAleman [ .CARISMA 200 ] ]
+      ]
+      .MASA 100
+      .SEHUNDE 1
+      .GRAPH [ .ANIM FRANCO .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .OCLU 0
+      .DETECTAEXPLOSION 0
+      .CONTENEDOR 0
+      .NOAGACHA 0
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN TESTIGO
+      .MACRO TESTIGO
+      .XYZ [ 421 346 0 ]
+    ]
+    [ 
+      .CLASS BICHOALIADO
+      .TOKEN CONDUC
+      .BANDO ALIADO
+      .XYZ [ 625 247 0 ]
+      .ANGULO 45
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .ACCIONES [ 
+        [ acMuerte [ .CARISMA 999 ] ]
+        [ 
+          acUsaHab
+          [ .CARISMA 300 .HABILIDAD [ TIERRA ARMA_ESTATICA ] ]
+        ]
+        [ auEscalar [ .CARISMA 200 ] ]
+        [ 
+          auUsarVehiculo
+          [ .CARISMA 200 .VEHICULOS [ TIERRA ARMA_ESTATICA ] ]
+        ]
+        [ 
+          auDisparar
+          [ 
+            .CARISMA 200
+            .ARMAS [ PISTOLA PIEDRA ESCOPETA ]
+            .PIEDRAS 100
+            .MUNESCOPETA 50
+          ]
+        ]
+        [ auBeHome [ .CARISMA 200 ] ]
+        [ auUsar [ .CARISMA 200 .FLAGSUSAR FL_METRALLETA ] ]
+        [ 
+          auCoger
+          [ .CARISMA 200 .FLAGSRECOGER FL_METRALLETA ]
+        ]
+        [ auGoto [ .CARISMA 200 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuBotiquin [ .CARISMA 200 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AuCachiporra [ .CARISMA 200 ] ]
+        [ AuTomarControlAleman [ .CARISMA 200 ] ]
+      ]
+      .MASA 100
+      .SEHUNDE 1
+      .GRAPH [ .ANIM MECANIC .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ESCONDUCTOR 1
+      .OCLU 0
+      .DETECTAEXPLOSION 0
+      .CONTENEDOR 0
+      .NOAGACHA 0
+    ]
+    [ 
+      .CLASS BICHOALIADO
+      .BANDO ALIADO
+      .TOKEN ESPIA
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .MASA 100
+      .GRAPH [ .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] .ANIM ESPIA ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ACCIONES [ 
+        [ AcMuerte [ .CARISMA 999 ] ]
+        [ AcUsaHab [ .CARISMA 300 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuUsar [ .CARISMA 200 ] ]
+        [ AuCoger [ .CARISMA 200 ] ]
+        [ AuBeHome [ .CARISMA 200 ] ]
+        [ AuUsarVehiculo [ .CARISMA 200 ] ]
+        [ AuEscalar [ .CARISMA 200 .ESCALAMUROS NO ] ]
+        [ AuQuitaUniforme [ .CARISMA 200 ] ]
+        [ AuGoTo [ .CARISMA 200 ] ]
+        [ 
+          AuDisparar
+          [ 
+            .CARISMA 200
+            .ARMAS [ PISTOLA PIEDRA ESCOPETA METRALLETA ]
+            .PIEDRAS 100
+            .MUNMETRA 50
+          ]
+        ]
+        [ 
+          AcSerEspia
+          [ 
+            .CARISMA 1
+            .EMPIEZADISFRAZADO 0
+            .DISFRAZ ESPIAA
+            .INSIGNIA SI
+            .PRECARGAANMS [ 
+              ESPIAA
+              ESPIAA1
+              ESPIAA2
+              ESPIAA3
+              ESPIAA4
+              ESPIAA5
+              ESPIAA6
+              ESPIAA7
+            ]
+          ]
+        ]
+        [ 
+          AuJeringar
+          [ .CARISMA 200 .TIPOJERINGA LETAL .DOSIS 5 ]
+        ]
+        [ AuDisfraz [ .CARISMA 200 ] ]
+        [ AuGarfio [ .CARISMA 200 .ESPIADES NO ] ]
+        [ AuInsignia [ .CARISMA 200 .USOS 8 ] ]
+        [ AuEsposas [ .CARISMA 200 ] ]
+        [ AuQuieto [ .CARISMA 200 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AuTomarControlAleman [ .CARISMA 200 ] ]
+        [ AuCachiporra [ .CARISMA 200 ] ]
+      ]
+      .SEHUNDE 1
+      .CONTENEDOR 1
+      .XYZ [ 568 286 0 ]
+      .NOAGACHA 0
+    ]
+    [ 
+      .CLASS BICHOALIADO
+      .BANDO ALIADO
+      .TOKEN LANCHERO
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .MASA 100
+      .GRAPH [ 
+        .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ]
+        .ANIM LANCHIST
+      ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ACCIONES [ 
+        [ AcMuerte [ .CARISMA 999 ] ]
+        [ AcUsaHab [ .CARISMA 300 .HABILIDAD BALSA ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuUsar [ .CARISMA 200 ] ]
+        [ AuCoger [ .CARISMA 200 ] ]
+        [ AuBeHome [ .CARISMA 200 ] ]
+        [ AuUsarVehiculo [ .CARISMA 200 .VEHICULOS BALSA ] ]
+        [ AuEscalar [ .CARISMA 200 ] ]
+        [ AuGoTo [ .CARISMA 200 ] ]
+        [ 
+          AuDisparar
+          [ 
+            .CARISMA 200
+            .ARMAS [ ARPON PIEDRA PISTOLA ]
+            .PIEDRAS 100
+          ]
+        ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AutomarControlAleman [ .CARISMA 200 ] ]
+        [ AuAcuchillar [ .CARISMA 200 ] ]
+        [ AuBucear [ .CARISMA 200 ] ]
+        [ 
+          AuManejaBalsa
+          [ 
+            .CARISMA 200
+            .OTOK ZODIAC5
+            .ITTOK IT_BALSA
+            .BICHOSOLTAR LANZABARCA
+          ]
+        ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+      ]
+      .SEHUNDE 1
+      .CONTENEDOR 1
+      .XYZ [ 1200 1383 0 ]
+      .NOAGACHA 0
+      .ANGULO 45
+      .ELEMENTOS [ 
+        [ 
+          .CLASS MACRO
+          .TOKEN ZODIAC5
+          .MACRO ZODIAC5
+          .NIVEL TODOS
+          .XYZ [ 511 312 0 ]
+          .Angulo 180
+          .bando NEUTRAL
+        ]
+      ]
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN ESCALA1
+      .MACRO ESCALA
+      .NIVEL TODOS
+      .PUNTOBAJO [ 251 656 0 ]
+      .PUNTOALTO [ 243 631 51 ]
+      .ESCALAUSABLEPORBUZO 0
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN KUBE
+      .MACRO KUBETUT
+      .NIVEL TODOS
+      .XYZ [ 789 287 0 ]
+      .BOXSELECCIONREL [ -25 -25 50 40 ]
+      .Angulo 136
+      .NoPilotableAliado 0
+      .ATROPELLA 0
+      .NosigueChivando 0
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN UNIFORME
+      .MACRO UNIFORME
+      .NIVEL TODOS
+      .XYZ [ 1442 166 0 ]
+      .Angulo 132
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN CASA_INICIO
+      .MACRO CASA
+      .NIVEL TODOS
+      .XYZ [ 103 1174 0 ]
+      .BOXSELECCIONREL [ -15 -55 31 50 ]
+      .TocarWav 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN BANPE2_CACA
+      .MACRO BANPE2
+      .NIVEL TODOS
+      .XYZ [ 410 1179 0 ]
+      .Angulo 132
+      .AngBarrido 45
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN TOLAI_TB
+      .MACRO BANPE2
+      .NIVEL TODOS
+      .XYZ [ 1492 1292 0 ]
+      .Angulo 314
+      .AngBarrido 1
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN PAQUETE
+      .MACRO BANPE2
+      .NIVEL TODOS
+      .XYZ [ 549 524 0 ]
+      .Angulo 132
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN CACOSO
+      .MACRO BANPE2
+      .NIVEL TODOS
+      .XYZ [ 775 676 0 ]
+      .Angulo 45
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN PA_LA_CAMARA
+      .MACRO BAP1
+      .AcPatrulla [ 
+        AcPatrulla
+        [ 
+          .PATRULLA [ 
+            [ 
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [ [ .XYZ [ 356 1148 0 ] ] [ .XYZ [ 226 1267 0 ] ] ]
+              .VEL 1.5
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .NIVEL TODOS
+      .XYZ [ 381 1162 0 ]
+      .Angulo 180
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN MIERDERO
+      .MACRO BANPE2
+      .NIVEL TODOS
+      .XYZ [ 1662 371 0 ]
+      .Angulo 91
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN PAQUETON
+      .MACRO BANPE2
+      .NIVEL TODOS
+      .XYZ [ 1272 138 0 ]
+      .Angulo 140
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN AVER_AVER
+      .MACRO BANPE2
+      .NIVEL TODOS
+      .XYZ [ 1420 718 0 ]
+      .Angulo 264
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .AngBarrido 2
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN CASA_FINAL
+      .MACRO CASA
+      .NIVEL TODOS
+      .XYZ [ 1663 1535 0 ]
+      .BOXSELECCIONREL [ -15 -55 31 50 ]
+      .TocarWav 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN CAJA
+      .MACRO CAJAMETR
+      .NIVEL TODOS
+      .XYZ [ 116 186 0 ]
+    ]
+  ]
+  .INTERFACE [ 
+    .SUBINTERFACES [ 
+      [ 
+        SUBINTERFACEMULTIPLE
+        [ .TOKEN MULTIPLE .ELEMUSABLES [ KUBE FURGO_HUIDA ] ]
+      ]
+      [ 
+        SUBINTERFACEALIADO
+        [ 
+          .TOKEN COMANDO
+          .CARETO CARA0001.RLE
+          .ITEMS [ 
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_CUCHILLO ]
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_SEGNUELO ]
+            [ .TOKEN IT_ACTSENUELOOFF .DISPONIBLE NO ]
+            [ .TOKEN IT_ACTSENUELOON .DISPONIBLE NO ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_ESPOSAS ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+            [ 
+              .TOKEN IT_CAMUFLARSE
+              .ACCION AuCamuflarse
+              .DISPONIBLE SI
+            ]
+          ]
+        ]
+      ]
+      [ 
+        SUBINTERFACEALIADO
+        [ 
+          .TOKEN FRANCOT
+          .CARETO CARA0005.RLE
+          .ITEMS [ 
+            [ .TOKEN IT_MIRILLA ]
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+            [ .TOKEN IT_BOTIQUIN ]
+          ]
+        ]
+      ]
+      [ 
+        SUBINTERFACEALIADO
+        [ 
+          .TOKEN CONDUC
+          .CARETO CARA0003.RLE
+          .ITEMS [ 
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_BOTIQUIN ]
+            [ .TOKEN IT_METRALLETA .DISPONIBLE NO ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_ESCOPETA ]
+            [ 
+              .TOKEN IT_TABACO
+              .DISPONIBLE SI
+              .TESTDISPONIBLE NO
+            ]
+            [ .TOKEN IT_CACHIPORRA ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+          ]
+        ]
+      ]
+      [ 
+        SUBINTERFACEALIADO
+        [ 
+          .TOKEN ESPIA
+          .ITEMS [ 
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_INSIGNIA .DISPONIBLE SI ]
+            [ .TOKEN IT_JERINGUILLALETAL ]
+            [ .TOKEN IT_QUITAUNIFORME ]
+            [ .TOKEN IT_ESPOSAS ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_LUGER .DISPONIBLE NO ]
+            [ .TOKEN IT_MAUSER .DISPONIBLE NO ]
+            [ .TOKEN IT_MP38 .DISPONIBLE NO ]
+            [ .TOKEN IT_ESPIAA .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA2 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA3 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA4 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA5 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA6 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA7 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_CLOROFORMO ]
+          ]
+        ]
+      ]
+      [ 
+        SUBINTERFACEALIADO
+        [ 
+          .TOKEN LANCHERO
+          .ITEMS [ 
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PISTOLA ]
+            [ 
+              .TOKEN IT_BALSA
+              .ACCION AuManejaBalsa
+              .DISPONIBLE SI
+            ]
+            [ 
+              .TOKEN IT_ARPON
+              .ACCION AuDisparar
+              .DISPONIBLE SI
+            ]
+            [ 
+              .TOKEN IT_CUCHILLO
+              .ACCION AuAcuchillar
+              .DISPONIBLE SI
+            ]
+            [ .TOKEN IT_TRAJEBUZO ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_TABACO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+          ]
+        ]
+      ]
+    ]
+    .INFOCARAS [ 
+      [ CARA [ .TOKEN COMANDO .ACCESIBLE 1 ] ]
+      [ CARA [ .TOKEN FRANCOT .ACCESIBLE 1 ] ]
+      [ CARA [ .TOKEN LANCHERO .ACCESIBLE 1 ] ]
+      [ CARA [ .TOKEN CONDUC .ACCESIBLE 1 ] ]
+      [ CARA [ .TOKEN ESPIA .ACCESIBLE 1 ] ]
+    ]
+  ]
+  .TRIPLINES [ ]
+  .SENSORES_SND_ZONA [ ]
+]

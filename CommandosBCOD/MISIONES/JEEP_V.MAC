@@ -1,0 +1,78 @@
+      .VARIABLES [ EAngulo.180 AAcPatrulla NReactividades CAngMarchaAtras ]
+      .REACTIVIDADES $Reactividades
+      .BANDO ALIADO
+      .ANGULO $ANGULO
+      .VOLCOLISION [
+        POLY
+        [
+          .H 41
+          .VERT [ [ 45 25 ] [ -50 25 ] [ -50 -25 ] [ 45 -25 ] ]
+        ]
+      ]
+      .BOXSELECCIONREL [ -35 -35 70 50 ]
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .MASA 3000
+      .ENEGIA 300
+      .GRAPH [
+        .ANIM JEEP
+        .RENDERVOL [
+          POLY
+          [
+            .H 40
+            .VERT [ [ 45 25 ] [ -50 25 ] [ -50 -25 ] [ 45 -25 ] ]
+          ]
+        ]
+      ]
+      .ORGANOS [
+        .MOTOR [
+          MotorAuto
+          [
+            .VELMAX 5
+            .ACBASE 1
+            .WAV CAMN
+            .ANGREV $AngMarchaAtras
+          ]
+        ]
+      ]
+      .ACCIONES
+      [
+        [
+          acExplotaVeh
+          [
+            .CARISMA 900 .RADIO 200 .DANO 180 .TIEMPO 200
+            .IMPACTOS [ .ATROPELLO 1 .DISPARO 30 .BOMBA 1 .PEPINAZOTANQUE 1 .EXPLOSIONMENOR 1 ]
+            .SONFIS XPLO
+          ]
+        ]
+        [
+          acPilotaje
+          [
+            .CARISMA 200
+            .TIPOVEH TIERRA
+            .FUERZA 150
+            .CHIVABANDO 1
+            .INFO [
+              [ .ENTRADA [ 35 -30 0 ] .SALIDA [ 35 -30 0 ] ]
+              [ .ENTRADA [ 35 30 0 ] .SALIDA [ 35 30 0 ] ]
+              [ .ENTRADA [ -55 0 0 ] .SALIDA [ -55 0 0 ] ]
+              [ .ENTRADA [ -55 0 0 ] .SALIDA [ -55 0 0 ] ]
+            ]
+          ]
+        ]
+        [ $AcPatrulla [ .CARISMA 300 ] ]
+        [
+          acPisar
+          [
+            .CARISMA 100
+            .VEHICLE [
+              [ .POS [ 30 12 ] ]
+              [ .POS [ -30 12 ] ]
+              [ .POS [ -30 -15 ] ]
+              [ .POS [ 30 -15 ] ]
+            ]
+          ]
+        ]
+      ]
+      .CONTENEDOR 1
+      .OCLU 1
+      .TIP I001

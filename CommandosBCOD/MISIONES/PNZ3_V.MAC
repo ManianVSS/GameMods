@@ -1,0 +1,87 @@
+      .VARIABLES [ EAngulo.180 CAngMarchaAtras ]
+      .BANDO NEUTRAL
+      .ANGULO $ANGULO
+      .ENEGIA 500
+      .TIP 2PZ3
+      .VOLCOLISION [
+        POLY
+        [
+          .H 40
+          .VERT [ [ 63 37 ] [ -63 37 ] [ -63 -37 ] [ 63 -37 ] ]
+        ]
+      ]
+      .BOXSELECCIONREL [ -35 -45 70 70 ]
+      .LISTAS [ EJEC CHOC SELE ]
+      .MASA 3500
+      .GRAPH [
+        .ANIM PNZ3
+        .RENDERVOL [
+          POLY
+          [
+            .H 40
+            .VERT [ [ 63 37 ] [ -63 37 ] [ -63 -37 ] [ 63 -37 ] ]
+          ]
+        ]
+      ]
+      .ORGANOS [
+        .MOTOR [ MotorTanque [
+           .WAV CAMN
+           .ANGREV $AngMarchaAtras
+        ] ]
+      ]
+      .ACCIONES [
+        [
+          acExplotaVeh
+          [
+            .CARISMA 900 .RADIO 200 .DANO 180 .TIEMPO 200
+            .IMPACTOS [ .DISPARO -1 .BOMBA 1 .PEPINAZOTANQUE 1  .EXPLOSIONMENOR -1 ]
+            .SONFIS XPLO
+          ]
+        ]
+        [
+          Acpilotaje
+          [
+            .CARISMA 200
+            .FUERZA 20000
+            .TIPOVEH TIERRA
+            .MINVEL 5
+            .MAXVEL 10
+            .DISPARA 1
+            .CHIVABANDO 1
+            .INFO
+            [
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+            ]
+          ]
+        ]
+        [
+          acTorreta
+          [
+            .RECARGA 30
+            .TORRETA [ .ANIM TPNZ3 .HOTSPOTSEQUENCES [ PNZ3 DISPAROVEHICULOS ] .POSICION [ 10 0 40 ] ]
+            .CARISMA 100
+            .BANDO ALEMAN
+            .TIPODISPARO CANON
+            .ALCANCEMINIMO 300
+          ]
+        ]
+        [
+          acPisar
+          [
+            .CARISMA 50
+            .VEHICLE [
+              [ .POS [ 54 28 ] ]
+              [ .POS [ -54 28 ] ]
+              [ .POS [ -54 -28 ] ]
+              [ .POS [ 54 -28 ] ]
+            ]
+          ]
+        ]
+      ]
+      .CONTENEDOR 1
+      .OCLU 1

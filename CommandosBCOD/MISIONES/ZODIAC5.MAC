@@ -1,0 +1,126 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion Concreta X-Accion elegible
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+.CLASS BICHO
+.VARIABLES [ EAngulo.180 CVolumenAgua NColorBurbujas Cbando.NEUTRAL ]
+.BANDO $Bando
+.ANGULO $Angulo
+.VOLCOLISION [ CILINDRO [ .R 30 .H 40 ] ]
+.GRAPH [ .ANIM BARCA .RENDERVOL [ CILINDRO [ .R 30 .H 0.01 ] ] ]
+.LISTAS [ EJEC CHOC SELE VISI ]
+.MASA 400
+.CONTENEDOR 1
+.ACCIONES
+[
+  [ acZodiac [ .CARISMA 999 ] ]
+  [ acvehdescubierto [ ] ]
+  [
+    acPilotaje
+    [
+			.WAV [ .SONIDOAVANCE REMA ]
+      .FTCANSHOOT 1
+      .REPARTEIMPACTO 1
+      .CARISMA 200
+      .TIPOVEH BALSA
+      .CHIVABANDO 1
+      .ATROPELLA 0
+      .INFO
+      [
+        [
+          .ENTRADA [ 20 0 0 ]
+          .SALIDA [ 55 0 0 ]
+          .PINTABLE 1
+          .ANIMACION EMBARCADO
+          .ANGULO 180
+        ]
+        [
+          .ENTRADA [ 0 7 0 ]
+          .SALIDA [ 0 55 0 ]
+          .PINTABLE 1
+          .ANIMACION EMBARCADO
+        ]
+        [
+          .ENTRADA [ 0 -7 0 ]
+          .SALIDA [ 0 -55 0 ]
+          .PINTABLE 1
+          .ANIMACION EMBARCADO
+        ]
+        [
+          .ENTRADA [ -20 7 0 ]
+          .SALIDA [ -20 55 0 ]
+          .PINTABLE 1
+          .ANIMACION EMBARCADO
+        ]
+        [
+          .ENTRADA [ -20 -7 0 ]
+          .SALIDA [ -20 -55 0 ]
+          .PINTABLE 1
+          .ANIMACION EMBARCADO
+        ]
+      ]
+    ]
+  ]
+  [
+    AcPSTail
+    [
+      .CARISMA 0
+      .NAMEVOL $VolumenAgua
+      .NPARTICLES 800
+      .MANGUERAS [
+        [
+          .POS [ -30 15 ]
+          .WIDTH 3
+          .HEIGHT 3
+          .ANG 0
+          .FORCEMOD 1.0
+          .FORCEANG 135.0
+          .COLOR $ColorBurbujas
+        ]
+        [
+          .POS [ -30 -15 ]
+          .WIDTH 3
+          .HEIGHT 3
+          .ANG 0
+          .FORCEMOD 1.0
+          .FORCEANG -135.0
+          .COLOR $ColorBurbujas
+        ]
+        [
+          .POS [ 30 0 ]
+          .WIDTH 3
+          .HEIGHT 3
+          .ANG 0
+          .FORCEMOD 1.0
+          .FORCEANG 115.0
+          .COLOR $ColorBurbujas
+        ]
+        [
+          .POS [ 30 0 ]
+          .WIDTH 3
+          .HEIGHT 3
+          .ANG 0
+          .FORCEMOD 1.0
+          .FORCEANG -115.0
+          .COLOR $ColorBurbujas
+        ]
+      ]
+    ]
+  ]
+]
+.ORGANOS
+[
+  .MOTOR
+  [
+    MotorBalsa
+    [
+      .VELMAX 4
+      .ACBASE 1
+      .GIROMAX 3
+      .SOBREAGUA 1
+    ]
+  ]
+]

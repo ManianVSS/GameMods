@@ -1,0 +1,22 @@
+.VARIABLES [ ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 5 ] ]
+      .LISTAS [ CHOC SELE ]
+      .TIP MGN0
+      .GRAPH [ .ANIM CAJ1MUN .RENDERVOL [ CILINDRO [ .R 10 .H 5 ] ] ]
+      .ACCIONES [
+        [
+          acRecogeArma
+          [
+            .TOLTIP_LLENO MGN0
+            .TOLTIP_VACIO EMPT
+            .TOKENARMA METRALLETA
+            .NUMARMAS 1
+            .BALASINICIALES 50
+            .FLAGSRECOGER FL_METRALLETA
+          ]
+        ]
+      ]
+      .BANDO NEUTRAL
+      .ANGULO 0
+      .MASA 0
+      .NOSOLIDO 1

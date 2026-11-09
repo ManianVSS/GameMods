@@ -1,0 +1,10 @@
+	.VARIABLES [ ]
+      .CLASS BICHO
+      .OCLU 1
+      .VOLCOLISION [ CILINDRO [ .R 30 .H 45 ] ]
+      .LISTAS CHOC
+      .GRAPH [
+        .ANIM EMBALAJE
+        .RENDERVOL [ CILINDRO [ .R 30 .H 45 ] ]
+      ]
+      .BANDO NEUTRAL

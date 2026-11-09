@@ -1,0 +1,32 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+
+
+.VARIABLES [ CBARRERA ]
+      .CLASS BICHO
+      .BANDO NEUTRAL
+      .ANGULO 250
+      .LISTAS EJEC
+      .ORGANOS [ 
+        .VISTA [ 
+          Vista02
+          [ 
+            .VOL [ 
+              POLY
+              [ 
+                .H 20
+                .VERT [ [ 410 12 ] [ -410 12 ] [ -410 -12 ] [ 410 -12 ] ]
+              ]
+            ]
+          ]
+        ]
+      ]
+      .ACCIONES [ 
+        [ 
+          AcContrBarreraTren
+          [ .CARISMA 100 .BARRERA $BARRERA ]
+        ]
+      ]

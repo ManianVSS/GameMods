@@ -1,0 +1,10 @@
+        .VARIABLES [ EANGULO ]
+      .ANGULO $ANGULO
+      .BANDO NEUTRAL
+      .LISTAS CHOC
+      .VOLCOLISION [
+                POLY [ .H 20 .VERT [ [ 20 10 ] [ -20 10 ] [ -20 -10 ] [ 20 -10 ] ] ]
+        ]
+      .GRAPH [ .ANIM NOTOY .RENDERVOL [
+                POLY [ .H 20 .VERT [ [ 20 10 ] [ -20 10 ] [ -20 -10 ] [ 20 -10 ] ] ]
+        ] ]

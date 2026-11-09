@@ -1,0 +1,30 @@
+{
+;*****************************************************************************
+;* MAPA DE VOLUMENES ESTATICOS
+;*****************************************************************************
+
+MAPDIMXY 2611,2521
+MAPTABPOLYS
+{
+	POLY "NONAME",1584,738,0,174,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		3				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1565, 341,  26, 138,   0,  36, 0,"POST0000.RLE","   "
+	POLY "NONAME",143,2173,0,172,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		3				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         119,1264,  44, 135,   0,  48, 0,"POST0004.RLE","X  "
+	POLY "NONAME",591,1827,0,172,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		3				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         567,1042,  44, 135,   0,  48, 0,"POST0004.RLE","X  "
+	POLY "NONAME",1352,1747,0,167,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1334, 995,  44, 131,   0,  52, 0,"POST0004.RLE","   "
+	POLY "NONAME",1060,1518,0,167,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		2				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1042, 848,  44, 131,   0,  52, 0,"POST0004.RLE","   "
+}
+}

@@ -1,0 +1,212 @@
+.MISSION [
+  .DATOSFICHEROSMISION [
+    .VOLUMENES MAPA0008.VOL
+    .SECTORES TUT.SEC
+    .ESTATICODINAMICOS CHOQ0008.VOL
+    .TEXTOSMISSION MAPA0008.STR
+    .WADMAP FASE0008.WAD
+  ]
+  .MAP [ .SCALE 0.050823 .XY [ 22 25 ] .BITMAP LIBR0008.BMP ]
+  .INTENDENCIA 8
+  .INTENDENCIAINFO [
+    .PUNTUACIONES [ .PAR_TICKS 38000 ]
+    .OBJETIVOS [ [ .OBJETIVO ALEMAN1 .VOLUMEN 0 ] ]
+    .PUNTOHUIDA [ 2776 3486 ]
+    .MENSAJESDEDESTRUCCION 0
+    .AMBIENTE [ ]
+    .VEHICULOHUIDA ALEMAN1
+  ]
+  .XY [ 1502 923 ]
+  .PATRULLAS [ ]
+  .ELEMENTOS [
+    [
+      .CLASS MACRO
+      .TOKEN TESTIGO
+      .MACRO TESTIGO
+      .XYZ [ 421 346 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN ESCALA_01
+      .MACRO ESCALA
+      .NIVEL TODOS
+      .PUNTOBAJO [ 212 631 0 ]
+      .PUNTOALTO [ 221 614 51 ]
+      .ESCALAUSABLEPORBUZO 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN ESCALA_02
+      .MACRO ESCALA
+      .NIVEL TODOS
+      .PUNTOBAJO [ 260 555 0 ]
+      .PUNTOALTO [ 242 616 51 ]
+      .ESCALAUSABLEPORBUZO 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN KUBE_1
+      .MACRO KUBE_V
+      .NIVEL TODOS
+      .XYZ [ 466 835 0 ]
+      .BOXSELECCIONREL [ -25 -25 50 40 ]
+      .Angulo 45
+      .NoPilotableAliado 0
+      .ATROPELLA 0
+      .NosigueChivando 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN KUBE_2
+      .MACRO KUBE_V
+      .NIVEL TODOS
+      .XYZ [ 372 922 0 ]
+      .BOXSELECCIONREL [ -25 -25 50 40 ]
+      .Angulo 45
+      .NoPilotableAliado 0
+      .ATROPELLA 0
+      .NosigueChivando 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN KUBE_3
+      .MACRO KUBE_V
+      .NIVEL TODOS
+      .XYZ [ 632 961 0 ]
+      .BOXSELECCIONREL [ -25 -25 50 40 ]
+      .Angulo 136
+      .NoPilotableAliado 0
+      .ATROPELLA 0
+      .NosigueChivando 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BARRIL_1
+      .MACRO BARRIL
+      .NIVEL TODOS
+      .XYZ [ 843 406 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BARRIL_2
+      .MACRO BARRIL
+      .NIVEL TODOS
+      .XYZ [ 712 488 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE1_AMETRA
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 1617 1154 0 ]
+      .Angulo 272
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE1_SALIDA
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 1581 743 0 ]
+      .Angulo 223
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [
+      .CLASS BICHOALIADO
+      .BANDO ALIADO
+      .TOKEN LANCHERO
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .MASA 100
+      .GRAPH [
+        .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ]
+        .ANIM LANCHIST
+      ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ACCIONES [
+        [ AcMuerte [ .CARISMA 999 ] ]
+        [ AcUsaHab [ .CARISMA 300 .HABILIDAD BALSA ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuUsar [ .CARISMA 200 ] ]
+        [ AuCoger [ .CARISMA 200 ] ]
+        [ AuBeHome [ .CARISMA 200 ] ]
+        [ AuUsarVehiculo [ .CARISMA 200 .VEHICULOS BALSA ] ]
+        [ AuEscalar [ .CARISMA 200 ] ]
+        [ AuGoTo [ .CARISMA 200 ] ]
+        [
+          AuDisparar
+          [ .CARISMA 200 .ARMAS [ ARPON PISTOLA ] ]
+        ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AutomarControlAleman [ .CARISMA 200 ] ]
+        [ AuAcuchillar [ .CARISMA 200 ] ]
+        [ AuBucear [ .CARISMA 200 ] ]
+        [
+          AuManejaBalsa
+          [
+            .CARISMA 200
+            .OTOK ZODIAC
+            .ITTOK IT_BALSA
+            .BICHOSOLTAR LANZABARCA
+          ]
+        ]
+      ]
+      .SEHUNDE 1
+      .CONTENEDOR 1
+      .NOAGACHA 0
+      .XYZ [ 1274 1537 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN ZODIAC
+      .MACRO ZODIAC
+      .NIVEL TODOS
+      .XYZ [ 1544 565 -10 ]
+      .Bando NEUTRAL
+      .Angulo 180
+      .ColorBurbujas [ 0 65 65 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE1_MUELLE
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 1273 225 0 ]
+      .Angulo 128
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .AngBarrido 40
+    ]
+  ]
+  .INTERFACE [
+    .SUBINTERFACES [
+      [
+        SUBINTERFACEMULTIPLE
+        [ .TOKEN MULTIPLE .ELEMUSABLES [ ] ]
+      ]
+      [
+        SUBINTERFACEALIADO
+        [
+          .TOKEN LANCHERO
+          .ITEMS [
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_ARPON ]
+            [ .TOKEN IT_CUCHILLO ]
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_TRAJEBUZO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+            [ .TOKEN IT_BALSA .DISPONIBLE NO ]
+          ]
+        ]
+      ]
+    ]
+    .INFOCARAS [ [ CARA [ .TOKEN LANCHERO .ACCESIBLE 1 ] ] ]
+  ]
+  .TRIPLINES [ ]
+  .SENSORES_SND_ZONA [ ]
+]

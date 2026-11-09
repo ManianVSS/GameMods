@@ -1,0 +1,159 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto
+# G-Grafico A-Accion Concreta X-Accion elegible
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+.CLASS BICHO
+.VARIABLES
+[
+ EAngulo.180 NReactividades TTokenConductor AAcPatrulla CAngMarchaAtras
+]
+.BANDO NEUTRAL
+.ANGULO $Angulo
+.GRAPH [
+  .ANIM TANQUETA
+  .RENDERVOL [
+    POLY
+    [
+      .H 20
+      .VERT [
+        [ 55 23 ]
+        [ -75 23 ]
+        [ -75 -23 ]
+        [ 55 -23 ]
+      ]
+    ]
+  ]
+]
+.VOLCOLISION
+[
+  POLY
+  [
+    .H 30
+    .VERT [
+      [ 55 23 ]
+      [ -75 23 ]
+      [ -75 -23 ]
+      [ 55 -23 ]
+    ]
+  ]
+]
+.BOXSELECCIONREL [ -35 -35 70 60 ]
+.LISTAS [ EJEC CHOC SELE ]
+.MASA 500
+.SEHUNDE 1
+.TIP 2SD2
+.ACCIONES
+[
+  [
+    acExplotaVeh
+    [
+          .CARISMA 900 .RADIO 200 .DANO 180 .TIEMPO 200
+          .IMPACTOS [ .DISPARO 500 .BOMBA 1 .PEPINAZOTANQUE 1 .EXPLOSIONMENOR 1 ]
+          .SONFIS XPLO
+    ]
+  ]
+  [
+    acPilotaje
+    [
+      .CARISMA 200
+      .TIPOVEH TIERRA
+      .FUERZA 150
+      .NORMALVEL 5
+      .CHIVABANDO 1
+      .INFO [ [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ] ]
+      .DISPARA 1
+      .PARAYDISPARA 1
+    ]
+  ]
+  [
+    acTorreta
+    [
+      .CARISMA 100
+      .TIPODISPARO METRALLETA
+      .SONIDOMETRALLETA TANQUE
+      .ALCANCE 600
+      .ALCANCEMINIMO 150
+      .TORRETA [ .ANIM T-TANQTA .HOTSPOTSEQUENCES [ DISPAROLANCHA ] .POSICION [ 0 0 30 ] ]
+    ]
+  ]
+  [
+    acPisar
+    [
+      .CARISMA 50
+      .VEHICLE [
+        [ .POS [ 30 18 ] ]
+        [ .POS [ 4 18 ] ]
+        [ .POS [ -23 18 ] ]
+        [ .POS [ -50 18 ] ]
+        [ .POS [ -50 -18 ] ]
+        [ .POS [ 4 -18 ] ]
+        [ .POS [ -23 -18 ] ]
+        [ .POS [ 30 -18 ] ]
+      ]
+    ]
+  ]
+]
+.ORGANOS
+[
+  .MOTOR [ MotorAuto [
+     .WAV CAMN
+    .ANGREV $AngMarchaAtras
+  ] ]
+  .VISTA [
+    Vista02
+    [
+      .VOL [
+        POLY
+        [
+          .H 20
+          .VERT [ [ 85 -30 ] [ 150 -30 ] [ 150 30 ] [ 85 30 ] ]
+        ]
+      ]
+    ]
+  ]
+]
+.CONTENEDOR 1
+.OCLU 1
+.DETECTAEXPLOSION 0
+.BUILDING 0
+.SEHUNDE 0
+.ESCONDUCTOR 0
+.ELEMENTOS
+[
+  [
+    .CLASS BICHO
+    .TOKEN $TokenConductor
+    .REACTIVIDADES $Reactividades
+    .BANDO ALEMAN
+    .LISTAS EJEC
+    .VOLCOLISION [ CILINDRO [ .R 5 .H 29 ] ]
+    .ACCIONES
+    [
+      [ acMuerte [ .CARISMA 500 ] ]
+      [ AcUsaHab [ .CARISMA 400 .HABILIDAD TIERRA ] ]
+      [ acCTanque [ .CARISMA 300 .NOVERHASTA 0 ] ]
+      [ $AcPatrulla [ .CARISMA 200 ] ]
+      [ AcVigilar [ .CARISMA 100 .ANGBARRIDO 155 ] ]
+    ]
+    .ORGANOS
+    [
+      .VISTA
+      [
+        Vista01
+        [
+          .ALT 250
+          .MOD 550
+          .ANG 40
+          .CABEZA 0
+          .PASO 90
+          .ALIADOMUERTO 0
+          .ALEMANMUERTO 0
+        ]
+      ]
+    ]
+  ]
+]

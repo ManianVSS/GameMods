@@ -1,0 +1,82 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto
+# G-Grafico A-Accion Concreta X-Accion elegible
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+.VARIABLES [ EAngulo.180 AAcPatrulla NReactividades CAngMarchaAtras ]
+.REACTIVIDADES $Reactividades
+.BANDO NEUTRAL
+.ANGULO $ANGULO
+.VOLCOLISION [
+  POLY
+  [
+    .H 30
+    .VERT [ [ 65 28 ] [ -65 28 ] [ -65 -28 ] [ 65 -28 ] ]
+  ]
+]
+.BOXSELECCIONREL [ -25 -25 50 50 ]
+.LISTAS [ EJEC CHOC VISI SELE ]
+.MASA 500
+.ENEGIA 300
+.CONTENEDOR 1
+.OCLU 1
+.TIP 2CIT
+.GRAPH
+[
+  .ANIM COCHE
+  .RENDERVOL
+  [
+    POLY
+    [
+      .H 30
+      .VERT [ [ 65 28 ] [ -65 28 ] [ -65 -28 ] [ 65 -28 ] ]
+    ]
+  ]
+]
+.ORGANOS
+[
+  .MOTOR
+  [
+    MotorAuto
+    [
+      .VELMAX 10
+      .ACBASE 1
+      .WAV CAMN
+      .ANGREV $AngMarchaAtras
+    ]
+  ]
+]
+.ACCIONES [
+  [
+    acExplotaVeh
+    [
+      .CARISMA 900 .RADIO 200 .DANO 180 .TIEMPO 100
+      .IMPACTOS [ .DISPARO 60 .EXPLOTAVEH 1 .EXPLOSIONMENOR 1 .PEPINAZOTANQUE 1 ]
+      .SONFIS XPLO
+    ]
+  ]
+  [ $AcPatrulla [ .CARISMA 300 ] ]
+  [
+    acPilotaje
+    [
+      .CARISMA 100
+      .TIPOVEH TIERRA
+      .FUERZA 150
+      .CHIVABANDO 1
+      .NORMALVEL 5
+            .INFO
+            [
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+              [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+            ]
+
+    ]
+  ]
+]

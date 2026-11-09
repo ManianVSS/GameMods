@@ -1,0 +1,47 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion Concreta X-Accion elegible
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+.CLASS BICHO
+.VARIABLES
+[
+ EAngulo.180 AAcPatrulla CZonaRecinto NReactividades
+ PPosComedero1.0 PPosComedero2.0 PPosComedero3.0 PPosComedero4.0 PPosComedero5.0
+]
+.BANDO NEUTRAL
+.ANGULO $Angulo
+.VOLCOLISION [ CILINDRO [ .R 10 .H 30 ] ]
+.GRAPH [ .ANIM AVESTRUZ .RENDERVOL [ CILINDRO [ .R 20 .H 50 ] ] ]
+.LISTAS [ EJEC CHOC SELE VISI ]
+.REACTIVIDADES $Reactividades
+.MASA 100
+.SEHUNDE 1
+.TIP AVES
+.ACCIONES
+[
+  [ AcMuerteAnimal [ .CARISMA 700 .SONIDOHERIDO AVHE ] ]
+  [
+    AcAvestruz
+    [
+      .CARISMA 600 .ZONARECINTO $ZonaRecinto
+      .POSCOMEDERO1 $PosComedero1
+      .POSCOMEDERO2 $PosComedero2
+      .POSCOMEDERO3 $PosComedero3
+      .POSCOMEDERO4 $PosComedero4
+      .POSCOMEDERO5 $PosComedero5
+    ]
+  ]
+  [ AcVigilar [ .CARISMA 400 .ANGBARRIDO 40 ] ]
+  [ AcBuscador [ .CARISMA 300 ] ]
+  [ $AcPatrulla [ .CARISMA 200 ] ]
+]
+.ORGANOS
+[
+  .VISTA [ Vista01 [ .ANG 90 ] ]
+  .MOTOR [ MotorAndante [ ] ]
+  .OIDO [ Oido01 [ ] ]
+]
+

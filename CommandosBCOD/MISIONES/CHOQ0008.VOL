@@ -1,0 +1,60 @@
+{
+;*****************************************************************************
+;* MAPA DE VOLUMENES ESTATICOS
+;*****************************************************************************
+
+MAPDIMXY 1851,1015
+MAPTABPOLYS
+{
+	POLY "NONAME",1537,161,0,75,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1456,  58, 144,  53,   0, 109, 0,"VERD0005.RLE","   "
+	POLY "NONAME",1075,186,0,53,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         993,  75, 144,  53,   0, 109, 0,"VERD0005.RLE","   "
+	POLY "NONAME",250,177,0,61,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         178,  82, 133,  41,   0, 104, 0,"VERD0004.RLE","   "
+	POLY "NONAME",540,810,0,40,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         478, 497, 118,  30,   0,  97, 0,"VERD0006.RLE","   "
+	POLY "NONAME",958,642,0,40,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         896, 388, 118,  30,   0,  97, 0,"VERD0006.RLE","   "
+	POLY "NONAME",725,223,0,32,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         677, 119,  96,  37,   0,  76, 0,"VERD0007.RLE","   "
+	POLY "NONAME",1214,334,0,35,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1213, 191,   6,  26,  42,   0, 0,"RAMP0000.RLE","   "
+	POLY "NONAME",1061,583,0,35,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1059, 346,   5,  33,  19,  13, 0,"RAMP0001.RLE","   "
+	POLY "NONAME",1512,390,0,22,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		3				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1511, 231,   5,  22,  20,   0, 0,"RAMP0000.RLE","X  "
+	POLY "NONAME",1597,607,0,35,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1595, 361,   5,  35,  38,  11, 0,"RAMP0001.RLE","X  "
+	POLY "NONAME",1296,1248,0,20,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		8				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1283, 781,  22,  28,   0,   0, 0,"ROCK0010.RLE","   "
+	POLY "NONAME",351,679,0,134,0,0			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		12				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	POLY "NONAME",443,1400,0,138,0,0			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		12				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+}
+}

@@ -1,0 +1,1514 @@
+{
+;*****************************************************************************
+;* MAPA DE VOLUMENES ESTATICOS
+;*****************************************************************************
+
+MAPDIMXY 2700,2100
+MAPTABPOLYS
+{
+	POLY "AGUA",1099,1183,-300,1,4,157			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-1099,-1554				;Coord. X, Coord. Y
+	POINT		1604,-1561				;Coord. X, Coord. Y
+	POINT		1603,1714				;Coord. X, Coord. Y
+	POINT		-1099,1714				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         664,  -1,  54,  59, 568,-1746, 0,"MAR0DST.BMP","   "
+	TILE         718,  -1,  24,  75, 622,-1746, 0,"MAR0DST.BMP","   "
+	TILE         641,  -1,  23,  79, 545,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1693,  -1,  67, 115,1597,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1795,  -1,  80, 128,1699,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1875,  -1, 825, 139,1779,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1760,  -1,  35, 143,1664,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1907, 138, 793,  24,1811,-1607, 0,"MAR0DST.BMP","   "
+	TILE        1614,  -1,  79, 175,1518,-1746, 0,"MAR0DST.BMP","   "
+	TILE         742,  -1,  39, 194, 646,-1746, 0,"MAR0DST.BMP","   "
+	TILE         781,  -1,  42, 202, 685,-1746, 0,"MAR0DST.BMP","   "
+	TILE         823,  -1,  37, 209, 727,-1746, 0,"MAR0DST.BMP","   "
+	TILE         918,  -1,  32, 211, 822,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1571,  -1,  43, 213,1475,-1746, 0,"MAR0DST.BMP","   "
+	TILE         860,  -1,  58, 217, 764,-1746, 0,"MAR0DST.BMP","   "
+	TILE         950,  -1,  80, 221, 854,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2030, 162, 671,  60,1934,-1583, 0,"MAR0DST.BMP","   "
+	TILE        1548,  -1,  23, 237,1452,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1030,  -1,  43, 251, 934,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2059, 222, 642,  29,1963,-1524, 0,"MAR0DST.BMP","   "
+	TILE         592,  -1,  49, 259, 496,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1073,  -1,  41, 265, 977,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2471, 251, 230,  19,2375,-1495, 0,"MAR0DST.BMP","   "
+	TILE         569,  -1,  23, 283, 473,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1500,  -1,  30, 294,1404,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1530,  -1,  18, 294,1434,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2078, 251, 356,  43,1982,-1495, 0,"MAR0DST.BMP","   "
+	TILE        1114,  -1,  51, 304,1018,-1746, 0,"MAR0DST.BMP","   "
+	TILE         544,  -1,  25, 310, 448,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1465,  -1,  35, 316,1369,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1165,  -1,  83, 321,1069,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2095, 294, 258,  30,1999,-1452, 0,"MAR0DST.BMP","   "
+	TILE        1464, 324,   5,   6,1369,-1436, 0,"MAR0DST.BMP","   "
+	TILE         512,  -1,  32, 339, 416,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2539, 270, 162,  74,2443,-1476, 0,"MAR0DST.BMP","   "
+	TILE        1436,  -1,  29, 358,1340,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1248,  -1,  76, 359,1152,-1746, 0,"MAR0DST.BMP","   "
+	TILE        1324,  -1, 112, 364,1228,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2139, 324, 196,  51,2043,-1422, 0,"MAR0DST.BMP","   "
+	TILE        2540, 344, 160,  50,2444,-1402, 0,"MAR0DST.BMP","   "
+	TILE         473,  -1,  39, 400, 377,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2168, 375, 135,  46,2072,-1371, 0,"MAR0DST.BMP","   "
+	TILE        2500, 394, 201,  34,2404,-1352, 0,"MAR0DST.BMP","   "
+	TILE         437,  -1,  36, 445, 342,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2200, 421, 150,  48,2104,-1325, 0,"MAR0DST.BMP","   "
+	TILE        2438, 428, 263,  41,2342,-1318, 0,"MAR0DST.BMP","   "
+	TILE         403,  -1,  34, 511, 308,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2200, 469, 500,  79,2104,-1277, 0,"MAR0DST.BMP","   "
+	TILE        2199, 548, 501,  34,2103,-1198, 0,"MAR0DST.BMP","   "
+	TILE         206,  -1,  33, 624, 111,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2178, 582, 522,  42,2082,-1164, 0,"MAR0DST.BMP","   "
+	TILE         292,  -1,  30, 642, 197,-1746, 0,"MAR0DST.BMP","   "
+	TILE         239,  -1,  53, 643, 144,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2163, 624, 537,  38,2067,-1122, 0,"MAR0DST.BMP","   "
+	TILE         403, 553,  41, 114, 308,-1192, 0,"MAR0DST.BMP","   "
+	TILE         373,  -1,  30, 701, 278,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2139, 662, 562,  45,2043,-1084, 0,"MAR0DST.BMP","   "
+	TILE        2115, 707, 585,  35,2019,-1039, 0,"MAR0DST.BMP","   "
+	TILE         348,  -1,  25, 747, 253,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2072, 742, 628,  50,1976,-1004, 0,"MAR0DST.BMP","   "
+	TILE         322,  -1,  26, 806, 227,-1746, 0,"MAR0DST.BMP","   "
+	TILE        2094, 792, 606,  27,1998,-954, 0,"MAR0DST.BMP","   "
+	TILE        2124, 819, 576,  29,2028,-927, 0,"MAR0DST.BMP","   "
+	TILE         292, 662,  30, 189, 197,-1083, 0,"MAR0DST.BMP","   "
+	TILE        2155, 848, 546,  24,2059,-898, 0,"MAR0DST.BMP","   "
+	TILE        2182, 872, 518,  25,2086,-874, 0,"MAR0DST.BMP","   "
+	TILE        2209, 897, 491,  24,2113,-849, 0,"MAR0DST.BMP","   "
+	TILE        2235, 921, 465,  39,2139,-825, 0,"MAR0DST.BMP","   "
+	TILE        2244, 960, 456,  24,2148,-786, 0,"MAR0DST.BMP","   "
+	TILE        2203, 984, 498,  26,2107,-762, 0,"MAR0DST.BMP","   "
+	TILE         356,1052,  12,  20, 222,-673, 0,"MAR0DST.BMP","   "
+	TILE         317, 998,  39, 113, 222,-747, 0,"MAR0DST.BMP","   "
+	TILE         292, 850,  25, 286, 197,-895, 0,"MAR0DST.BMP","   "
+	TILE         206, 726,  47, 417, 111,-1019, 0,"MAR0DST.BMP","   "
+	TILE         253, 729,  39, 480, 158,-1016, 0,"MAR0DST.BMP","   "
+	TILE         234,1148,  19,  82, 139,-597, 0,"MAR0DST.BMP","   "
+	TILE         206,1156,  28, 118, 111,-589, 0,"MAR0DST.BMP","   "
+	TILE        2031,1086,  48, 260,1935,-660, 0,"MAR0DST.BMP","   "
+	TILE        1988,1110,  43, 243,1892,-636, 0,"MAR0DST.BMP","   "
+	TILE        2079,1057,  35, 301,1983,-689, 0,"MAR0DST.BMP","   "
+	TILE        2114,1038,  35, 360,2018,-708, 0,"MAR0DST.BMP","   "
+	TILE        1929,1143,  59, 260,1833,-603, 0,"MAR0DST.BMP","   "
+	TILE        1179,1464,  63,  38,1083,-282, 0,"MAR0DST.BMP","   "
+	TILE        1863,1193,  35, 338,1767,-553, 0,"MAR0DST.BMP","   "
+	TILE        1820,1214,  43, 331,1724,-532, 0,"MAR0DST.BMP","   "
+	TILE        1898,1174,  31, 378,1802,-572, 0,"MAR0DST.BMP","   "
+	TILE        1773,1239,  47, 326,1677,-507, 0,"MAR0DST.BMP","   "
+	TILE        1929,1403,  21, 181,1833,-343, 0,"MAR0DST.BMP","   "
+	TILE        1500,1512,  13,  87,  12,   0, 0,"ROCA0005.RLE","   "
+	TILE         256,1394,  52, 260, 160,-352, 0,"MAR0DST.BMP","   "
+	TILE         308,1460,  45, 223, 212,-286, 0,"MAR0DST.BMP","   "
+	TILE         206,1311,  50, 378, 110,-435, 0,"MAR0DST.BMP","   "
+	TILE          -1,  -1, 207,1699, -96,-1746, 0,"MAR0DST.BMP","   "
+	TILE         353,1502,  39, 220, 257,-244, 0,"MAR0DST.BMP","   "
+	TILE          -1,1698, 181,  63, -97, -48, 0,"MAR0DST.BMP","   "
+	TILE         864,1618,  53, 154, 768,-128, 0,"MAR0DST.BMP","   "
+	TILE         424,1594,  35, 201, 328,-152, 0,"MAR0DST.BMP","   "
+	TILE          -1,1761, 160,  36, -97,  15, 0,"MAR0DST.BMP","   "
+	TILE         917,1591,  35, 220, 821,-155, 0,"MAR0DST.BMP","   "
+	TILE         952,1575,  36, 236, 856,-171, 0,"MAR0DST.BMP","   "
+	TILE         875,1798,  42,  13, 779,  52, 0,"MAR0DST.BMP","   "
+	TILE        2189,1010, 512,1090,2093,-736, 0,"MAR0DST.BMP","   "
+	TILE        1615,1317,  40, 783,1519,-429, 0,"MAR0DST.BMP","   "
+	TILE        1524,1367,  41, 733,1428,-379, 0,"MAR0DST.BMP","   "
+	TILE        1311,1427,  73, 673,1215,-319, 0,"MAR0DST.BMP","   "
+	TILE        1242,1463,  32, 637,1146,-283, 0,"MAR0DST.BMP","   "
+	TILE        1045,1518,  43, 582, 949,-228, 0,"MAR0DST.BMP","   "
+	TILE        1088,1504,  55, 596, 992,-242, 0,"MAR0DST.BMP","   "
+	TILE         988,1539,  57, 561, 892,-207, 0,"MAR0DST.BMP","   "
+	TILE         724,1755,  59, 345, 628,   9, 0,"MAR0DST.BMP","   "
+	TILE         647,1732,  44, 368, 551, -14, 0,"MAR0DST.BMP","   "
+	TILE         593,1708,  28, 392, 497, -38, 0,"MAR0DST.BMP","   "
+	TILE         537,1658,  56, 442, 441, -88, 0,"MAR0DST.BMP","   "
+	TILE        1793,1596,  32, 504,1697,-150, 0,"MAR0DST.BMP","   "
+	TILE        1773,1565,  20, 535,1677,-181, 0,"MAR0DST.BMP","   "
+	TILE        1825,1625,  28, 475,1729,-121, 0,"MAR0DST.BMP","   "
+	TILE        1853,1641,  29, 459,1757,-105, 0,"MAR0DST.BMP","   "
+	TILE        1921,1591,  29, 509,1825,-155, 0,"MAR0DST.BMP","   "
+	TILE        1882,1626,  39, 474,1786,-120, 0,"MAR0DST.BMP","   "
+	TILE        1950,1479,  38, 621,1854,-267, 0,"MAR0DST.BMP","   "
+	TILE        1988,1496,  32, 604,1892,-250, 0,"MAR0DST.BMP","   "
+	TILE        2020,1511,  47, 589,1924,-235, 0,"MAR0DST.BMP","   "
+	TILE        2067,1492,  56, 608,1971,-254, 0,"MAR0DST.BMP","   "
+	TILE        2123,1470,  26, 630,2027,-276, 0,"MAR0DST.BMP","   "
+	TILE        2149,1019,  40,1082,2053,-727, 0,"MAR0DST.BMP","   "
+	TILE        1700,1285,  44, 816,1604,-461, 0,"MAR0DST.BMP","   "
+	TILE        1744,1260,  29, 841,1648,-486, 0,"MAR0DST.BMP","   "
+	TILE        1655,1299,  45, 802,1559,-447, 0,"MAR0DST.BMP","   "
+	TILE        1565,1350,  50, 751,1469,-396, 0,"MAR0DST.BMP","   "
+	TILE        1481,1359,  43, 742,1385,-387, 0,"MAR0DST.BMP","   "
+	TILE        1438,1369,  43, 732,1342,-377, 0,"MAR0DST.BMP","   "
+	TILE        1384,1410,  54, 691,1288,-336, 0,"MAR0DST.BMP","   "
+	TILE        1274,1443,  37, 658,1178,-303, 0,"MAR0DST.BMP","   "
+	TILE        1224,1502,  18, 599,1128,-244, 0,"MAR0DST.BMP","   "
+	TILE         783,1765,  56, 336, 687,  19, 0,"MAR0DST.BMP","   "
+	TILE         839,1787,  36, 314, 743,  41, 0,"MAR0DST.BMP","   "
+	TILE         691,1734,  33, 367, 595, -12, 0,"MAR0DST.BMP","   "
+	TILE         621,1726,  26, 375, 525, -20, 0,"MAR0DST.BMP","   "
+	TILE         459,1609,  41, 492, 363,-137, 0,"MAR0DST.BMP","   "
+	TILE         500,1642,  37, 459, 404,-104, 0,"MAR0DST.BMP","   "
+	TILE         392,1558,  32, 543, 296,-188, 0,"MAR0DST.BMP","   "
+	TILE         424,1845,  35, 256, 328,  99, 0,"MAR0DST.BMP","   "
+	TILE         365,1794,  27, 307, 269,  48, 0,"MAR0DST.BMP","   "
+	TILE         266,1839,  68, 262, 170,  93, 0,"MAR0DST.BMP","   "
+	TILE         334,1819,  31, 282, 237,  73, 0,"MAR0DST.BMP","   "
+	TILE         191,1824,  31, 277,  95,  78, 0,"MAR0DST.BMP","   "
+	TILE         222,1835,  44, 266, 126,  89, 0,"MAR0DST.BMP","   "
+	TILE          -1,1797, 192, 304, -97,  51, 0,"MAR0DST.BMP","   "
+	TILE         875,1811, 113, 290, 779,  65, 0,"MAR0DST.BMP","   "
+	TILE        1143,1488,  36, 613,1047,-258, 0,"MAR0DST.BMP","   "
+	TILE        1179,1502,  45, 599,1083,-244, 0,"MAR0DST.BMP","   "
+	TILE        2252, 258,  15,  99,   0,   0, 0,"ROCA0006.RLE","   "
+	TILE        2577, 383,  15, 151, 322,   0, 0,"ROCA0012.RLE","   "
+	TILE        2482, 535,  32,  90,   0,   0, 0,"ROCA0000.RLE","   "
+	TILE        1692,1618,  14,  99,   0,   0, 0,"ROCA0006.RLE","   "
+	TILE          87,1667,  29,  90,   0,   0, 0,"ROCA0000.RLE","   "
+	TILE         824,1705,  14, 156,   6,   0, 0,"ROCA0004.RLE","   "
+	POLY "BASE",1192,992,-150,1,4,169			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-1093,-1446				;Coord. X, Coord. Y
+	POINT		1062,-1438				;Coord. X, Coord. Y
+	POINT		1066,1917				;Coord. X, Coord. Y
+	POINT		-1099,1913				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         770, 411,   4,   6, 232, 213, 0,"SUEL0000.RLE","   "
+	TILE         753, 405,   6,  15, 248, 218, 0,"SUEL0000.RLE","   "
+	TILE         773, 416,  20,  14, 232, 213, 0,"SUEL0000.RLE","   "
+	TILE         740, 417,  13,  13, 241, 218, 0,"SUEL0000.RLE","   "
+	TILE         803, 428,  13,  18, 236, 209, 0,"SUEL0000.RLE","   "
+	TILE         710, 432,  18,  15, 236, 218, 0,"SUEL0000.RLE","   "
+	TILE         659, 377,  18,  75, 378, 174, 0,"SUEL0000.RLE","   "
+	TILE         639, 403,  20,  49, 358, 200, 0,"SUEL0000.RLE","   "
+	TILE         791, 445,  13,   9, 236, 218, 0,"SUEL0000.RLE","   "
+	TILE         790, 423,  13,  31, 236, 196, 0,"SUEL0000.RLE","   "
+	TILE         721, 447,  31,  15, 236, 218, 0,"SUEL0000.RLE","   "
+	TILE         784, 454,  13,   9, 236, 218, 0,"SUEL0000.RLE","   "
+	TILE         744, 462,  31,   4, 236, 218, 0,"SUEL0000.RLE","   "
+	TILE        2073, 425, 178, 100,   0, 150, 0,"ISLA0008.RLE","   "
+	TILE        1419, 525, 211,  26,   0,   0, 0,"ISLA0010.RLE","   "
+	TILE        1413, 541,  23,  30, 397, 181, 0,"SUEL0000.RLE","   "
+	TILE        1394, 541,  19,  50, 378, 181, 0,"SUEL0000.RLE","   "
+	TILE        1484, 551,  57,  42,  99,   1, 0,"ISLA0011.RLE","   "
+	TILE         685, 579,  21,  19, -24,-134, 0,"SUELO01.BMP","   "
+	TILE        1374, 556,  20,  53, 358, 196, 0,"SUEL0000.RLE","   "
+	TILE         727, 624,  23,  19,  18, -89, 0,"SUELO01.BMP","   "
+	TILE         898, 683,  14,  15,   0,  25, 0,"MURO0005.RLE","   "
+	TILE         453, 522,  31, 183,  85,  67, 0,"ISLA0009.RLE","   "
+	TILE         484, 522,  57, 183, 116,  67, 0,"ISLA0009.RLE","   "
+	TILE         368, 522,  85, 183,   0,  67, 0,"ISLA0009.RLE","   "
+	TILE         555, 557,  31, 148,-154,-155, 0,"SUELO01.BMP","   "
+	TILE         586, 580,  33, 125,-123,-133, 0,"SUELO01.BMP","   "
+	TILE         619, 571,  33, 134, -90,-142, 0,"SUELO01.BMP","   "
+	TILE         652, 560,  33, 145, -57,-153, 0,"SUELO01.BMP","   "
+	TILE         541, 522,  14, 183, 172,  67, 0,"ISLA0009.RLE","   "
+	TILE         912, 693,  14,  30,  15,  35, 0,"MURO0005.RLE","   "
+	TILE         478, 705,  95,  27, 224,   0, 0,"ISLA0014.RLE","   "
+	TILE         573, 705,  99,  27, 319,   0, 0,"ISLA0014.RLE","   "
+	TILE         254, 705, 222,  27,   0,   0, 0,"ISLA0014.RLE","   "
+	TILE        1533, 593,   8, 147, 148,  41, 0,"ISLA0011.RLE","   "
+	TILE         926, 709,  10,  31,  29,  51, 0,"MURO0005.RLE","   "
+	TILE        1105, 741,   7,   5, 236, 228, 0,"SUEL0000.RLE","   "
+	TILE        1083, 748,   7,   5, 236, 228, 0,"SUEL0000.RLE","   "
+	TILE        2032, 525,  39, 241, 158,   3, 0,"ISLA4.BMP","   "
+	TILE         768, 665,  29, 107,  59, -48, 0,"SUELO01.BMP","   "
+	TILE         685, 598,  42, 174, -24,-115, 0,"SUELO01.BMP","   "
+	TILE         727, 643,  41, 129,  18, -70, 0,"SUELO01.BMP","   "
+	TILE         824, 725,  30,  47, 115,  12, 0,"SUELO01.BMP","   "
+	TILE        2071, 525, 179, 247,   0,   0, 0,"ISLA0012.RLE","   "
+	TILE         854, 740,  18,  32, 145,  27, 0,"SUELO01.BMP","   "
+	TILE         872, 758,  14,  14, 163,  45, 0,"SUELO01.BMP","   "
+	TILE         797, 696,  27,  76,  88, -17, 0,"SUELO01.BMP","   "
+	TILE         672, 705,  13,  70, -37,  -8, 0,"SUELO01.BMP","   "
+	TILE        1222, 770,   8,  12, 217,  21, 0,"MURO0008.RLE","   "
+	TILE        1134, 756,  20,  26, 236, 209, 0,"SUEL0000.RLE","   "
+	TILE         673, 783,   5,   4, -37,  58, 0,"SUELO01.BMP","   "
+	TILE        1120, 765,  14,  24, 236, 211, 0,"SUEL0000.RLE","   "
+	TILE         810, 738,  93,  53,   0,   0, 0,"ESCL0001.RLE","   "
+	TILE        1240, 743,  62,  48, 429, 339, 0,"SUELO00.BMP","   "
+	TILE        1032, 760,  14,  33,   0,   0, 0,"ANTI0004.RLE","   "
+	TILE        1484, 740,  57,  56,  99, 188, 0,"ISLA0011.RLE","   "
+	TILE        1385, 759,  99,  37,   1, 207, 0,"ISLA0011.RLE","   "
+	TILE         641, 338, 735, 458,   0,   0, 0,"SUEL0000.RLE","   "
+	TILE        1106, 785,  14,  11, 236, 224, 0,"SUEL0000.RLE","   "
+	TILE        1208, 778,  14,  21, 203,  28, 0,"MURO0008.RLE","   "
+	TILE        1067, 758,  87,  44,  25,   0, 0,"ANTI0004.RLE","   "
+	TILE         749, 772,  15,  32,  40,  58, 0,"SUELO01.BMP","   "
+	TILE        2071, 772,  74,  37,  73, 120, 0,"ISLA0019.RLE","   "
+	TILE        1194, 786,  14,  29, 189,  37, 0,"MURO0008.RLE","   "
+	TILE         764, 772, 201,  52,  55,  58, 0,"SUELO01.BMP","   "
+	TILE         685, 809,  21,  15, -24,  96, 0,"SUELO01.BMP","   "
+	TILE         965, 785,  23,  52, 256,  71, 0,"SUELO01.BMP","   "
+	TILE        1177, 809,  17,  29, 172,  60, 0,"MURO0008.RLE","   "
+	TILE        1257, 827,  28,  13,  12, 230, 0,"ISLA0011.RLE","   "
+	TILE        1302, 736,  83, 104, 167,   0, 0,"ISLA0015.RLE","   "
+	TILE        1285, 808,  17,  32, 150,  72, 0,"ISLA0015.RLE","   "
+	TILE        1228, 840, 157,  18,  93, 104, 0,"ISLA0015.RLE","   "
+	TILE        1135, 840,  57,  18,   0, 104, 0,"ISLA0015.RLE","   "
+	TILE        1874, 525, 158, 353,   0,   3, 0,"ISLA4.BMP","   "
+	TILE        1874, 878, 122,  31,   0,   0, 0,"ISLA5.BMP","   "
+	TILE        1996, 878,  75,  31, 122,   0, 0,"ISLA5.BMP","   "
+	TILE         672, 803,  13, 132, -37,  90, 0,"SUELO01.BMP","   "
+	TILE         254, 732, 418, 222,   0,  27, 0,"ISLA0014.RLE","   "
+	TILE         685, 824, 280, 131, -24, 110, 0,"SUELO01.BMP","   "
+	TILE         705, 955,  51,  15, 104, 257, 0,"SUELO01.BMP","   "
+	TILE         821, 955,  65,  15, 220, 257, 0,"SUELO01.BMP","   "
+	TILE         937, 955,  27,  15, 336, 257, 0,"SUELO01.BMP","   "
+	TILE         789, 955,  15,  15, 250, 257, 0,"SUELO01.BMP","   "
+	TILE        1541, 551,  89, 420,   0,   0, 0,"ISLA2.BMP","   "
+	TILE        1630, 525, 244, 446,   0,   0, 0,"ISLA3.BMP","   "
+	TILE        1385, 796, 156, 176,   0,   0, 0,"ISLA1.BMP","   "
+	TILE        1135, 858, 250, 114,   0, 122, 0,"ISLA0015.RLE","   "
+	TILE         759, 974,  21,  14, 106, 271, 0,"SUELO01.BMP","   "
+	TILE         761, 988,  32,   9,  96, 276, 0,"SUELO01.BMP","   "
+	TILE         720, 970,  24,  29,  11, 256, 0,"SUELO01.BMP","   "
+	TILE         837, 970,  66,  29, 128, 256, 0,"SUELO01.BMP","   "
+	TILE         828, 990,   9,   9, 119, 276, 0,"SUELO01.BMP","   "
+	TILE         786, 997,  38,   9,  90, 276, 0,"SUELO01.BMP","   "
+	TILE         760,1017,  70,  11,  51, 303, 0,"SUELO01.BMP","   "
+	TILE        1874, 909, 250, 132,   0,  31, 0,"ISLA5.BMP","   "
+	TILE         777,1028,  49,  19,  68, 314, 0,"SUELO01.BMP","   "
+	TILE         903, 971, 234, 105, 108,   0, 0,"ISLA0018.RLE","   "
+	TILE         873, 999,  30,  77,  78,  28, 0,"ISLAT018.BMP","   "
+	TILE         826,1028,  47,  48,  31,  57, 0,"ISLAT018.BMP","   "
+	TILE         795,1047,  31,  29,   0,  76, 0,"ISLAT018.BMP","   "
+	TILE        2124, 980, 135, 147,   0,   0, 0,"ISLA0027.RLE","   "
+	TILE         243, 954, 442, 250,   0,   0, 0,"ISLA0017.RLE","   "
+	TILE         685, 970,  35, 234, 442,  16, 0,"ISLA0017.RLE","   "
+	TILE         720, 999,  28, 205, 477,  45, 0,"ISLA0017.RLE","   "
+	TILE         748,1028,  29, 176, 505,  74, 0,"ISLA0017.RLE","   "
+	TILE         777,1047,  18, 157, 534,  93, 0,"ISLA0017.RLE","   "
+	TILE        1541, 971, 333, 240,  97,   3, 0,"ISLA9.BMP","   "
+	TILE        1444, 972,  97, 239,   0,   4, 0,"ISLA9.BMP","   "
+	TILE        1874,1041, 250, 250,   0,   0, 0,"ISLA0019.RLE","   "
+	TILE        1137, 972, 307, 433,   0,   0, 0,"ISLA8.BMP","   "
+	TILE        1137,1405,  57,  38,   0,   0, 0,"ISLA12.BMP","   "
+	TILE         795,1076, 342, 368,   0,   0, 0,"ISLA7.BMP","   "
+	TILE        1137,1443,  57,   1,   0,  37, 0,"ISLA12.BMP","   "
+	TILE         414,1204, 381, 249,   0,   0, 0,"ISLA6.BMP","   "
+	TILE         164,1204, 250, 250,   0,   0, 0,"ISLA0020.RLE","   "
+	TILE        1444,1211, 430, 250,   0,   0, 0,"ISLA0021.RLE","   "
+	TILE         738,1453,  57,  74, 161,   0, 0,"ISLA10.BMP","   "
+	TILE        1194,1405, 250, 132,   0,   0, 0,"ISLA0023.RLE","   "
+	TILE         877,1444, 317, 125,   0,   0, 0,"ISLA0024.RLE","   "
+	TILE         738,1527,  57,  72,   0,   0, 0,"INTE.BMP","   "
+	TILE         194,1453, 383, 240,   0,   0, 0,"ISLA0022.RLE","   "
+	TILE         577,1453, 161, 240,   0,   0, 0,"ISLA10.BMP","   "
+	TILE         795,1444,  82, 249,   0,   0, 0,"ISLA11.BMP","   "
+	TILE         738,1599,  57,  94, 161, 146, 0,"ISLA10.BMP","   "
+	TILE         877,1568, 251, 125,   0, 124, 0,"ISLA0024.RLE","   "
+	TILE         447,1693, 538, 155,   0,   0, 0,"ISLA0025.RLE","   "
+	TILE         721, 341, 164,  43,   0,   0, 0,"FARO0007.RLE","   "
+	TILE         885, 368, 127,  41,   0,   0, 0,"FARO0008.RLE","   "
+	TILE        1012, 393, 193,  89,   0,   0, 0,"FARO0009.RLE","   "
+	TILE         685, 420, 128,  70,   0,   0, 0,"ANTI0005.RLE","   "
+	TILE        1233, 444, 107,  82,   0,   0, 0,"FARO0023.RLE","   "
+	TILE         555, 566, 113,  62,  15,  18, 0,"ROTO0003.RLE","X  "
+	TILE         985, 642,  73,  43,   0,   0, 0,"SCAO0000.RLE","   "
+	TILE        1236, 703,  47,  28,   0,   0, 0,"SCAO0001.RLE","   "
+	TILE         642, 560, 195, 180,  23,  20, 0,"MURO0006.RLE","   "
+	TILE        1135, 749,  20,  23, 104,  23, 0,"ANTI0004.RLE","XY "
+	TILE        1480, 765,  19,   7,  90,  64, 0,"FARO0021.RLE","   "
+	TILE        1230, 742,  68,  42,   3,   2, 0,"ROTO0000.RLE","   "
+	TILE         936, 739,  32,  52,  39,  81, 0,"MURO0005.RLE","   "
+	TILE        1324, 735, 109,  57,   0,  14, 0,"FARO0021.RLE","   "
+	TILE         596, 762,  54,  43,   1,   0, 0,"SCAO0000.RLE","   "
+	TILE         650, 790,  37,  28,   0,   0, 0,"SCAO0001.RLE","   "
+	TILE         687, 809,  21,  14,   3,   0, 0,"SUNC0000.RLE","   "
+	TILE         921, 772,  89,  61,  23,  29, 0,"MURO0006.RLE","   "
+	TILE        1263, 829,  27,   9,  82,  62, 0,"FARO0021.RLE","   "
+	TILE        1168, 843,  42,  26,   0,   0, 0,"ESCL0003.RLE","   "
+	TILE        1173, 765, 107, 105,   0,   0, 0,"ESCL0002.RLE","   "
+	TILE         411, 695, 185, 180,   0,   0, 0,"MURO0003.RLE","   "
+	TILE        1964, 864,  73,  43,   0,   0, 0,"SCAO0000.RLE","   "
+	TILE         663, 833, 126,  79,  11,   0, 0,"ROTO0003.RLE","   "
+	TILE        1376, 896, 113,  70,   0,   0, 0,"ANTI0005.RLE","   "
+	TILE         857, 921, 120,  98,  12,   0, 0,"ROTO0004.RLE","   "
+	TILE         887, 906, 155, 114,   0,   0, 0,"FARO0019.RLE","   "
+	TILE         571, 874, 185, 167,   0,  13, 0,"MURO0003.RLE","   "
+	TILE        1064,1042,  89,  29,   0,  17, 0,"MONT0000.RLE","   "
+	TILE        1105,1031,  36,  45,   0,   0, 0,"MONT0009.RLE","   "
+	TILE         733,1040,  61,  39, 124, 141, 0,"MURO0003.RLE","   "
+	TILE        2059,1035,  23,  67,   0,   0, 0,"PLAT0001.RLE","   "
+	TILE        1128,1025,  72,  78,   0,   0, 0,"MONT0001.RLE","   "
+	TILE        1153,1516,  42,  34,   0,   0, 0,"RPSO0001.RLE","   "
+	TILE         555, 557,  53,  38,  56,  33, 0,"FARO0021.RLE","   "
+	TILE         453, 680,  13,  26,   0,   0, 0,"ANTI0004.RLE","   "
+	TILE        1263, 744,  39,  26,   0,   0, 0,"ESCL0003.RLE","   "
+	TILE        1230, 764,  10,   9, 225,  15, 0,"MURO0008.RLE","   "
+	TILE         851, 675, 100, 116,   0,   0, 0,"ESCL0000.RLE","   "
+	TILE         690, 823,  20,  14,   4,   0, 0,"SUNC0000.RLE","XY "
+	TILE         732, 958, 128,  70,   0,   0, 0,"ANTI0005.RLE","   "
+	TILE        1099, 993,  79,  58,  33,  32, 0,"MURO0006.RLE","   "
+	TILE        1166,1433,  68, 103,   0,   0, 0,"ROCA0010.RLE","   "
+	POLY "CASA07",1052,1793,253,145,0,5			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		90				;Radio
+	EXTRAINFO		18,10,9,16,12,0,0,0                 ;Extra Info Bytes
+	TILE         960, 791, 184, 223,   0,   0, 0,"FARO0018.RLE","   "
+	TILE         979, 814, 154, 100,   0,   0, 0,"-RUINA02.RLE","   "
+	TILE         964, 871,  73,  50,   6,   0, 0,"-RUINA06.RLE","   "
+	TILE        1001, 868, 138, 100,   0,   0, 0,"-RUINA01.RLE","   "
+	TILE         966, 890, 141, 106,  18,   0, 0,"-RUINA00.RLE","X  "
+	POLY "NONAME",846,1921,254,22,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		55,-62				;Coord. X, Coord. Y
+	POINT		64,-48				;Coord. X, Coord. Y
+	POINT		-54,62				;Coord. X, Coord. Y
+	POINT		-64,49				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         866, 982,  45,  52, 196,   0, 0,"MURO0007.RLE","   "
+	TILE         782,1005,  84,  74,   0,  91, 0,"MURO0007.RLE","   "
+	POLY "NONAME",609,1677,254,22,4,3			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-166,-281				;Coord. X, Coord. Y
+	POINT		186,278				;Coord. X, Coord. Y
+	POINT		174,289				;Coord. X, Coord. Y
+	POINT		-185,-281				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         428, 681, 105, 134,   0,   0, 0,"MURO0002.RLE","   "
+	TILE         533, 777, 121, 159,  35,  24, 0,"MURO0002.RLE","   "
+	TILE         654, 902, 141, 167,  36,  25, 0,"MURO0002.RLE","   "
+	POLY "NONAME",493,1274,254,24,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-67,121				;Coord. X, Coord. Y
+	POINT		53,-121				;Coord. X, Coord. Y
+	POINT		64,-104				;Coord. X, Coord. Y
+	POINT		-48,122				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         432, 534, 127, 159,  41,   0, 0,"MURO0004.RLE","   "
+	POLY "NONAME",635,1023,310,30,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-54,100				;Coord. X, Coord. Y
+	POINT		46,-100				;Coord. X, Coord. Y
+	POINT		63,-98				;Coord. X, Coord. Y
+	POINT		-27,81				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         621, 334,  79, 104,  89,   0, 0,"MURO0004.RLE","   "
+	POLY "NONAME",760,1302,254,63,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-94,-157				;Coord. X, Coord. Y
+	POINT		95,145				;Coord. X, Coord. Y
+	POINT		81,155				;Coord. X, Coord. Y
+	POINT		-93,-129				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         666, 499, 190, 244,   6,   1, 0,"MURO0005.RLE","   "
+	POLY "NONAME",961,1489,254,65,4,5			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-51,-85				;Coord. X, Coord. Y
+	POINT		78,121				;Coord. X, Coord. Y
+	POINT		57,122				;Coord. X, Coord. Y
+	POINT		-66,-73				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         898, 658,  14,  25,   0,   0, 0,"MURO0005.RLE","   "
+	TILE         912, 658,  14,  35,  15,   0, 0,"MURO0005.RLE","   "
+	TILE         926, 658,  10,  51,  29,   0, 0,"MURO0005.RLE","   "
+	TILE         936, 686,  32,  54,  39,  28, 0,"MURO0005.RLE","   "
+	TILE         968, 718,  73,  91,  71,  60, 0,"MURO0005.RLE","   "
+	POLYRAMPA "CASA08",608,1176,254,155,0,4,3			;Nombre,CentroX,CentroY,CentroZ,Altura,AlturaOff,#vertices,#Tiles
+	POINT		6,-75				;Coord. X, Coord. Y
+	POINT		59,4				;Coord. X, Coord. Y
+	POINT		-8,53				;Coord. X, Coord. Y
+	POINT		-61,-24				;Coord. X, Coord. Y
+	EXTRAINFO		12,10,16,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         546, 407, 130, 186,   0,   0, 0,"FARO0020.RLE","   "
+	TILE         552, 468, 110, 106,  17,   0, 0,"-RUINA00.RLE","X  "
+	TILE         585, 460,  79,  50,   0,   0, 0,"-RUINA06.RLE","   "
+	POLY "NONAME",1176,1601,254,63,4,6			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-66,50				;Coord. X, Coord. Y
+	POINT		53,-61				;Coord. X, Coord. Y
+	POINT		64,-49				;Coord. X, Coord. Y
+	POINT		-53,63				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1230, 750,  10,  14, 225,   1, 0,"MURO0008.RLE","   "
+	TILE        1222, 750,   8,  20, 217,   1, 0,"MURO0008.RLE","   "
+	TILE        1208, 750,  14,  28, 203,   1, 0,"MURO0008.RLE","   "
+	TILE        1194, 750,  14,  36, 189,   1, 0,"MURO0008.RLE","   "
+	TILE        1177, 771,  17,  38, 172,  22, 0,"MURO0008.RLE","   "
+	TILE        1123, 779,  54,  82, 118,  30, 0,"MURO0008.RLE","   "
+	POLY "NONAME",1304,1577,254,63,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-27,18				;Coord. X, Coord. Y
+	POINT		12,-24				;Coord. X, Coord. Y
+	POINT		33,-22				;Coord. X, Coord. Y
+	POINT		-20,29				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1274, 757,  64,  79,   0, 112, 0,"MURO0008.RLE","   "
+	POLY "NONAME",1305,1530,288,24,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-24,-34				;Coord. X, Coord. Y
+	POINT		32,22				;Coord. X, Coord. Y
+	POINT		12,22				;Coord. X, Coord. Y
+	POINT		-34,-24				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1292, 758,  21,   9,  21,  36, 0,"MURO0007.RLE","X  "
+	TILE        1271, 722,  67,  37,   0,   0, 0,"MURO0007.RLE","X  "
+	POLY "NONAME",1318,1463,254,63,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		39,-14				;Coord. X, Coord. Y
+	POINT		-24,45				;Coord. X, Coord. Y
+	POINT		-38,30				;Coord. X, Coord. Y
+	POINT		39,-41				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1280, 673,  78,  78,  13,  81, 0,"MURO0008.RLE","   "
+	POLY "CASA06A",1448,1465,254,204,4,4			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		40,29				;Coord. X, Coord. Y
+	POINT		-18,75				;Coord. X, Coord. Y
+	POINT		-93,-17				;Coord. X, Coord. Y
+	POINT		12,-100				;Coord. X, Coord. Y
+	EXTRAINFO		12,9,10,16,0,0,0,0                 ;Extra Info Bytes
+	TILE        1343, 527, 142, 267,   0,   0, 0,"FARO0017.RLE","   "
+	TILE        1358, 657, 127, 106,  15,   0, 0,"-RUINA00.RLE","X  "
+	TILE        1371, 568, 114, 100,   0,   0, 0,"-RUINA01.RLE","   "
+	TILE        1420, 653,  65,  50,   0,   0, 0,"-RUINA06.RLE","   "
+	POLY "CASA06B",1495,1458,254,204,4,4			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		48,4				;Coord. X, Coord. Y
+	POINT		1,44				;Coord. X, Coord. Y
+	POINT		-6,37				;Coord. X, Coord. Y
+	POINT		-34,-94				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1485, 546,  59, 226, 141,  19, 0,"FARO0017.RLE","   "
+	TILE        1485, 657,  17, 106, 142,   0, 0,"-RUINA00.RLE","X  "
+	TILE        1485, 568,  33, 100, 114,   0, 0,"-RUINA01.RLE","   "
+	TILE        1485, 653,  14,  50,  65,   0, 0,"-RUINA06.RLE","   "
+	POLY "FARO01",690,864,310,343,7,3			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		57,41				;Coord. X, Coord. Y
+	POINT		25,59				;Coord. X, Coord. Y
+	POINT		-24,57				;Coord. X, Coord. Y
+	POINT		-52,37				;Coord. X, Coord. Y
+	POINT		-63,8				;Coord. X, Coord. Y
+	POINT		-63,-46				;Coord. X, Coord. Y
+	POINT		57,-51				;Coord. X, Coord. Y
+	EXTRAINFO		2,9,7,16,23,12,0,0                 ;Extra Info Bytes
+	TILE         634,  17, 116, 170,   0,   0, 0,"FARO0000.RLE","   "
+	TILE         627, 187, 122, 171,   0,   0, 0,"FARO0001.RLE","   "
+	TILE         727, 264,  22,  50,   3,   0, 0,"-RUINA06.RLE","   "
+	POLY "CASA01",981,919,310,142,6,13			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-232,-157				;Coord. X, Coord. Y
+	POINT		-29,-131				;Coord. X, Coord. Y
+	POINT		29,-111				;Coord. X, Coord. Y
+	POINT		126,-52				;Coord. X, Coord. Y
+	POINT		83,80				;Coord. X, Coord. Y
+	POINT		-231,-14				;Coord. X, Coord. Y
+	EXTRAINFO		9,10,16,17,12,0,0,0                 ;Extra Info Bytes
+	TILE         749, 187,  93, 174,   0,   0, 0,"FAR20000.RLE","   "
+	TILE         866, 314,  79,  50,   0,   0, 0,"-RUINA06.RLE","   "
+	TILE         986, 335,  79,  50,   0,   0, 0,"-RUINA06.RLE","   "
+	TILE         842, 204, 170, 190,   0,   0, 0,"FARO0003.RLE","   "
+	TILE        1012, 238,  96, 167,   0,   0, 0,"FARO0004.RLE","   "
+	TILE         943, 255,  79,  50,   0,   0, 0,"-RUINA06.RLE","   "
+	TILE        1048, 307,  35,   6,   0,   0, 0,"MAST0001.RLE","   "
+	TILE         749, 264,  54,  50,  25,   0, 0,"-RUINA06.RLE","   "
+	TILE         969, 332,  79,  50,   0,   0, 0,"-RUINA06.RLE","X  "
+	TILE         866, 270, 147, 100,   0,   0, 0,"-RUINA01.RLE","X  "
+	TILE         986, 283,  79,  50,   0,   0, 0,"-RUINA06.RLE","X  "
+	TILE         749, 245, 140, 106,  19,   0, 0,"-RUINA00.RLE","X  "
+	TILE         809, 237,  76,  50,   3,   0, 0,"-RUINA06.RLE","X  "
+	POLY "CASA02",1157,998,310,85,5,5			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-49,-132				;Coord. X, Coord. Y
+	POINT		96,-29				;Coord. X, Coord. Y
+	POINT		51,126				;Coord. X, Coord. Y
+	POINT		-95,81				;Coord. X, Coord. Y
+	POINT		-90,3				;Coord. X, Coord. Y
+	EXTRAINFO		12,9,12,16,0,0,0,0                 ;Extra Info Bytes
+	TILE        1062, 259, 107, 217,   0,   0, 0,"FARO0005.RLE","   "
+	TILE        1169, 307,  83, 177,   0,   0, 0,"FARO0006.RLE","   "
+	TILE        1114, 334,  79,  50,   0,   0, 0,"-RUINA06.RLE","X  "
+	TILE        1073, 364, 147, 100,   0,   0, 0,"-RUINA01.RLE","X  "
+	TILE        1090, 313,  79,  50,   0,   0, 0,"-RUINA06.RLE","   "
+	POLY "CASA05",1323,1119,310,130,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-18,-52				;Coord. X, Coord. Y
+	POINT		61,-8				;Coord. X, Coord. Y
+	POINT		15,67				;Coord. X, Coord. Y
+	POINT		-58,24				;Coord. X, Coord. Y
+	EXTRAINFO		12,9,18,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1262, 347, 125, 175,   0,   0, 0,"FARO0022.RLE","   "
+	TILE        1274, 405, 107, 106,  34,   0, 0,"-RUINA00.RLE","   "
+	POLY "NONAME",878,791,400,130,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		10				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         871,  97,  16, 107,   0,   0, 0,"FARO0002.RLE","   "
+	POLY "CASA03",1725,903,355,250,4,4			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-21,-70				;Coord. X, Coord. Y
+	POINT		77,34				;Coord. X, Coord. Y
+	POINT		-9,88				;Coord. X, Coord. Y
+	POINT		-74,4				;Coord. X, Coord. Y
+	EXTRAINFO		26,4,9,12,18,0,0,0                 ;Extra Info Bytes
+	TILE        1650, 100, 155, 263,   0,   0, 0,"FARO0010.RLE","   "
+	TILE        1692, 117,  67,  50,   0,   0, 0,"-RUINA06.RLE","   "
+	TILE        1654, 174, 147, 100,   0,   0, 0,"-RUINA01.RLE","   "
+	TILE        1657, 222, 144, 106,  15,   0, 0,"-RUINA00.RLE","X  "
+	POLY "CASA04",1851,818,355,105,10,6			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-146,13				;Coord. X, Coord. Y
+	POINT		-78,-66				;Coord. X, Coord. Y
+	POINT		-17,-80				;Coord. X, Coord. Y
+	POINT		45,-65				;Coord. X, Coord. Y
+	POINT		85,-17				;Coord. X, Coord. Y
+	POINT		94,40				;Coord. X, Coord. Y
+	POINT		65,107				;Coord. X, Coord. Y
+	POINT		43,121				;Coord. X, Coord. Y
+	POINT		1,130				;Coord. X, Coord. Y
+	POINT		-46,120				;Coord. X, Coord. Y
+	EXTRAINFO		18,9,10,7,16,0,0,0                 ;Extra Info Bytes
+	TILE        1763, 121, 184, 214,   0,   0, 0,"FARO0011.RLE","   "
+	TILE        1784, 124,  79,  50,   0,   0, 0,"-RUINA06.RLE","X  "
+	TILE        1803, 164, 140, 106,   0,   0, 0,"-RUINA00.RLE","   "
+	TILE        1800, 228, 131, 100,  23,   0, 0,"-RUINA02.RLE","   "
+	TILE        1799, 174,  59,  31,  53,   0, 0,"ANTE0001.RLE","   "
+	TILE        1837, 165,  79,  50,   0,   0, 0,"-RUINA06.RLE","   "
+	POLY "NONAME",1699,1121,355,49,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1696, 416,   8,  37,   0,  20, 0,"FARO0013.RLE","   "
+	POLY "NONAME",1657,1157,355,49,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1654, 439,   8,  40,   0,  17, 0,"FARO0013.RLE","   "
+	POLY "NONAME",1613,1194,355,49,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1610, 463,   8,  41,   0,  16, 0,"FARO0013.RLE","   "
+	POLY "NONAME",1569,1132,355,49,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1566, 423,   8,  33,   0,  24, 0,"FARO0013.RLE","   "
+	POLY "NONAME",1601,979,355,49,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1597, 321,   8,  39,   0,  18, 0,"FARO0013.RLE","   "
+	POLY "NONAME",1560,1016,355,49,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1556, 344,   8,  40,   0,  17, 0,"FARO0013.RLE","   "
+	POLY "NONAME",1516,1053,355,49,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1512, 368,   8,  39,   0,  18, 0,"FARO0013.RLE","   "
+	POLY "NONAME",1471,984,355,49,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1468, 328,   8,  33,   0,  24, 0,"FARO0013.RLE","   "
+	POLY "NONAME",1538,974,405,10,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		28,-86				;Coord. X, Coord. Y
+	POINT		80,0				;Coord. X, Coord. Y
+	POINT		-29,91				;Coord. X, Coord. Y
+	POINT		-80,5				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1520, 256,  99, 111,  62,   0, 0,"FARO0012.RLE","   "
+	TILE        1458, 281,  62,  92,   0,  25, 0,"FARO0012.RLE","   "
+	POLY "NONAME",1636,1122,405,10,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		27,-83				;Coord. X, Coord. Y
+	POINT		80,0				;Coord. X, Coord. Y
+	POINT		-29,91				;Coord. X, Coord. Y
+	POINT		-80,7				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1618, 351,  99, 111,  62,   0, 0,"FARO0012.RLE","   "
+	TILE        1556, 376,  62,  92,   0,  25, 0,"FARO0012.RLE","   "
+	POLY "NONAME",1717,1155,355,27,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		109,-114				;Coord. X, Coord. Y
+	POINT		120,-105				;Coord. X, Coord. Y
+	POINT		-112,112				;Coord. X, Coord. Y
+	POINT		-120,101				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1596, 376, 241, 165,   0,   0, 0,"MURO0007.RLE","   "
+	POLY "NONAME",1559,886,355,27,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		109,-114				;Coord. X, Coord. Y
+	POINT		120,-105				;Coord. X, Coord. Y
+	POINT		-112,112				;Coord. X, Coord. Y
+	POINT		-122,99				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1571, 207,  88,  75, 133,   5, 0,"MURO0007.RLE","   "
+	TILE        1438, 326,  47,  41,   0, 124, 0,"MURO0007.RLE","   "
+	POLY "NONAME",2160,1475,0,63,4,7			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-127,-58				;Coord. X, Coord. Y
+	POINT		-129,-257				;Coord. X, Coord. Y
+	POINT		86,52				;Coord. X, Coord. Y
+	POINT		-51,191				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2071, 770,  41,  38,  71,   5, 0,"ISLA0016.RLE","   "
+	TILE        2112, 797,   6,  18, 100,  20, 0,"ISLA0016.RLE","   "
+	TILE        2071, 808,  41,   7,   0,  36, 0,"ISLA0013.RLE","   "
+	TILE        2071, 815, 121,  63,   0,  43, 0,"ISLA0013.RLE","   "
+	TILE        2032, 766,  39, 112, 158, 244, 0,"ISLA4.BMP","   "
+	TILE        2071, 878,  53,  31, 197,   0, 0,"ISLA5.BMP","   "
+	TILE        2124, 878, 124, 182,   0,   0, 0,"ISLA0016.RLE","   "
+	POLY "NONAME",1191,242,0,10,4,30			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		1066,-235				;Coord. X, Coord. Y
+	POINT		1066,667				;Coord. X, Coord. Y
+	POINT		-1198,642				;Coord. X, Coord. Y
+	POINT		-1195,-247				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         838, 198,  48,  15,  57,  72, 0,"ISLA0004.RLE","   "
+	TILE         909, 198,  24,  23,   0,  74, 0,"ISLA0004.RLE","   "
+	TILE         896, 212,   8,  11,  53,  79, 0,"ISLA0004.RLE","   "
+	TILE         904, 191,  88,  48,  73,   0, 0,"ISLA0007.RLE","X  "
+	TILE         992, 187,  54,  60,  45,   0, 0,"ISLA0005.RLE","X  "
+	TILE        1529, 145, 166, 130,   0,   0, 0,"ISLA0005.RLE","   "
+	TILE         431, 243, 250, 129,   0,   0, 0,"ISLA0000.RLE","   "
+	TILE         431, 372, 230,  26,   0, 129, 0,"ISLA0000.RLE","   "
+	TILE        1241, 343,  71,  72,   0,   0, 0,"ISLA0003.RLE","   "
+	TILE         431, 398, 211,  26,   0, 155, 0,"ISLA0000.RLE","   "
+	TILE        2073, 276, 179, 149,   0,   1, 0,"ISLA0008.RLE","   "
+	TILE        1220, 388,  71,  63,   0,   0, 0,"ROTO0000.RLE","   "
+	TILE         398, 410,  33,  45,   0,   0, 0,"ISLA0028.RLE","   "
+	TILE         431, 424, 173,  31,   0, 181, 0,"ISLA0000.RLE","   "
+	TILE         369, 455, 187,  67,   0,   0, 0,"ISLA0009.RLE","   "
+	TILE        1331, 275, 257, 250,   0,   0, 0,"ISLA0004.RLE","   "
+	TILE        1588, 275, 353, 250,   1,   0, 0,"ISLA0006.RLE","   "
+	TILE        1941, 276, 132, 249,   0,   0, 0,"ISLA0.BMP","   "
+	TILE        1318, 493, 127,  91,   0,   7, 0,"ROTO0004.RLE","   "
+	TILE        1929, 144, 177, 132,   5,   0, 0,"ISLA0007.RLE","   "
+	TILE        1870, 321,  43,  16,  91,   0, 0,"FARO0015.RLE","   "
+	TILE        1762, 326,  98,  14,  77, 100, 0,"FARO0019.RLE","   "
+	TILE        1544, 335,  44,  18,  62,  34, 0,"CAOC0000.RLE","   "
+	TILE         528, 243, 151, 114,   0,   0, 0,"SFAR0000.RLE","   "
+	TILE        1581, 267, 144, 102,  26,   0, 0,"FARO0014.RLE","   "
+	TILE        1482, 353, 106,  35,   0,  52, 0,"CAOC0000.RLE","   "
+	TILE        1442, 334, 160,  83,   0,  33, 0,"FARO0016.RLE","   "
+	TILE        1648, 423,  40,  36,  66,  51, 0,"CAOC0000.RLE","X  "
+	TILE        1574, 438,  78,  53,   0,  33, 0,"CAOC0001.RLE","X  "
+	TILE        1543, 436, 160,  74,   0,  42, 0,"FARO0016.RLE","   "
+	POLY "NONAME",810,2507,0,69,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		83,17				;Coord. X, Coord. Y
+	POINT		-61,56				;Coord. X, Coord. Y
+	POINT		-83,-19				;Coord. X, Coord. Y
+	POINT		63,-56				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         795,1520,  98, 112,  66,   0, 0,"ESCA0001.RLE","   "
+	POLY "NONAME",517,1743,70,93,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-24,-81				;Coord. X, Coord. Y
+	POINT		81,25				;Coord. X, Coord. Y
+	POINT		22,81				;Coord. X, Coord. Y
+	POINT		-81,-28				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         491, 942,  53,  34,  55,   0, 0,"ESCA0000.RLE","   "
+	TILE         436, 942,  55, 120,   0,   0, 0,"ESCA0000.RLE","   "
+	POLY "ANTENA",1842,844,462,200,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-24,-4				;Coord. X, Coord. Y
+	POINT		2,-18				;Coord. X, Coord. Y
+	POINT		24,9				;Coord. X, Coord. Y
+	POINT		-4,23				;Coord. X, Coord. Y
+	EXTRAINFO		4,7,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1820,  25,  48, 181,   0,   0, 0,"ANTE0000.RLE","   "
+	POLY "NONAME",1105,1795,254,65,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		27,44				;Coord. X, Coord. Y
+	POINT		89,135				;Coord. X, Coord. Y
+	POINT		76,146				;Coord. X, Coord. Y
+	POINT		17,52				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1122, 936,  38,  96,   0,   0, 0,"MURO0005.RLE","   "
+	TILE        1160, 956,  35,  96, 161, 149, 0,"MURO0005.RLE","   "
+	POLY "NONAME",1329,1561,320,25,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		15				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1315, 733,  29,  29,   0,   0, 0,"CABL0004.RLE","X  "
+	POLY "NONAME",787,1972,280,24,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		13				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         772,1024,  29,  53,   0,   0, 0,"CABL0004.RLE","   "
+	POLY "NONAME",442,1409,280,25,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		15				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         427, 663,  29,  39,   0,   0, 0,"CABL0010.RLE","X  "
+	POLY "NONAME",1209,1921,254,61,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		17				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1186, 975,  46,  77,  21,   0, 0,"VERD0005.RLE","   "
+	POLY "ANTI02A",518,1389,254,12,8,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		42,70				;Coord. X, Coord. Y
+	POINT		-2,75				;Coord. X, Coord. Y
+	POINT		-35,51				;Coord. X, Coord. Y
+	POINT		-60,6				;Coord. X, Coord. Y
+	POINT		-60,-9				;Coord. X, Coord. Y
+	POINT		-43,-46				;Coord. X, Coord. Y
+	POINT		-1,-63				;Coord. X, Coord. Y
+	POINT		41,-51				;Coord. X, Coord. Y
+	EXTRAINFO		4,23,7,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         458, 651, 102,  96,   0,   0, 0,"ANTI0001.RLE","   "
+	TILE         468, 657,  92,  84,   0,   0, 0,"-RUINA11.RLE","   "
+	POLY "ANTI04A",1113,1563,310,13,6,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-35,-56				;Coord. X, Coord. Y
+	POINT		28,-56				;Coord. X, Coord. Y
+	POINT		64,-9				;Coord. X, Coord. Y
+	POINT		57,29				;Coord. X, Coord. Y
+	POINT		12,70				;Coord. X, Coord. Y
+	POINT		-38,65				;Coord. X, Coord. Y
+	EXTRAINFO		4,23,7,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1072, 724, 102,  96,  40,   0, 0,"ANTI0001.RLE","X  "
+	TILE        1072, 730,  92,  84,  35,   0, 0,"-RUINA11.RLE","X  "
+	POLY "ANTI01",762,1066,310,13,9,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-73,-10				;Coord. X, Coord. Y
+	POINT		-62,-44				;Coord. X, Coord. Y
+	POINT		-18,-64				;Coord. X, Coord. Y
+	POINT		41,-45				;Coord. X, Coord. Y
+	POINT		71,-14				;Coord. X, Coord. Y
+	POINT		60,44				;Coord. X, Coord. Y
+	POINT		23,64				;Coord. X, Coord. Y
+	POINT		-22,64				;Coord. X, Coord. Y
+	POINT		-70,27				;Coord. X, Coord. Y
+	EXTRAINFO		4,7,23,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         691, 401, 143,  89,   0,   0, 0,"ANTI0002.RLE","   "
+	TILE         699, 401, 129,  84,   0,   0, 0,"-RUINA10.RLE","   "
+	POLY "ANTI03",810,1836,254,14,9,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-73,-10				;Coord. X, Coord. Y
+	POINT		-62,-44				;Coord. X, Coord. Y
+	POINT		-18,-64				;Coord. X, Coord. Y
+	POINT		41,-45				;Coord. X, Coord. Y
+	POINT		71,-14				;Coord. X, Coord. Y
+	POINT		60,44				;Coord. X, Coord. Y
+	POINT		23,64				;Coord. X, Coord. Y
+	POINT		-22,64				;Coord. X, Coord. Y
+	POINT		-70,27				;Coord. X, Coord. Y
+	EXTRAINFO		4,7,23,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         739, 939, 143,  89,   0,   0, 0,"ANTI0002.RLE","   "
+	TILE         747, 943, 129,  84,   0,   0, 0,"-RUINA10.RLE","   "
+	POLY "ANTI05",1452,1736,254,14,9,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-73,-14				;Coord. X, Coord. Y
+	POINT		-42,-52				;Coord. X, Coord. Y
+	POINT		30,-61				;Coord. X, Coord. Y
+	POINT		58,-42				;Coord. X, Coord. Y
+	POINT		71,-14				;Coord. X, Coord. Y
+	POINT		71,22				;Coord. X, Coord. Y
+	POINT		23,66				;Coord. X, Coord. Y
+	POINT		-27,64				;Coord. X, Coord. Y
+	POINT		-61,38				;Coord. X, Coord. Y
+	EXTRAINFO		4,7,23,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1381, 875, 143,  89,   0,   0, 0,"ANTI0002.RLE","X  "
+	TILE        1389, 879, 129,  84,   0,   0, 0,"-RUINA10.RLE","X  "
+	POLY "NONAME",2087,1723,-19,18,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		38,-70				;Coord. X, Coord. Y
+	POINT		105,24				;Coord. X, Coord. Y
+	POINT		32,97				;Coord. X, Coord. Y
+	POINT		-35,1				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2054,1063, 137, 108,   0,   0, 0,"PLA20000.RLE","   "
+	POLY "NONAME",734,1568,254,52,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		33,25				;Coord. X, Coord. Y
+	POINT		-31,38				;Coord. X, Coord. Y
+	POINT		-33,8				;Coord. X, Coord. Y
+	POINT		-33,-38				;Coord. X, Coord. Y
+	POINT		20,-31				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         701, 750,  67,  87,  39,   0, 0,"CAOC0000.RLE","X  "
+	POLY "NONAME",683,1543,254,40,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		17,33				;Coord. X, Coord. Y
+	POINT		-21,7				;Coord. X, Coord. Y
+	POINT		-20,-27				;Coord. X, Coord. Y
+	POINT		17,-13				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         663, 749,  18,  61,  60,  25, 0,"CAOC0001.RLE","X  "
+	TILE         662, 750,  39,  69,   0,   0, 0,"CAOC0000.RLE","X  "
+	POLY "NONAME",631,1521,254,54,6,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		30,29				;Coord. X, Coord. Y
+	POINT		14,43				;Coord. X, Coord. Y
+	POINT		-23,20				;Coord. X, Coord. Y
+	POINT		-29,-9				;Coord. X, Coord. Y
+	POINT		0,-25				;Coord. X, Coord. Y
+	POINT		30,-6				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         603, 724,  60,  86,   0,   0, 0,"CAOC0001.RLE","X  "
+	POLY "NONAME",711,1624,254,11,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		33,-4				;Coord. X, Coord. Y
+	POINT		-26,21				;Coord. X, Coord. Y
+	POINT		-33,3				;Coord. X, Coord. Y
+	POINT		25,-21				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         678, 826,  67,  34,   0,   0, 0,"UNCA0002.RLE","   "
+	POLY "NONAME",235,1102,-120,175,7,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-62,-72				;Coord. X, Coord. Y
+	POINT		64,-73				;Coord. X, Coord. Y
+	POINT		109,-65				;Coord. X, Coord. Y
+	POINT		78,8				;Coord. X, Coord. Y
+	POINT		35,39				;Coord. X, Coord. Y
+	POINT		-27,40				;Coord. X, Coord. Y
+	POINT		-99,-39				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         107, 619, 241, 221,  11,   0, 0,"ROCA0004.RLE","   "
+	POLY "NONAME",159,1296,-70,93,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		26,-20				;Coord. X, Coord. Y
+	POINT		30,4				;Coord. X, Coord. Y
+	POINT		-5,20				;Coord. X, Coord. Y
+	POINT		-27,3				;Coord. X, Coord. Y
+	POINT		-24,-18				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         118, 802,  82,  76,   0,   0, 0,"ROCA0005.RLE","   "
+	POLY "NONAME",218,1783,-70,100,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		52,-4				;Coord. X, Coord. Y
+	POINT		31,18				;Coord. X, Coord. Y
+	POINT		-14,21				;Coord. X, Coord. Y
+	POINT		-54,-2				;Coord. X, Coord. Y
+	POINT		-17,-19				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         152,1112, 120, 103,  27,   0, 0,"ROCA0006.RLE","   "
+	POLY "NONAME",125,2634,-70,96,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		22,-17				;Coord. X, Coord. Y
+	POINT		31,4				;Coord. X, Coord. Y
+	POINT		-17,24				;Coord. X, Coord. Y
+	POINT		-28,-10				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE          83,1663,  82,  76,   0,   0, 0,"ROCA0005.RLE","   "
+	POLY "NONAME",276,2763,-130,220,8,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-54,-125				;Coord. X, Coord. Y
+	POINT		20,-135				;Coord. X, Coord. Y
+	POINT		78,-95				;Coord. X, Coord. Y
+	POINT		149,-17				;Coord. X, Coord. Y
+	POINT		96,28				;Coord. X, Coord. Y
+	POINT		11,67				;Coord. X, Coord. Y
+	POINT		-93,47				;Coord. X, Coord. Y
+	POINT		-148,-43				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         119,1606, 313, 329,   0,   0, 0,"ROCA0014.RLE","X  "
+	POLY "NONAME",442,2855,-90,127,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		0,-37				;Coord. X, Coord. Y
+	POINT		49,-14				;Coord. X, Coord. Y
+	POINT		31,17				;Coord. X, Coord. Y
+	POINT		-29,28				;Coord. X, Coord. Y
+	POINT		-47,1				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         349,1786, 147, 103,   0,   0, 0,"ROCA0006.RLE","   "
+	POLY "NONAME",951,2813,-100,162,6,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-99,-50				;Coord. X, Coord. Y
+	POINT		-72,-61				;Coord. X, Coord. Y
+	POINT		-17,-52				;Coord. X, Coord. Y
+	POINT		126,-20				;Coord. X, Coord. Y
+	POINT		80,-13				;Coord. X, Coord. Y
+	POINT		-23,0				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         849,1733, 231, 140,   0,   0, 0,"ROCA0007.RLE","   "
+	POLY "NONAME",1877,2511,-130,174,6,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-42,-84				;Coord. X, Coord. Y
+	POINT		27,-85				;Coord. X, Coord. Y
+	POINT		92,-33				;Coord. X, Coord. Y
+	POINT		26,42				;Coord. X, Coord. Y
+	POINT		-38,38				;Coord. X, Coord. Y
+	POINT		-103,-62				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1766,1525, 252, 221,   0,   0, 0,"ROCA0004.RLE","X  "
+	POLY "NONAME",1740,2576,-70,103,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		19,-23				;Coord. X, Coord. Y
+	POINT		35,1				;Coord. X, Coord. Y
+	POINT		9,31				;Coord. X, Coord. Y
+	POINT		-23,21				;Coord. X, Coord. Y
+	POINT		-35,-14				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1697,1614,  82,  76,   0,   0, 0,"ROCA0005.RLE","   "
+	POLY "NONAME",2052,2259,-120,200,10,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-97,-83				;Coord. X, Coord. Y
+	POINT		-44,-97				;Coord. X, Coord. Y
+	POINT		6,-102				;Coord. X, Coord. Y
+	POINT		53,-86				;Coord. X, Coord. Y
+	POINT		141,-43				;Coord. X, Coord. Y
+	POINT		161,0				;Coord. X, Coord. Y
+	POINT		114,47				;Coord. X, Coord. Y
+	POINT		-11,105				;Coord. X, Coord. Y
+	POINT		-91,65				;Coord. X, Coord. Y
+	POINT		-127,-3				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1911,1302, 313, 329,   0,   0, 0,"ROCA0014.RLE","   "
+	POLY "NONAME",2433,612,-140,236,9,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-48,-111				;Coord. X, Coord. Y
+	POINT		25,-138				;Coord. X, Coord. Y
+	POINT		117,-106				;Coord. X, Coord. Y
+	POINT		170,-66				;Coord. X, Coord. Y
+	POINT		83,42				;Coord. X, Coord. Y
+	POINT		-21,141				;Coord. X, Coord. Y
+	POINT		-96,112				;Coord. X, Coord. Y
+	POINT		-145,53				;Coord. X, Coord. Y
+	POINT		-160,-3				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2245, 210, 391, 371,   0,   0, 0,"ROCA0011.RLE","   "
+	POLY "NONAME",2316,467,-70,109,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		5,-31				;Coord. X, Coord. Y
+	POINT		47,-1				;Coord. X, Coord. Y
+	POINT		8,31				;Coord. X, Coord. Y
+	POINT		-52,-1				;Coord. X, Coord. Y
+	POINT		-55,-14				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2222, 250, 147, 103,   0,   0, 0,"ROCA0006.RLE","   "
+	POLY "NONAME",2541,881,-70,94,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-10,-22				;Coord. X, Coord. Y
+	POINT		34,-14				;Coord. X, Coord. Y
+	POINT		39,3				;Coord. X, Coord. Y
+	POINT		-7,21				;Coord. X, Coord. Y
+	POINT		-27,0				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2502, 533,  82,  76,   0,   0, 0,"ROCA0005.RLE","   "
+	POLY "ANTI02B",572,1436,254,18,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-11,23				;Coord. X, Coord. Y
+	POINT		-11,-3				;Coord. X, Coord. Y
+	POINT		7,-23				;Coord. X, Coord. Y
+	POINT		28,-17				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         560, 711,  40,  36, 102,  60, 0,"ANTI0001.RLE","   "
+	TILE         560, 711,  35,  30,  92,  54, 0,"-RUINA11.RLE","   "
+	POLY "ANTO02C",585,1400,254,17,5,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		14,16				;Coord. X, Coord. Y
+	POINT		-6,11				;Coord. X, Coord. Y
+	POINT		-12,-20				;Coord. X, Coord. Y
+	POINT		2,-31				;Coord. X, Coord. Y
+	POINT		11,-8				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         564, 682,  36,  29, 106,  31, 0,"ANTI0001.RLE","   "
+	TILE         564, 682,  31,  29,  96,  25, 0,"-RUINA11.RLE","   "
+	POLY "ANTI04B",1058,1609,310,11,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		15,19				;Coord. X, Coord. Y
+	POINT		-23,-8				;Coord. X, Coord. Y
+	POINT		-11,-16				;Coord. X, Coord. Y
+	POINT		16,2				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1037, 785,  35,  35,   5,  61, 0,"ANTI0001.RLE","X  "
+	TILE        1037, 785,  35,  29,   0,  55, 0,"-RUINA11.RLE","X  "
+	POLY "ANTI04C",1045,1579,310,13,5,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-10,20				;Coord. X, Coord. Y
+	POINT		-11,-5				;Coord. X, Coord. Y
+	POINT		1,-25				;Coord. X, Coord. Y
+	POINT		12,-17				;Coord. X, Coord. Y
+	POINT		1,12				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1032, 755,  36,  30,   0,  31, 0,"ANTI0001.RLE","X  "
+	TILE        1037, 755,  31,  30,   0,  25, 0,"-RUINA11.RLE","X  "
+	POLY "FARO01EXP1",686,1023,341,482,4,33			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-88,-42				;Coord. X, Coord. Y
+	POINT		91,-43				;Coord. X, Coord. Y
+	POINT		91,-41				;Coord. X, Coord. Y
+	POINT		-88,-39				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         584, -41, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         613, -25, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         585, -22, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         599, -13, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         629,  -8, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         564,  -5, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         636,  10, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         583,  22, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         605,  23, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         635,  35, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         621,  36, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         596,  46, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         611,  69, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         582,  98, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         562, 103, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         598, 114, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         567, 133, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         611, 134, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         631, 140, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         582, 150, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         599, 173, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         635, 175, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         617, 175, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         579, 184, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         555, 193, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         647, 200, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         610, 206, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         582, 209, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         552, 223, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         614, 229, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         639, 230, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         571, 236, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         590, 249, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "CASA01EXP1",902,969,310,255,4,43			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-164,-53				;Coord. X, Coord. Y
+	POINT		162,46				;Coord. X, Coord. Y
+	POINT		162,47				;Coord. X, Coord. Y
+	POINT		-165,-52				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         687, 158, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         759, 174, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         829, 175, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         739, 180, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         717, 184, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         773, 190, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         667, 195, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         860, 195, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         882, 200, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         693, 204, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         813, 208, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         903, 209, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         789, 212, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         836, 215, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         735, 216, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         711, 218, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         662, 219, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         919, 220, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         942, 220, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         753, 222, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         800, 230, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         672, 234, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         854, 234, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         950, 235, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         877, 236, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         766, 241, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         713, 247, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         893, 247, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         819, 248, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         928, 251, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         690, 251, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         903, 256, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         797, 256, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         733, 258, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         776, 259, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         751, 262, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         890, 271, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         837, 271, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         860, 272, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         815, 274, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         861, 283, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         909, 290, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         936, 291, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "CASA02EXP1",1133,1113,310,253,4,21			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-77,-27				;Coord. X, Coord. Y
+	POINT		95,26				;Coord. X, Coord. Y
+	POINT		94,29				;Coord. X, Coord. Y
+	POINT		-77,-24				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1068, 263, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1024, 264, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1046, 268, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1004, 271, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1083, 290, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1021, 298, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1041, 305, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         999, 307, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1059, 307, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1022, 322, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1075, 323, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1097, 327, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         995, 334, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1060, 338, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1036, 339, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1111, 344, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1010, 353, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1033, 355, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1095, 358, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1075, 363, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1051, 372, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "CASA05EXP1",1326,1192,310,196,4,15			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-71,-4				;Coord. X, Coord. Y
+	POINT		72,-4				;Coord. X, Coord. Y
+	POINT		72,-2				;Coord. X, Coord. Y
+	POINT		-71,-2				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1241, 339, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1196, 345, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1265, 359, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1211, 361, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1230, 363, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1248, 369, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1276, 376, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1187, 388, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1234, 392, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1206, 394, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1246, 397, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1267, 404, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1194, 410, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1215, 415, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1244, 421, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "CASA03EXP1",1722,985,355,362,4,25			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-87,6				;Coord. X, Coord. Y
+	POINT		98,9				;Coord. X, Coord. Y
+	POINT		98,11				;Coord. X, Coord. Y
+	POINT		-86,8				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1630,  58, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1608,  67, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1647,  67, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1628,  91, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1643, 119, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1662, 124, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1683, 126, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1614, 139, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1580, 144, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1595, 158, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1636, 158, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1656, 162, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1683, 164, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1614, 178, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1573, 186, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1655, 191, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1588, 194, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1673, 200, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1637, 200, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1607, 212, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1689, 216, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1587, 219, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1619, 224, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1662, 238, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1641, 239, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "CASA04EXP1",1874,952,355,327,4,25			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-95,32				;Coord. X, Coord. Y
+	POINT		86,-26				;Coord. X, Coord. Y
+	POINT		88,-24				;Coord. X, Coord. Y
+	POINT		-94,34				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1722,  64, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1700,  73, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1754,  75, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1734,  78, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1788, 101, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1763, 107, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1798, 124, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1835, 132, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1815, 133, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1735, 139, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1716, 149, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1755, 149, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1773, 155, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1794, 163, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1824, 164, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1729, 181, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1747, 192, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1798, 194, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1768, 195, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1716, 200, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1817, 209, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1786, 226, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1718, 231, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1740, 232, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1760, 244, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "CASA06EXP1",1438,1551,254,334,4,26			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-104,17				;Coord. X, Coord. Y
+	POINT		103,-20				;Coord. X, Coord. Y
+	POINT		103,-18				;Coord. X, Coord. Y
+	POINT		-104,20				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1348, 512, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1394, 521, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1370, 522, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1318, 534, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1296, 543, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1343, 552, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1409, 553, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1385, 564, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1365, 564, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1311, 567, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1338, 594, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1318, 598, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1355, 600, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1371, 604, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1297, 608, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1393, 613, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1273, 620, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1340, 628, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1316, 636, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1362, 636, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1283, 644, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1394, 655, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1325, 659, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1372, 660, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1299, 665, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1347, 675, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "CASA07EXP1",1047,1906,254,316,4,31			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-102,-75				;Coord. X, Coord. Y
+	POINT		106,69				;Coord. X, Coord. Y
+	POINT		104,71				;Coord. X, Coord. Y
+	POINT		-103,-73				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         924, 765, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         999, 768, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         971, 769, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         945, 776, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         897, 778, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1021, 788, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1002, 790, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         913, 804, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         951, 807, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         967, 808, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         882, 812, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         935, 814, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1028, 818, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         980, 820, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         999, 821, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         913, 836, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         891, 839, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1033, 848, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         949, 848, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         932, 853, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         999, 855, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1021, 857, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         964, 863, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         915, 867, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         884, 868, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         974, 869, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1000, 888, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         902, 892, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         930, 892, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         973, 901, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         949, 902, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "CASA08EXP1",605,1237,254,243,4,13			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-74,-7				;Coord. X, Coord. Y
+	POINT		76,-6				;Coord. X, Coord. Y
+	POINT		76,-4				;Coord. X, Coord. Y
+	POINT		-74,-5				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         509, 405, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         547, 407, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         523, 409, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         471, 419, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         495, 428, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         559, 432, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         513, 438, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         473, 444, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         535, 445, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         491, 462, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         561, 466, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         509, 474, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         533, 479, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "ANTI01EXP1",760,1138,310,144,4,11			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-82,2				;Coord. X, Coord. Y
+	POINT		83,2				;Coord. X, Coord. Y
+	POINT		83,3				;Coord. X, Coord. Y
+	POINT		-83,3				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         675, 339, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         637, 347, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         656, 349, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         688, 351, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         623, 362, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         703, 362, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         669, 372, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         713, 378, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         639, 385, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         686, 389, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         664, 390, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "ANTI02EXP1",527,1493,277,139,4,8			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-83,2				;Coord. X, Coord. Y
+	POINT		81,4				;Coord. X, Coord. Y
+	POINT		81,7				;Coord. X, Coord. Y
+	POINT		-83,4				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         414, 603, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         450, 604, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         431, 605, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         395, 615, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         485, 629, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         406, 635, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         428, 641, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         451, 642, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "ANTI03EXP1",807,1937,277,140,4,10			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-78,-3				;Coord. X, Coord. Y
+	POINT		78,-2				;Coord. X, Coord. Y
+	POINT		78,0				;Coord. X, Coord. Y
+	POINT		-78,-2				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         721, 886, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         686, 888, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         736, 894, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         702, 895, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         666, 899, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         753, 902, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         706, 920, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         682, 920, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         758, 922, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         730, 927, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "ANTI04EXP1",1104,1650,320,138,4,8			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-85,-1				;Coord. X, Coord. Y
+	POINT		85,-1				;Coord. X, Coord. Y
+	POINT		85,0				;Coord. X, Coord. Y
+	POINT		-85,0				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1010, 675, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1032, 677, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         989, 678, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1050, 690, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         956, 704, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE         984, 705, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1030, 707, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1003, 709, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "ANTI05EXP1",1451,1804,254,137,4,8			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-82,1				;Coord. X, Coord. Y
+	POINT		82,0				;Coord. X, Coord. Y
+	POINT		82,3				;Coord. X, Coord. Y
+	POINT		-82,3				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1342, 825, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1364, 827, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1380, 830, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1317, 834, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1402, 845, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1324, 849, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1368, 858, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	TILE        1342, 863, 187, 175,   0,   0, 0,"-EXPLO00.RLE","  L"
+	POLY "NONAME",2160,1602,65,30,4,8			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-75,77				;Coord. X, Coord. Y
+	POINT		70,-76				;Coord. X, Coord. Y
+	POINT		74,-73				;Coord. X, Coord. Y
+	POINT		-72,80				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2103, 987,  19,  31,   0,   0, 0,"PIVO0000.RLE","   "
+	TILE        2085, 999,  19,  31,   0,   0, 0,"PIVO0000.RLE","   "
+	TILE        2215, 912,  19,  31,   0,   0, 0,"PIVO0000.RLE","   "
+	TILE        2196, 925,  19,  31,   0,   0, 0,"PIVO0000.RLE","   "
+	TILE        2178, 937,  19,  31,   0,   0, 0,"PIVO0000.RLE","   "
+	TILE        2159, 950,  19,  31,   0,   0, 0,"PIVO0000.RLE","   "
+	TILE        2140, 962,  19,  31,   0,   0, 0,"PIVO0000.RLE","   "
+	TILE        2122, 974,  19,  31,   0,   0, 0,"PIVO0000.RLE","   "
+	POLY "NONAME",2152,1403,65,28,4,13			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-84,-121				;Coord. X, Coord. Y
+	POINT		88,120				;Coord. X, Coord. Y
+	POINT		84,124				;Coord. X, Coord. Y
+	POINT		-88,-118				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2071, 760,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2085, 774,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2101, 789,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2117, 803,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2133, 817,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2148, 831,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2164, 845,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2179, 859,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2194, 873,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2209, 886,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2225, 899,  10,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	TILE        2233, 900,   6,  31,   0,   0, 0,"PIVO0000.RLE","   "
+	TILE        2065, 747,   7,  31,   9,   0, 0,"PIVO0001.RLE","   "
+	POLY "NONAME",2035,1694,65,31,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-7,-15				;Coord. X, Coord. Y
+	POINT		12,11				;Coord. X, Coord. Y
+	POINT		7,15				;Coord. X, Coord. Y
+	POINT		-12,-12				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2024,1003,   7,  31,   9,   0, 0,"PIVO0001.RLE","   "
+	TILE        2031,1018,  16,  31,   0,   0, 0,"PIVO0001.RLE","   "
+	POLY "NONAME",2028,1347,65,57,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		7,-19				;Coord. X, Coord. Y
+	POINT		21,0				;Coord. X, Coord. Y
+	POINT		-1,7				;Coord. X, Coord. Y
+	POINT		-13,-8				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2013, 766,  38,  52,   0,   0, 0,"GRUA0003.RLE","   "
+	POLY "NONAME",2128,1311,105,170,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-88,16				;Coord. X, Coord. Y
+	POINT		11,-24				;Coord. X, Coord. Y
+	POINT		15,-17				;Coord. X, Coord. Y
+	POINT		-81,27				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2082, 638,  52,  92,   0,   0, 0,"GRUA0000.RLE","   "
+	TILE        2026, 698,  56,  92,   0,   0, 0,"GRUA0001.RLE","   "
+	POLY "NONAME",2030,1445,65,67,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-7,-34				;Coord. X, Coord. Y
+	POINT		22,-35				;Coord. X, Coord. Y
+	POINT		17,14				;Coord. X, Coord. Y
+	POINT		9,43				;Coord. X, Coord. Y
+	POINT		-52,29				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1977, 821,  71,  87,   0,   0, 0,"CAOC0000.RLE","   "
+	POLY "NONAME",1136,2030,230,22,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-43,-21				;Coord. X, Coord. Y
+	POINT		9,-41				;Coord. X, Coord. Y
+	POINT		65,-11				;Coord. X, Coord. Y
+	POINT		-63,38				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1071,1085, 129,  65,   0,   0, 0,"MONT0003.RLE","   "
+	POLY "NONAME",1060,2017,230,23,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-31,-76				;Coord. X, Coord. Y
+	POINT		3,-88				;Coord. X, Coord. Y
+	POINT		32,-8				;Coord. X, Coord. Y
+	POINT		12,52				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1028,1047,  65,  92,   0,   0, 0,"MONT0002.RLE","   "
+	POLY "NONAME",1066,1979,254,109,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		5,-17				;Coord. X, Coord. Y
+	POINT		19,17				;Coord. X, Coord. Y
+	POINT		7,21				;Coord. X, Coord. Y
+	POINT		-10,22				;Coord. X, Coord. Y
+	POINT		-18,0				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1048, 986,  38, 107,   0,   0, 0,"MONT0004.RLE","   "
+	POLY "NONAME",1104,1961,364,14,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		21,-14				;Coord. X, Coord. Y
+	POINT		28,3				;Coord. X, Coord. Y
+	POINT		-22,21				;Coord. X, Coord. Y
+	POINT		-28,4				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1075, 972,  57,  22,   0,   0, 0,"MONT0005.RLE","   "
+	POLY "NONAME",1055,2013,254,52,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-14,-43				;Coord. X, Coord. Y
+	POINT		17,38				;Coord. X, Coord. Y
+	POINT		14,40				;Coord. X, Coord. Y
+	POINT		-17,-42				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1039,1054,  33,  76,   0,   0, 0,"MONT0006.RLE","   "
+	POLY "NONAME",1133,2040,254,58,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-61,25				;Coord. X, Coord. Y
+	POINT		61,-19				;Coord. X, Coord. Y
+	POINT		63,-16				;Coord. X, Coord. Y
+	POINT		-59,28				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1072,1085, 124,  51,   0,   0, 0,"MONT0007.RLE","   "
+	POLY "NONAME",1176,1966,254,36,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-14,-40				;Coord. X, Coord. Y
+	POINT		18,48				;Coord. X, Coord. Y
+	POINT		15,49				;Coord. X, Coord. Y
+	POINT		-17,-38				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1160,1025,  36,  62,   0,   0, 0,"MONT0008.RLE","   "
+	POLY "NONAME",1071,2398,0,519,4,2			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		9,13				;Coord. X, Coord. Y
+	POINT		-16,-56				;Coord. X, Coord. Y
+	POINT		-11,-56				;Coord. X, Coord. Y
+	POINT		15,13				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1055,1148,  32, 106,   0, 161, 0,"MONT0012.RLE","   "
+	TILE        1055,1254,  32, 297,   0,   0, 0,"MONT0011.RLE","   "
+	POLY "NONAME",1080,1985,191,172,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-4,-29				;Coord. X, Coord. Y
+	POINT		14,22				;Coord. X, Coord. Y
+	POINT		12,22				;Coord. X, Coord. Y
+	POINT		-6,-28				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1055, 987,  32, 161,   0,   0, 0,"MONT0012.RLE","   "
+	POLY "NONAME",1129,1965,254,107,4,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-1,-24				;Coord. X, Coord. Y
+	POINT		16,21				;Coord. X, Coord. Y
+	POINT		14,22				;Coord. X, Coord. Y
+	POINT		-3,-23				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1105, 975,  36,  92,   0,   0, 0,"MONT0009.RLE","   "
+	POLY "NONAME",1284,1463,310,47,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-28,-27				;Coord. X, Coord. Y
+	POINT		11,-44				;Coord. X, Coord. Y
+	POINT		33,-7				;Coord. X, Coord. Y
+	POINT		-9,33				;Coord. X, Coord. Y
+	POINT		-38,-2				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1245, 646,  78,  86,   0,   0, 0,"CAOC0001.RLE","   "
+	POLY "NONAME",1050,1389,310,48,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-25,-31				;Coord. X, Coord. Y
+	POINT		10,-35				;Coord. X, Coord. Y
+	POINT		52,-14				;Coord. X, Coord. Y
+	POINT		10,45				;Coord. X, Coord. Y
+	POINT		-52,32				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         998, 599, 106,  87,   0,   0, 0,"CAOC0000.RLE","   "
+	POLY "NONAME",639,1124,315,139,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         636, 375,   9, 109,   0,   0, 0,"MAST0000.RLE","   "
+	POLY "NONAME",1374,1422,335,181,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1368, 520,   9, 140,   0,   0, 0,"MAST0000.RLE","X  "
+	POLY "NONAME",1276,1107,360,139,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1273, 326,   9,  90,   0,   0, 0,"MAST0000.RLE","   "
+	POLY "NONAME",1191,2461,-100,162,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		1,-52				;Coord. X, Coord. Y
+	POINT		8,-30				;Coord. X, Coord. Y
+	POINT		5,10				;Coord. X, Coord. Y
+	POINT		-70,55				;Coord. X, Coord. Y
+	POINT		-81,56				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1109,1477,  90, 170,   0,   0, 0,"ROCA0009.RLE","   "
+	POLY "NONAME",1299,2381,-100,162,5,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-53,-28				;Coord. X, Coord. Y
+	POINT		-8,-10				;Coord. X, Coord. Y
+	POINT		-71,52				;Coord. X, Coord. Y
+	POINT		-98,49				;Coord. X, Coord. Y
+	POINT		-103,19				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1199,1477,  91, 170,  90,   0, 0,"ROCA0009.RLE","   "
+	POLY "NONAME",2069,1433,65,71,3,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	POINT		-16,-23				;Coord. X, Coord. Y
+	POINT		13,-1				;Coord. X, Coord. Y
+	POINT		-21,25				;Coord. X, Coord. Y
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2048, 821,  35,  87,  71,   0, 0,"CAOC0000.RLE","   "
+}
+EXTRASPRITE "FARO02.RLE"
+EXTRASPRITE "FARO01.RLE"
+EXTRASPRITE "ANTD0000.RLE"
+}

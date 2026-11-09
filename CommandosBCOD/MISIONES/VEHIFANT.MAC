@@ -1,0 +1,36 @@
+#....es un vehiculo fantasma que no se puede pilotar. Se usa en la mis02 de Mission Pack
+.CLASS BICHO
+.BANDO NEUTRAL
+.VARIABLES [ ]
+.ENEGIA 500
+.VOLCOLISION [ CILINDRO [ .R 10 .H 29 ] ]
+.BOXSELECCIONREL [ -15 -55 31 50 ]
+.LISTAS [ EJEC CHOC SELE VISI ]
+.MASA 100
+.NOSOLIDO 1
+.ACCIONES
+[
+  [
+    AcPilotaje
+    [
+      .CARISMA 100
+      .FUERZA 200
+      .TIPOVEH TIERRA
+      .MINVEL 5
+      .MAXVEL 10
+      .DISPARA 0
+      .CHIVABANDO 1
+      .NOSIGUECHIVANDO 1
+      .REPARTEIMPACTO 0
+      .INFO
+      [
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+      ]
+    ]
+  ]
+]
+.CONTENEDOR 1
+.OCLU 0

@@ -1,0 +1,20 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+# esta macro se usa para poner bichos fantasmas en sectores no transitables
+# y oclusores, para que se vea que hay algo hasta que se ponga el grafico
+# apropiado
+
+.CLASS BICHO
+.VARIABLES [ ]
+.BANDO NEUTRAL
+.ANGULO 0
+.GRAPH [ .ANIM NOTOY .RENDERVOL [ CILINDRO [ .R 10 .H 20 ] ] ]
+.LISTAS [ ]
+.MASA 200
+.OCLU 0
+.DETECTAEXPLOSION 0

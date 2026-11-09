@@ -1,0 +1,57 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+.VARIABLES [ EAngulo.180 TTokenArtillero CAngBarrido.60 Ggrafico.CABO CGiro.180 ]
+.BANDO NEUTRAL
+.ANGULO $Angulo
+.ENEGIA 200
+.TIP 0NID
+.VOLCOLISION [ CILINDRO [ .R 10 .H 20 ] ]
+.BOXSELECCIONREL [ -18 -28 36 32 ]
+.LISTAS [ EJEC CHOC SELE ]
+.NOSOLIDO 1
+.GRAPH [ .ANIM METRALLA .RENDERVOL [ CILINDRO [ .R 20 .H 40 ] ] ]
+.ORGANOS [ .MOTOR [ MotorObjeto [ .FIJO 1 .NOCAE 1 ] ] ]
+.CONTENEDOR 1
+.ACCIONES
+[
+  [ AcNidoMetralleta [ .CARISMA 100 .GIRO $Giro ] ]
+]
+.ELEMENTOS
+[
+  [
+    .CLASS BICHO
+    .TOKEN $TokenArtillero
+    .TIP 0AMA
+    .BANDO ALEMAN
+    .VOLCOLISION [ CILINDRO [ .H 29 .R 10 ] ]
+#La caja de seleccion ampliada para abarcar las posiciones de giro
+#    .BOXSELECCIONREL [ -25 -30 50 50 ]
+#La caja de seleccion que tenia antes (coincidente con la de la ametralladora)
+    .BOXSELECCIONREL [ -20 -30 40 40 ]
+    .LISTAS [ EJEC CHOC ]
+    .MASA 100
+    .ESCONDUCTOR 1
+    .NOSOLIDO 1
+    .ACCIONES
+    [
+      [ acMuerte [ .CARISMA 600 ] ]
+      [ acDisparar [ .CARISMA 500 .TIPOARMA PISTOLA ] ]
+      [ acMetrallero [ .CARISMA 400 .RANGOVISION $Giro ] ]
+      [ acVigilar [ .CARISMA 300 .ANGBARRIDO $AngBarrido .VISTAELIPTICA 0 ] ]
+      [ acUsaHab  [ .CARISMA 200 .HABILIDAD ARMA_ESTATICA ] ]
+      [ acBuscador [ .CARISMA 100 ] ]
+    ]
+    .GRAPH [ .ANIM $Grafico .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] ]
+    .ORGANOS
+    [
+     .VISTA [ Vista01 [ .MOD 320 .ANG 40 ] ]
+     .OIDO [ Oido01 [ ] ]
+     .MOTOR [ MotorAndante [  ] ]
+    ]
+  ]
+]

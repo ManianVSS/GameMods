@@ -1,0 +1,6 @@
+	.VARIABLES [ CBichoExplota ]
+      .VOLCOLISION [ CILINDRO [ .H 40 .R 100 ] ]
+      .DETECTAEXPLOSION 1
+      .BANDO NEUTRAL
+      .ANGULO 0
+      .ACCIONES [ [ AcTransmiteImpacto [ .CARISMA 100 .CEREBRO $BichoExplota ] ] ]

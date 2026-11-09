@@ -1,0 +1,21 @@
+.VARIABLES [ CBALAS ]
+      .TIP BULL
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 5 ] ]
+      .LISTAS [ CHOC SELE ]
+      .GRAPH [ .ANIM CAJ1MUN .RENDERVOL [ CILINDRO [ .R 10 .H 5 ] ] ]
+      .ACCIONES [ 
+        [ 
+          acRecarga
+          [ 
+            .TOKENARMA MIRILLA
+            .TOLTIP_LLENO BULL
+            .TOLTIP_VACIO EMPT
+            .BALASRECARGA $BALAS
+            .FLAGSRECOGER FL_BALASFRANCOT
+          ]
+        ]
+      ]
+      .BANDO NEUTRAL
+      .ANGULO 0
+      .MASA 0
+      .NOSOLIDO 1

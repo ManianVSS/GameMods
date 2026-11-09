@@ -1,0 +1,105 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+      .VARIABLES
+      [
+        EAngulo.180 AAcPatrulla NReactividades CAngMarchaAtras
+        VNoPilotableAliado VATROPELLA VNosigueChivando.0
+      ]
+      .BANDO NEUTRAL
+      .ANGULO $ANGULO
+      .REACTIVIDADES $Reactividades
+      .OCLU 1
+      .VOLCOLISION [
+        POLY
+        [
+          .H 20
+          .VERT [ [ 40 15 ] [ -40 15 ] [ -40 -15 ] [ 40 -15 ] ]
+        ]
+      ]
+      .BOXSELECCIONREL [ -25 -25 50 40 ]
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .TIP 2KUB
+      .MASA 500
+      .ENEGIA 300
+      .GRAPH [
+        .ANIM KUBEL
+        .RENDERVOL [
+          POLY
+          [
+            .H 40
+            .VERT [ [ 40 15 ] [ -40 15 ] [ -40 -15 ] [ 40 -15 ] ]
+          ]
+        ]
+      ]
+      .ORGANOS [ .MOTOR [ MotorAuto [
+            .ANGREV $AngMarchaAtras
+      ] ] ]
+      .ACCIONES [
+        [ AcEmpujable [ .CARISMA 100 ] ]
+        [
+          acExplotaVeh
+          [
+            .CARISMA 900 .RADIO 200 .DANO 180 .TIEMPO 200
+            .IMPACTOS [ .ATROPELLO 1 .DISPARO 20 .BOMBA 1 .PEPINAZOTANQUE 1 .EXPLOSIONMENOR 1 ]
+            .SONFIS XPLO
+          ]
+        ]
+        [ $AcPatrulla [ .CARISMA 300 ] ]
+        [
+          acPilotaje
+          [
+            .CARISMA 100
+						.WAV [ .SONIDOARRANQUE COCA .SONIDORALENTI COCR .SONIDOAVANCE COCI .SONIDOPARAR COCP ]
+            .TIPOVEH TIERRA
+            .FUERZA 100
+            .CHIVABANDO 1
+            .NOSIGUECHIVANDO $NoSigueChivando
+            .NOPILOTABLEALIADO $NoPilotableAliado
+            .ATROPELLA $ATROPELLA
+            .INFO [
+              [
+                .ENTRADA [ 35 -30 0 ]
+                .SALIDA [ 35 -30 0 ]
+                .ANGULOSALIDA 270
+                .PINTABLE 0
+              ]
+              [
+                .ENTRADA [ 35 -30 0 ]
+                .SALIDA [ 35 -30 0 ]
+                .ANGULOSALIDA 270
+                .PINTABLE 0
+              ]
+              [
+                .ENTRADA [ 35 -30 0 ]
+                .SALIDA [ 35 -30 0 ]
+                .ANGULOSALIDA 270
+                .PINTABLE 0
+              ]
+              [
+                .ENTRADA [ 35 -30 0 ]
+                .SALIDA [ 35 -30 0 ]
+                .ANGULOSALIDA 270
+                .PINTABLE 0
+              ]
+            ]
+          ]
+        ]
+        [
+          acPisar
+          [
+            .CARISMA 100
+            .VEHICLE [
+              [ .POS [ 30 13 ] ]
+              [ .POS [ -30 13 ] ]
+              [ .POS [ -30 -13 ] ]
+              [ .POS [ 30 -13 ] ]
+            ]
+          ]
+        ]
+      ]
+      .CONTENEDOR 1

@@ -1,0 +1,74 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+
+.VARIABLES [ PXYZControl PExplosionPoint CBarreraGemela PXYSector CVolMapa ]
+      .CLASS BICHO
+      .ANGULO 315
+      .BANDO NEUTRAL
+      .VOLCOLISION [
+        POLY
+        [
+          .H 20
+          .VERT [ [ 4 8 ] [ -124 8 ] [ -124 -4 ] [ 4 -4 ] ]
+        ]
+      ]
+      .LISTAS [ EJEC CHOC SELE ]
+      .ENEGIA 40
+      .MASA 3000
+      .GRAPH [
+        .ANIM BARRERA
+        .RENDERVOL [
+          POLY
+          [
+            .H 20
+            .VERT [ [ 4 8 ] [ -124 8 ] [ -124 -4 ] [ 4 -4 ] ]
+          ]
+        ]
+      ]
+      .ORGANOS
+      [
+        .OIDO [ Oido01 [ .UMBRAL 10 ] ]
+        .VISTA
+        [
+          Vista02
+          [
+            .VOL
+            [
+              POLY
+              [
+                .H 20
+                .VERT [ [ -12 12 ] [ -118 12 ] [ -118 -12 ] [ -12 -12 ] ]
+              ]
+            ]
+          ]
+        ]
+      ]
+      .ACCIONES [
+        [
+          AcExplotaTilesBarrera
+          [
+            .CARISMA 200
+            .VOLMAPA $VOLMAPA
+            .NPARTICLES 10
+            .EXPLOSIONPOINT $EXPLOSIONPOINT
+            .TILELIST [ BARR0007.RLE BARR0009.RLE ]
+          ]
+        ]
+        [
+          acBarrera
+          [
+            .CARISMA 100
+            .XYZCONTROL $XYZCONTROL
+            .BARRERA BARRERA
+            .DIMSELECCION [ 20 20 ]
+            .VOLCOLISIONSUBIDA [ 8 8 ]
+            .DISTANCIA [ 60 110 ]
+            .AUTOMATICA 1
+            .XYSECTOR $XYSECTOR
+            .BARRERAGEMELA $BARRERAGEMELA
+          ]
+        ]
+      ]

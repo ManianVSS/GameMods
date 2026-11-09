@@ -1,0 +1,17 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+
+.VARIABLES [ ]
+.BANDO NEUTRAL
+.ANGULO 0
+.MASA 0
+.LISTAS [ EJEC VISI ]
+.GRAPH [ .ANIM TESTIGO .RENDERVOL [ CILINDRO [ .R 20 .H 2 ] ] ]
+.VOLCOLISION [ CILINDRO [ .R 20 .H 29 ] ]
+.ACCIONES
+[
+  [ ACTESTIGO [ ] ]
+]
+

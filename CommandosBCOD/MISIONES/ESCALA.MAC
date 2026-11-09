@@ -1,0 +1,20 @@
+      .VARIABLES [ PPUNTOBAJO PPUNTOALTO NCAJASELECCION VESCALAUSABLEPORBUZO ]
+      .BANDO NEUTRAL
+      .LISTAS [ CHOC SELE ]
+      .TIP 0ESC
+      .ACCIONES [
+        [
+          acEscala
+          [
+            .DESENRROLLADA 1
+            .PUNTOBAJO $PUNTOBAJO
+            .PUNTOALTO $PUNTOALTO
+            .CARISMA 100
+            .CAJASELECCION $CAJASELECCION
+          ]
+        ]
+      ]
+      .XYZ [ 0 0 0 ]
+      .ANGULO 0
+      .MASA 0
+      .ESCALAUSABLEPORBUZO $ESCALAUSABLEPORBUZO

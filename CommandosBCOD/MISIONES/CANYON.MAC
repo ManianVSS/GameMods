@@ -1,0 +1,80 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+.VARIABLES [ EAngulo.180 TTokenArtillero ]
+.BANDO NEUTRAL
+.VOLCOLISION
+[
+  POLY
+  [
+    .H 30
+    .VERT [ [ 90 5 ] [ -40 35 ] [ -40 -35 ] [ 90 -5 ] ]
+  ]
+]
+.LISTAS [ EJEC CHOC SELE TIP ]
+.ANGULO $ANGULO
+.GRAPH [ .ANIM CANON12 .RENDERVOL [ CILINDRO [ .H 30 .R 100 ] ] ]
+.TIP 2MOR
+.OCLU 1
+.ACCIONES
+[
+  [
+    acExplotaVeh
+    [ .CARISMA 300 .ANM GRNDEXPL .TIEMPO 50
+     .IMPACTOS [ .BOMBA 1 .EXPLOSIONMENOR 1 ]
+    ]
+  ]
+  [ acvehdescubierto [ .CARISMA 200 ] ]
+  [ AcCanon  [ .CARISMA 100 .GIRO 180 .TORRE 50 .ALCANCE_MINIMO 200 .INVULNERABLE $INVULNERABLE ] ]
+]
+.ORGANOS
+[
+ .MOTOR [ MotorObjeto [ .FIJO 1 .NOCAE 1 ] ]
+]
+.CONTENEDOR 1
+.ELEMENTOS
+[
+  [
+    .CLASS BICHO
+    .TOKEN $TokenArtillero
+    .BANDO ALEMAN
+    .TIP 3CAN
+    .VOLCOLISION [ CILINDRO [ .H 40 .R 5 ] ]
+    .LISTAS [ EJEC CHOC ]
+    .MASA 100
+    .ESCONDUCTOR 1
+    .NOSOLIDO 1
+    .ACCIONES
+    [
+      [ acMuerte [ .CARISMA 500 ] ]
+      [ acCanonero [ .CARISMA 300 ] ]
+      [ acVigilar [ .CARISMA 100 .ANGBARRIDO 20 .VISTAELIPTICA 0 ] ]
+      [ acUsaHab  [ .CARISMA 100 .HABILIDAD ARMA_ESTATICA ] ]
+    ]
+    .GRAPH [ .ANIM CABO .RENDERVOL [ CILINDRO [ .R 5 .H 40 ] ] ]
+    .ORGANOS
+    [
+        .VISTA [
+          Vista01
+          [
+            .ALT 150
+            .MOD 400
+            .ANG 70
+            .CABEZA 0
+            .PASO 90
+            .ALIADOMUERTO 0
+            .ALEMANMUERTO 0
+          ]
+        ]
+     .OIDO [ Oido01 [ ] ]
+     .ORGANOS [ .MOTOR [ MotorObjeto [ .FIJO 1 .NOCAE 1 ] ] ]
+    ]
+  ]
+]
+
+
+

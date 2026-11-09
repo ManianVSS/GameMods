@@ -1,0 +1,12 @@
+        .VARIABLES [ INTERVALOSND.30 ]
+          .CLASS BICHO
+          .BANDO NEUTRAL
+          .VOLCOLISION [ CILINDRO [ .R 10 .H 5 ] ]
+          .LISTAS [ EJEC CHOC VISI SELE ]
+          .NOSOLIDO 1
+          .MASA 200
+          .GRAPH [
+            .ANIM SEGNUELO
+            .RENDERVOL [ CILINDRO [ .R 10 .H 5 ] ]
+          ]
+          .ACCIONES [ [ acSegnuelo [ .CARISMA 100 .INTERVALOSND $INTERVALOSND ] ] ]

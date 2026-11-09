@@ -1,0 +1,90 @@
+.CLASS BICHO
+.VARIABLES [ EAngulo.180 CAngMarchaAtras ]
+.BANDO NEUTRAL
+.ANGULO $Angulo
+.TIP 2SD2
+.GRAPH [
+  .ANIM SDK
+  .RENDERVOL [
+    POLY
+    [
+      .H 20
+      .VERT [ [ 85 28 ] [ -45 28 ] [ -45 -28 ] [ 85 -28 ] ]
+    ]
+  ]
+]
+.VOLCOLISION
+[
+  POLY
+  [
+    .H 30
+    .VERT [ [ 85 28 ] [ -45 28 ] [ -45 -28 ] [ 85 -28 ] ]
+  ]
+]
+.BOXSELECCIONREL [ -35 -35 70 60 ]
+.LISTAS [ EJEC CHOC SELE ]
+.MASA 500
+.SEHUNDE 1
+.ACCIONES
+[
+  [
+    acExplotaVeh
+    [
+      .CARISMA 900 .RADIO 200 .DANO 180 .TIEMPO 200
+      .IMPACTOS [ .DISPARO 500 .BOMBA 1 .PEPINAZOTANQUE 1 .EXPLOSIONMENOR 1 ]
+      .SONFIS XPLO
+    ]
+  ]
+  [
+    acPilotaje
+    [
+      .CARISMA 200
+      .TIPOVEH TIERRA
+      .FUERZA 150
+      .NORMALVEL 5
+      .CHIVABANDO 1
+      .INFO
+      [
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+      ]
+      .DISPARA 1
+      .PARAYDISPARA 1
+    ]
+  ]
+  [
+    acTorreta
+    [
+      .CARISMA 100
+      .TIPODISPARO METRALLETA
+      .SONIDOMETRALLETA TANQUE
+      .ALCANCE 600
+      .ALCANCEMINIMO 150
+      .TORRETA [ .ANIM SDKDIS .HOTSPOTSEQUENCES [ DISPAROSDK ]  .POSICION [ 0 0 30 ] ]
+    ]
+  ]
+  [
+    acPisar
+    [
+      .CARISMA 50
+      .VEHICLE [
+        [ .POS [ 70 23 ] ]
+        [ .POS [ -30 23 ] ]
+        [ .POS [ -30 -23 ] ]
+        [ .POS [ 70 -23 ] ]
+      ]
+    ]
+  ]
+]
+.ORGANOS
+[
+  .MOTOR [ MotorAuto [
+     .WAV CAMN
+     .ANGREV $AngMarchaAtras
+   ] ]
+]
+.CONTENEDOR 1
+.OCLU 1

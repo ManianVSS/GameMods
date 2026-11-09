@@ -1,0 +1,32 @@
+.VARIABLES [ EAngulo.180 CVision CAngBarrido VDestruyeGranada CVolumen CVolumenFuego NCambiaTiles ]
+.BANDO ALEMAN
+.BOXSELECCIONREL [ -20 -40 40 40 ]
+.ANGULO $Angulo
+.LISTAS [ EJEC CHOC SELE ]
+.DETECTAEXPLOSION 1
+.VOLCOLISION [ CILINDRO [ .R 5 .H 20 ] ]
+.GRAPH [ .ANIM METRALLA .RENDERVOL [ POLY [ .H 20
+      .VERT [ [ 50 3 ] [ 35 3 ] [ 35 -3 ] [ 50 -3 ] ]
+  ] ] ]
+.TIP 0BUN
+.ORGANOS
+    [
+     .MOTOR [ MotorObjeto [ .FIJO 1 .NOCAE 1 ] ]
+     .VISTA [ Vista01 [ .MOD $Vision .ANG 40 ] ]
+     .OIDO [ Oido01 [ ] ]
+    ]
+.ACCIONES
+[
+  [
+    acExplotaCasa
+    [
+      .CARISMA 400
+      .TIEMPO 50
+      .IMPACTOS [ .BOMBA 1 .PEPINAZOTANQUE 1 .GRANADA $DestruyeGranada ]
+      .CAMBIATILES [ [ .MAPA $Volumen .TILES $CambiaTiles ] ]
+      .VOLTOKENLLAMAS $VolumenFuego
+    ]
+  ]
+  [ acBunker      [ .CARISMA 200 ] ]
+  [ acVigilar      [ .CARISMA 100 .ANGBARRIDO $AngBarrido .VISTAELIPTICA 0 ] ]
+]

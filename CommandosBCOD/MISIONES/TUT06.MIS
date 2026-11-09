@@ -1,0 +1,188 @@
+.MISSION [
+  .DATOSFICHEROSMISION [
+    .VOLUMENES MAPA0008.VOL
+    .SECTORES TUT.SEC
+    .ESTATICODINAMICOS CHOQ0008.VOL
+    .TEXTOSMISSION MAPA0008.STR
+    .WADMAP FASE0008.WAD
+  ]
+  .MAP [ .SCALE 0.050823 .XY [ 22 25 ] .BITMAP LIBR0008.BMP ]
+  .INTENDENCIA 8
+  .INTENDENCIAINFO [ 
+    .PUNTUACIONES [ .PAR_TICKS 38000 ]
+    .OBJETIVOS [ [ .OBJETIVO ALEMAN1 .VOLUMEN 0 ] ]
+    .PUNTOHUIDA [ 2776 3486 ]
+    .MENSAJESDEDESTRUCCION 0
+    .AMBIENTE [ ]
+    .VEHICULOHUIDA ALEMAN1
+  ]
+  .XY [ 1679 243 ]
+  .PATRULLAS [ ]
+  .ELEMENTOS [ 
+    [ 
+      .CLASS MACRO
+      .TOKEN TESTIGO
+      .MACRO TESTIGO
+      .XYZ [ 421 346 0 ]
+    ]
+    [ 
+      .CLASS BICHOALIADO
+      .BANDO ALIADO
+      .TOKEN ESPIA
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .MASA 100
+      .GRAPH [ .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] .ANIM ESPIA ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ACCIONES [ 
+        [ AcMuerte [ .CARISMA 999 ] ]
+        [ AcUsaHab [ .CARISMA 300 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuUsar [ .CARISMA 200 ] ]
+        [ AuCoger [ .CARISMA 200 ] ]
+        [ AuBeHome [ .CARISMA 200 ] ]
+        [ AuUsarVehiculo [ .CARISMA 200 ] ]
+        [ AuEscalar [ .CARISMA 200 .ESCALAMUROS NO ] ]
+        [ AuQuitaUniforme [ .CARISMA 200 ] ]
+        [ AuGoTo [ .CARISMA 200 ] ]
+        [ 
+          AuDisparar
+          [ 
+            .CARISMA 200
+            .ARMAS [ PISTOLA PIEDRA ESCOPETA METRALLETA ]
+            .PIEDRAS 100
+            .MUNMETRA 50
+          ]
+        ]
+        [ 
+          AcSerEspia
+          [ 
+            .CARISMA 1
+            .EMPIEZADISFRAZADO 0
+            .DISFRAZ ESPIAA
+            .INSIGNIA SI
+            .PRECARGAANMS [ 
+              ESPIAA
+              ESPIAA1
+              ESPIAA2
+              ESPIAA3
+              ESPIAA4
+              ESPIAA5
+              ESPIAA6
+              ESPIAA7
+            ]
+          ]
+        ]
+        [ 
+          AuJeringar
+          [ .CARISMA 200 .TIPOJERINGA LETAL .DOSIS 5 ]
+        ]
+        [ AuDisfraz [ .CARISMA 200 ] ]
+        [ AuGarfio [ .CARISMA 200 .ESPIADES NO ] ]
+        [ AuInsignia [ .CARISMA 200 .USOS 8 ] ]
+        [ AuEsposas [ .CARISMA 200 ] ]
+        [ AuQuieto [ .CARISMA 200 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AuTomarControlAleman [ .CARISMA 200 ] ]
+        [ AuCachiporra [ .CARISMA 200 ] ]
+      ]
+      .SEHUNDE 1
+      .CONTENEDOR 1
+      .XYZ [ 1718 451 0 ]
+      .NOAGACHA 0
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN UNIFORME
+      .MACRO UNIFORME
+      .NIVEL TODOS
+      .XYZ [ 1445 163 0 ]
+      .Angulo 132
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN BANPE1_UNIFORME
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 1299 158 0 ]
+      .Angulo 144
+      .AngBarrido 1
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN BANPE1_INCON
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 1495 362 0 ]
+      .Angulo 153
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .AngBarrido 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN BANPE1_DISTRAER
+      .MACRO BANPE1
+      .NIVEL TODOS
+      .XYZ [ 1550 659 0 ]
+      .Angulo 83
+      .AngBarrido 30
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [ 
+      .CLASS MACRO
+      .TOKEN GESTBANPE2_MIRA
+      .MACRO GTPOBNP2
+      .XYZ [ 1471 1208 0 ]
+      .Angulo 45
+      .Grafico GESTAPO
+      .TENGOTABACO 0
+      .TipoArma PISTOLA
+      .NIVEL TODOS
+      .AngBarrido 30
+    ]
+  ]
+  .INTERFACE [ 
+    .SUBINTERFACES [ 
+      [ 
+        SUBINTERFACEMULTIPLE
+        [ .TOKEN MULTIPLE .ELEMUSABLES [ KUBE FURGO_HUIDA ] ]
+      ]
+      [ 
+        SUBINTERFACEALIADO
+        [ 
+          .TOKEN ESPIA
+          .ITEMS [ 
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_INSIGNIA .DISPONIBLE SI ]
+            [ .TOKEN IT_JERINGUILLALETAL ]
+            [ .TOKEN IT_QUITAUNIFORME ]
+            [ .TOKEN IT_ESPOSAS ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_LUGER .DISPONIBLE NO ]
+            [ .TOKEN IT_MAUSER .DISPONIBLE NO ]
+            [ .TOKEN IT_MP38 .DISPONIBLE NO ]
+            [ .TOKEN IT_ESPIAA .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA2 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA3 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA4 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA5 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA6 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA7 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_CLOROFORMO ]
+          ]
+        ]
+      ]
+    ]
+    .INFOCARAS [ [ CARA [ .TOKEN ESPIA .ACCESIBLE 1 ] ] ]
+  ]
+  .TRIPLINES [ ]
+  .SENSORES_SND_ZONA [ ]
+]

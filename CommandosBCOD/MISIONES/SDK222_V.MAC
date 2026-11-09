@@ -1,0 +1,95 @@
+.CLASS BICHO
+.BANDO NEUTRAL
+.VARIABLES [ EAngulo.180 CAngMarchaAtras ]
+.ANGULO $ANGULO
+.ENEGIA 500
+.TIP SDK2
+.VOLCOLISION [
+  POLY
+  [
+    .H 29
+    .VERT [ [ 45 30 ] [ -60 30 ] [ -60 -30 ] [ 45 -30 ] ]
+  ]
+]
+.BOXSELECCIONREL [ -35 -35 70 60 ]
+.LISTAS [ EJEC CHOC SELE ]
+.MASA 500
+.GRAPH [
+  .ANIM SDK222
+  .TILES 2
+  .RENDERVOL [
+    POLY
+    [
+      .H 20
+      .VERT [ [ 45 30 ] [ -60 30 ] [ -60 -30 ] [ 45 -30 ] ]
+    ]
+  ]
+]
+.ORGANOS
+[
+  .MOTOR
+  [
+    MotorAuto
+    [
+     .WAV CAMN
+     .ANGREV $AngMarchaAtras
+    ]
+  ]
+]
+.ACCIONES [
+  [
+    acExplotaVeh
+    [
+    .CARISMA 900 .RADIO 200 .DANO 180 .TIEMPO 200
+    .IMPACTOS [ .DISPARO 500 .BOMBA 1 .PEPINAZOTANQUE 1 .EXPLOSIONMENOR 1 ]
+    .SONFIS XPLO
+    ]
+  ]
+  [
+    acTorreta
+    [
+      .ALCANCE 600
+      .ALCANCEMINIMO 150
+      .TIPODISPARO METRALLETA
+      .TORRETA [ .ANIM T-SDK222 .HOTSPOTSEQUENCES [ DISPAROPNZ2 DISPAROPNZ2 ] .POSICION [ 0 0 30 ] ]
+      .SONIDOMETRALLETA TANQUE
+      .CARISMA 100
+    ]
+  ]
+  [
+    AcPilotaje
+    [
+      .CARISMA 100
+      .FUERZA 150
+      .TIPOVEH TIERRA
+      .NORMALVEL 5
+      .DISPARA 1
+      .PARAYDISPARA 1
+      .CHIVABANDO 1
+      .NOSIGUECHIVANDO 1
+      .INFO
+      [
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+        [ .ENTRADA [ 0 0 0 ] .SALIDA [ 0 0 0 ] ]
+      ]
+    ]
+  ]
+  [
+    acPisar
+    [
+      .CARISMA 50
+      .VEHICLE [
+        [ .POS [ 50 25 ] ]
+        [ .POS [ -60 25 ] ]
+        [ .POS [ -60 -20 ] ]
+        [ .POS [ 50 -20 ] ]
+      ]
+    ]
+  ]
+]
+.CONTENEDOR 1
+.OCLU 1

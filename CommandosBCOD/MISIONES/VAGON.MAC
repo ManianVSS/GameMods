@@ -1,0 +1,36 @@
+      .VARIABLES [ GGRAFICO EANGULO.180 CPROPIETARIO CDIST ]
+      .CLASS BICHO
+      .OCLU 1
+      .BANDO NEUTRAL
+      .ANGULO $ANGULO
+      .VOLCOLISION [
+        POLY
+        [
+          .H 60
+          .VERT [ [ 150 25 ] [ -150 25 ] [ -150 -25 ] [ 140 -25 ] ]
+        ]
+      ]
+      .LISTAS [ EJEC CHOC TIP ]
+      .TIP 1WAG
+      .MASA 10
+      .GRAPH [
+        .ANIM $GRAFICO
+        .RENDERVOL [
+          POLY
+          [
+            .H 60
+            .VERT [ [ 150 25 ] [ -150 25 ] [ -150 -25 ] [ 150 -25 ] ]
+          ]
+        ]
+      ]
+      .ACCIONES [
+        [
+          acLapa
+          [
+            .CARISMA 200
+            .FUERZA 200
+            .PROPIETARIO $PROPIETARIO
+            .DIST $DIST
+          ]
+        ]
+      ]

@@ -1,0 +1,30 @@
+# VARIABLES: La primera letra indica tipo C-Caracteres (cadena normal) P-Punto G-Grafico A-Accion
+# Segun el tipo se crea un control adecuado en la ventana de edicion del bicho:
+# Un punto tiene un boton que permite hacer clic en pantalla para marcarlo
+# Un Grafico se asocia a una combobox con todos los ANM para seleccionar uno
+# Una accion tiene un boton que llama a la ventana de edicion de esa accion. Ej: AacPatrulla
+# (Pueden crearse mas tipos de variables para dar nuevas funcionalidades de macro)
+
+
+.CLASS BICHO
+.VARIABLES [ CStartFrame ]
+.BANDO NEUTRAL
+.ANGULO 120
+.VOLCOLISION [ ]
+.GRAPH
+[
+  .ANIM ASPAS
+  .STARTFRAME $StartFrame
+  .RENDERVOL
+  [
+    POLY
+    [
+      .H 400
+      .VERT [ [ 10 195 ] [ -10 195 ] [ -10 -195 ] [ 10 -195 ] ]
+    ]
+  ]
+]
+.LISTAS [ EJEC ]
+.MASA 0
+.OCLU 0
+.DETECTAEXPLOSION 0

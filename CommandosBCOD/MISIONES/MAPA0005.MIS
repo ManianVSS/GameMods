@@ -1,0 +1,3370 @@
+.MISSION [
+  .MUSICA FASES.WAV
+  .GRAFICOFINMISION FIN05.BMP
+  .DATOSFICHEROSMISION [
+    .VOLUMENES MAPA0005.VOL
+    .SECTORES MAPA0005.SEC
+    .WADMAP FASE0005.WAD
+    .ESTATICODINAMICOS CHOQ0005.VOL
+    .TEXTOSMISSION MAPA0005.STR
+    .WADSPRITES FASE0005
+    .INTROSCRIPT BRIE0005.SCR
+  ]
+  .BRIEFING [ .TEXTOS MB05.STR ]
+  .MAP [ .SCALE 0.0723311 .XY [ 10 23 ] .BITMAP LIBR0005.RLE ]
+  .WATER [
+    .BMP MAR01.BMP
+    .BMPSRC MAR0SRC.BMP
+    .BMPDST MAR0DST.BMP
+    .VELINC 0
+    .ANGINC 220
+    .SININC 1
+  ]
+  .INTENDENCIA 5
+  .INTENDENCIAINFO [
+    .PUNTUACIONES
+    [
+      .PAR_TICKS_FACIL 35856
+      .PAR_TICKS_DIFICIL 30191
+    ]
+    .OBJETIVOS [ ]
+    .PUNTOHUIDA [ 51 336 ]
+    .EXITPOINTS [
+      [ 1769 -60 0 ]
+      [ -50 365 0 ]
+      [ -31 1575 0 ]
+      [ -34 2232 0 ]
+      [ 1760 2843 0 ]
+      [ 2334 2599 0 ]
+      [ 2340 1551 0 ]
+      [ 2344 737 0 ]
+    ]
+    .PUNTOS_PANICO_ANIMALES [
+      [ 345 1447 -68 LEON ]
+      [ 804 1826 -68 LEON ]
+      [ 63 1763 -68 LEON ]
+      [ 2030 841 0 AVES ]
+      [ 2017 967 0 AVES ]
+      [ 1915 980 0 AVES ]
+      [ 1888 865 0 AVES ]
+    ]
+    .VEHICULOHUIDA FURGO_HUIDA
+    .HAY_ANIMALES_PELIGROSOS 1
+    .PAJAROS [
+      [
+        .NUMPAJAROS 1
+        .ANIM loro1
+        .SONIDOS [ LOR2 LOR3 ]
+        .TIEMPOES 100
+        .BASES [
+          [ .ESAEREA 0 .XYZ [ 989 1706 115 ] .CONEXION [ 2 4 ] ]
+          [ .ESAEREA 0 .XYZ [ 652 830 80 ] .CONEXION [ 3 4 ] ]
+          [ .ESAEREA 0 .XYZ [ 1516 1332 125 ] .CONEXION [ 0 3 ] ]
+          [ .ESAEREA 0 .XYZ [ 959 1088 235 ] .CONEXION [ 1 2 ] ]
+          [ .ESAEREA 0 .XYZ [ 807 1247 115 ] .CONEXION [ 0 1 5 ] ]
+          [ .ESAEREA 0 .XYZ [ 656 1476 50 ] .CONEXION 4 ]
+        ]
+      ]
+      [
+        .NUMPAJAROS 1
+        .ANIM loro
+        .SONIDOS [ LOR2 LOR3 ]
+        .TIEMPOES 120
+        .BASES [
+          [ .ESAEREA 0 .XYZ [ 1704 1383 280 ] .CONEXION [ 3 2 ] ]
+          [ .ESAEREA 0 .XYZ [ 1787 528 60 ] .CONEXION 2 ]
+          [ .ESAEREA 0 .XYZ [ 1417 389 165 ] .CONEXION [ 1 3 0 ] ]
+          [ .ESAEREA 0 .XYZ [ 946 776 85 ] .CONEXION [ 2 0 ] ]
+        ]
+      ]
+      [
+        .NUMPAJAROS 1
+        .ANIM loro1
+        .SONIDOS [ LOR2 LOR3 ]
+        .TIEMPOES 80
+        .BASES [
+          [ .ESAEREA 0 .XYZ [ 1708 1928 115 ] .CONEXION [ 2 1 ] ]
+          [
+            .ESAEREA 0
+            .XYZ [ 1502 1700 115 ]
+            .CONEXION [ 0 4 1 1 5 ]
+          ]
+          [ .ESAEREA 0 .XYZ [ 1888 1600 130 ] .CONEXION [ 3 0 ] ]
+          [ .ESAEREA 0 .XYZ [ 1716 1376 300 ] .CONEXION [ 2 4 ] ]
+          [ .ESAEREA 0 .XYZ [ 901 1110 215 ] .CONEXION [ 3 1 ] ]
+          [ .ESAEREA 0 .XYZ [ 1065 1943 240 ] .CONEXION 1 ]
+        ]
+      ]
+      [
+        .NUMPAJAROS 1
+        .ANIM loro
+        .SONIDOS LOR1
+        .TIEMPOES 150
+        .BASES [
+          [ .ESAEREA 0 .XYZ [ 1087 1930 180 ] .CONEXION [ 1 4 ] ]
+          [ .ESAEREA 0 .XYZ [ 1504 1806 150 ] .CONEXION [ 2 0 ] ]
+          [ .ESAEREA 0 .XYZ [ 1316 1217 90 ] .CONEXION [ 3 1 ] ]
+          [ .ESAEREA 0 .XYZ [ 964 1124 115 ] .CONEXION [ 2 4 ] ]
+          [ .ESAEREA 0 .XYZ [ 1162 1523 145 ] .CONEXION [ 0 3 ] ]
+        ]
+      ]
+    ]
+  ]
+  .XY [ 1968 771 ]
+  .ELEMENTOS [
+    [
+      .CLASS BICHO
+      .BANDO NEUTRAL
+      .XYZ [ 1882 1131 0 ]
+      .ANGULO 53
+      .LISTAS [ EJEC CHOC SELE ]
+      .MASA 3000
+      .ENEGIA 150
+      .TOKEN PUERTAAVESTRUCES
+      .ACCIONES [
+        [
+          AcPuertaCandado
+          [
+            .CARISMA 200
+            .RECORRIDO 100
+            .ENVIAREVENTO 1
+            .EVENTOABRIR SALE
+            .EVENTOCERRAR NOSA
+            .XYSECTOR [ 1895 1147 ]
+            .ACELERACION 0.35
+            .DESCUBREESPIA 0
+            .CAMBIARSECTOR 0
+            .LADOCERRADO NINGUNO
+            .EVENTO SALE
+          ]
+        ]
+        [
+          acAnchoVariable
+          [
+            .CARISMA 100
+            .TILE PUEC0001.RLE
+            .DESPXMAX -5
+            .DESPXMIN -35
+            .DESPYMAX -70
+            .DESPYMIN -98
+            .ALTURA 90
+            .GROSOR 5
+            .GROSORRENDER 2
+            .ANCHOMIN 7
+            .ANCHOMAX 53
+            .OFFMIN 0
+            .OFFMAX 0
+            .SPRITEMIN 44
+            .SPRITEMAX 44
+            .ALTURASEL 50
+            .OFFALTURASEL 20
+            .ANCHOPORC 100
+          ]
+        ]
+      ]
+      .SEHUNDE 0
+      .OCLU 0
+      .NOSOLIDO 0
+      .DETECTAEXPLOSION 0
+      .BUILDING 0
+      .CONTENEDOR 0
+    ]
+    [
+      .CLASS BICHOALIADO
+      .TOKEN COMANDO
+      .BANDO ALIADO
+      .XYZ [ 2042 1199 0 ]
+      .ANGULO 135
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .ACCIONES [
+        [ acMuerte [ .CARISMA 999 ] ]
+        [ acUsaHab [ .CARISMA 300 ] ]
+        [ auAcuchillar [ .CARISMA 200 ] ]
+        [ auUsar [ .CARISMA 200 ] ]
+        [ auCoger [ .CARISMA 200 ] ]
+        [ auUsarVehiculo [ .CARISMA 200 ] ]
+        [ auBeHome [ .CARISMA 200 ] ]
+        [
+          auDisparar
+          [
+            .CARISMA 200
+            .ARMAS [ PISTOLA PIEDRA MIRILLA GRANADA ]
+            .PIEDRAS 100
+            .MUNMIRILLA 28
+            .GRANADAS 10
+          ]
+        ]
+        [ auEscalar [ .CARISMA 200 .ESCALAMUROS SI ] ]
+        [ auGoto [ .CARISMA 200 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuGarfio [ .CARISMA 200 ] ]
+        [
+          auManejaSegnuelo
+          [
+            .CARISMA 200
+            .OBJETOS [ [ .TOKEN SEGNUELOUNO .ACTIVABLE SI ] ]
+          ]
+        ]
+        [ AuEsposas [ .CARISMA 200 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AuTomarControlAleman [ .CARISMA 200 ] ]
+        [ AuCachiporra [ .CARISMA 200 ] ]
+        [ AuEmpujar [ .CARISMA 200 ] ]
+      ]
+      .MASA 100
+      .SEHUNDE 1
+      .GRAPH [ .ANIM COMANDO .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .CONTENEDOR 1
+      .OCLU 0
+      .DETECTAEXPLOSION 0
+      .ELEMENTOS [
+        [
+          .CLASS MACRO
+          .MACRO SEGNUELO
+          .TOKEN SEGNUELOUNO
+          .INTERVALOSND 30
+        ]
+      ]
+      .NOAGACHA 0
+    ]
+    [
+      .CLASS BICHOALIADO
+      .BANDO ALIADO
+      .TOKEN FRANCOT
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .MASA 100
+      .GRAPH [
+        .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ]
+        .ANIM FRANCO
+      ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ACCIONES [
+        [ AcMuerte [ .CARISMA 999 ] ]
+        [ AcUsaHab [ .CARISMA 300 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuUsar [ .CARISMA 200 ] ]
+        [ AuCoger [ .CARISMA 200 ] ]
+        [ AuBeHome [ .CARISMA 200 ] ]
+        [ AuUsarVehiculo [ .CARISMA 200 ] ]
+        [ AuEscalar [ .CARISMA 200 ] ]
+        [ AuGoTo [ .CARISMA 200 ] ]
+        [
+          AuDisparar
+          [
+            .CARISMA 200
+            .MUNMIRILLA 100
+            .ARMAS [ MIRILLA PISTOLA PIEDRA ]
+            .PIEDRAS 100
+          ]
+        ]
+        [ AuBotiquin [ .CARISMA 200 .USOS 5 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AutomarControlAleman [ .CARISMA 200 ] ]
+      ]
+      .SEHUNDE 1
+      .CONTENEDOR 1
+      .NOAGACHA 0
+      .XYZ [ 2042 1221 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BARRIGA_ELEFANTE
+      .MACRO CASA
+      .XYZ [ 1006 2318 0 ]
+      .BOXSELECCIONREL [ -5 -30 37 30 ]
+      .TIP ELEF
+      .NIVEL TODOS
+      .TocarWav 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CASA_BONITA_1
+      .MACRO CASA
+      .XYZ [ 1795 2651 0 ]
+      .BOXSELECCIONREL [ -3 -50 29 50 ]
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CASA_BONITA_2
+      .MACRO CASA
+      .XYZ [ 1946 2604 0 ]
+      .BOXSELECCIONREL [ -22 -55 29 50 ]
+    ]
+    [
+      .CLASS BICHOALIADO
+      .BANDO ALIADO
+      .TOKEN ESPIA
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .MASA 100
+      .GRAPH [ .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] .ANIM ESPIA ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ACCIONES [
+        [ AcMuerte [ .CARISMA 999 ] ]
+        [ AcUsaHab [ .CARISMA 300 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuUsar [ .CARISMA 200 ] ]
+        [ AuCoger [ .CARISMA 200 ] ]
+        [ AuBeHome [ .CARISMA 200 ] ]
+        [ AuUsarVehiculo [ .CARISMA 200 ] ]
+        [ AuEscalar [ .CARISMA 200 .ESCALAMUROS NO ] ]
+        [ AuQuitaUniforme [ .CARISMA 200 ] ]
+        [ AuGoTo [ .CARISMA 200 ] ]
+        [
+          AuDisparar
+          [
+            .CARISMA 200
+            .ARMAS [ PISTOLA PIEDRA ESCOPETA METRALLETA ]
+            .PIEDRAS 50
+            .MUNMETRA 50
+          ]
+        ]
+        [
+          AcSerEspia
+          [
+            .CARISMA 1
+            .EMPIEZADISFRAZADO 0
+            .DISFRAZ ESPIAA
+            .INSIGNIA 0
+            .PRECARGAANMS [ ESPIAA3 ESPIAA5 ESPIAA ESPIAA7 ]
+          ]
+        ]
+        [
+          AuJeringar
+          [ .CARISMA 200 .TIPOJERINGA LETAL .DOSIS 5 ]
+        ]
+        [ AuDisfraz [ .CARISMA 200 ] ]
+        [ AuGarfio [ .CARISMA 200 .ESPIADES NO ] ]
+        [ AuInsignia [ .CARISMA 200 .USOS 8 ] ]
+        [ AuEsposas [ .CARISMA 200 ] ]
+        [ AuQuieto [ .CARISMA 200 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AuTomarControlAleman [ .CARISMA 200 ] ]
+        [ AuCachiporra [ .CARISMA 200 ] ]
+      ]
+      .SEHUNDE 1
+      .CONTENEDOR 1
+      .XYZ [ 2014 1221 0 ]
+      .ANGULO 45
+      .NOAGACHA 0
+    ]
+    [
+      .CLASS BICHOALIADO
+      .BANDO ALIADO
+      .TOKEN CONDUC
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .MASA 100
+      .GRAPH [
+        .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ]
+        .ANIM MECANIC
+      ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ACCIONES [
+        [ acMuerte [ .CARISMA 999 ] ]
+        [
+          acUsaHab
+          [ .CARISMA 300 .HABILIDAD [ TIERRA ARMA_ESTATICA ] ]
+        ]
+        [ auEscalar [ .CARISMA 200 ] ]
+        [
+          auUsarVehiculo
+          [ .CARISMA 200 .VEHICULOS [ TIERRA ARMA_ESTATICA ] ]
+        ]
+        [
+          auDisparar
+          [
+            .CARISMA 200
+            .ARMAS [ PISTOLA METRALLETA PIEDRA ESCOPETA ]
+            .MUNMETRA 100
+            .PIEDRAS 50
+            .MUNESCOPETA 50
+          ]
+        ]
+        [ auBeHome [ .CARISMA 200 ] ]
+        [ auUsar [ .CARISMA 200 ] ]
+        [ auCoger [ .CARISMA 200 ] ]
+        [ auGoto [ .CARISMA 200 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuBotiquin [ .CARISMA 200 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AuCachiporra [ .CARISMA 200 ] ]
+        [ AuTomarControlAleman [ .CARISMA 200 ] ]
+      ]
+      .SEHUNDE 1
+      .CONTENEDOR 0
+      .XYZ [ 2045 1258 0 ]
+      .ANGULO 90
+      .NOAGACHA 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN ESCALA_CASA_NO
+      .MACRO ESCALA
+      .PUNTOBAJO [ 566 584 14 ]
+      .PUNTOALTO [ 541 562 144 ]
+      .CAJASELECCION [ 555 255 12 103 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN ESCALA_LEONES
+      .MACRO ESCALA
+      .PUNTOBAJO [ 227 1482 -68 ]
+      .PUNTOALTO [ 222 1454 0 ]
+      .CAJASELECCION [ 223 938 22 67 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN FURGO_HUIDA
+      .MACRO FURGO_V
+      .XYZ [ 1652 1467 0 ]
+      .Angulo 210
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_INICIO
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .ESPERAEVENTO 0
+          .PATRULLA [
+            [
+              .TIPORUTA PINGPONG
+              .NOMBRE DIFICIL_PATRULLA_1
+              .RUTA [
+                [ .XYZ [ 1770 2025 0 ] ]
+                [
+                  .XYZ [ 2134 1717 0 ]
+                  .ESPERA 15
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 1.7
+            ]
+            [
+              .VEL 1.7
+              .TIPORUTA PINGPONG
+              .NOMBRE FACIL_PATRULLA_1
+              .RUTA [
+                [ .XYZ [ 1763 2030 0 ] ]
+                [
+                  .XYZ [ 2146 1714 0 ]
+                  .ANGULO 94
+                  .ESPERA 45
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+      .XYZ [ 2067 1776 0 ]
+      .Angulo 144
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_UNIFORME
+      .MACRO BANPE2
+      .XYZ [ 2071 2537 0 ]
+      .Angulo 50
+      .Grafico ALEMAN2
+      .TENGOTABACO 0
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_UNIFORME
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 1819 2442 0 ]
+                  .ESPERA 15
+                  .ENLAZAR 0
+                  .CASA 0
+                  .ANGULO 225
+                ]
+                [ .XYZ [ 1747 2515 0 ] ]
+                [ .XYZ [ 1761 2563 0 ] ]
+                [ .XYZ [ 1736 2590 0 ] ]
+                [
+                  .XYZ [ 1787 2655 0 ]
+                  .ANGULO 138
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 1.7
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 1804 2451 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN TESTIGO
+      .MACRO TESTIGO
+      .XYZ [ 0 0 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_UNIFORME_TONTO
+      .MACRO BANPE2
+      .XYZ [ 1733 2717 0 ]
+      .Angulo 153
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_ENTRADA_ZOO
+      .MACRO BANPE2
+      .XYZ [ 1158 2003 0 ]
+      .Angulo 33
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .AngBarrido 40
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_SUR
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 319 2538 0 ]
+                  .ANGULO 87
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 77 2235 0 ]
+                  .ANGULO 181
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 1.7
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 241 2420 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 0
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN ESCALA_FOSO_1
+      .MACRO ESCALA
+      .PUNTOBAJO [ 360 2139 -68 ]
+      .PUNTOALTO [ 346 2168 0 ]
+      .CAJASELECCION [ 340 1375 25 20 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN AMET_ZOO
+      .MACRO NIDOMET
+      .XYZ [ 1204 1628 0 ]
+      .BOXSELECCIONREL [ -18 -28 36 32 ]
+      .Angulo 87
+      .TokenArtillero ALEMAN_AMET_ZOO
+      .AngBarrido 30
+      .grafico CABO
+      .Giro 180
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANDERA_TASCA
+      .MACRO BANDERA
+      .XYZ [ 1015 1110 198 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANDERA_NORTE
+      .MACRO BANDERA
+      .XYZ [ 337 540 212 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANDERA_SUR
+      .MACRO BANDERA
+      .XYZ [ 2110 2500 331 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_NORTE_FOSO_D
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 349 1117 0 ]
+                  .ANGULO 1
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 116 1306 0 ]
+                  .ANGULO 141
+                  .ESPERA 15
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 1.7
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 213 1230 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL DIFICIL
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_JARDIN_TASCA
+      .MACRO BANPE2
+      .XYZ [ 1229 1112 0 ]
+      .Angulo 99
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .AngBarrido 40
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_JARDIN_TASCA_2
+      .MACRO BANPE2
+      .XYZ [ 1128 1061 0 ]
+      .Angulo 140
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_ESQUINA_NORTE
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA LOOP
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 853 927 0 ]
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                  .ANGULO 98
+                ]
+                [
+                  .XYZ [ 748 784 0 ]
+                  .ESPERA 5
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 750 782 0 ] ]
+                [ .XYZ [ 852 928 0 ] ]
+              ]
+              .VEL 1.7
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 762 798 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_ESQUINA_NORTE
+      .MACRO BANPE2
+      .XYZ [ 893 658 0 ]
+      .Angulo 120
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .AngBarrido 30
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_NORTE_VALLA
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 218 1082 0 ]
+                  .ESPERA 5
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 387 952 0 ]
+                  .ANGULO 290
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 1.7
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 351 945 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_MIRA_ESQUINA_NORTE
+      .MACRO BANPE2
+      .XYZ [ 1062 651 0 ]
+      .Angulo 124
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .AngBarrido 40
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE1_NORTE_ARRIBA
+      .MACRO BANPE1
+      .XYZ [ 557 509 144 ]
+      .Angulo 305
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_NORTE_ALAO_AZOTEA
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .VEL 1.7
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 833 514 0 ]
+                  .ESPERA 10
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 568 292 0 ]
+                  .ANGULO 261
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 678 374 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_NORTE_NORTE_D
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .VEL 1.7
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 111 326 0 ]
+                  .ANGULO 203
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 269 514 0 ]
+                  .ANGULO 91
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 198 432 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL DIFICIL
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_JARDIN_VIGILA
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .VEL 1.7
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 1562 352 0 ]
+                  .ANGULO 326
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1546 374 0 ] ]
+                [
+                  .XYZ [ 1536 468 0 ]
+                  .ANGULO 120
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 1554 373 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN FUSILA_1
+      .MACRO FUSILER
+      .XYZ [ 1830 339 0 ]
+      .Angulo 300
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .PRESO FUSILADO
+      .CasaHuida CUARTEL_TASCA
+      .ReacAlarma [ ZOJA ZONO ZOFO ]
+      .NIVEL TODOS
+      .MiJefe CABO_FUSILA
+      .SoyJefe 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN FUSILA_2
+      .MACRO FUSILER
+      .XYZ [ 1849 350 0 ]
+      .Angulo 292
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .PRESO FUSILADO
+      .CasaHuida CUARTEL_TASCA
+      .ReacAlarma [ ZOJA ZONO ZOFO ]
+      .NIVEL TODOS
+      .MiJefe CABO_FUSILA
+      .SoyJefe 0
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CABO_FUSILA
+      .MACRO FUSILER
+      .XYZ [ 1808 301 0 ]
+      .Angulo 335
+      .AngBarrido 20
+      .Grafico CABO
+      .TENGOTABACO 1
+      .PRESO FUSILADO
+      .CasaHuida CUARTEL_TASCA
+      .ReacAlarma [ ZOJA ZONO ZOFO ]
+      .NIVEL TODOS
+      .SoyJefe 1
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN METRABASE_ZOO
+      .MACRO METRBASE
+      .XYZ [ 1206 1631 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_JARDIN_NO_D
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .VEL 1.7
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 1286 292 0 ]
+                  .ANGULO 91
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1222 312 0 ] ]
+                [ .XYZ [ 1185 331 0 ] ]
+                [ .XYZ [ 1130 376 0 ] ]
+                [
+                  .XYZ [ 1091 420 0 ]
+                  .ANGULO 192
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 1168 345 0 ]
+      .Angulo 153
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL DIFICIL
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CASA_CARRICOCHE
+      .MACRO CASA
+      .XYZ [ 1577 701 7 ]
+      .BOXSELECCIONREL [ 5 -50 15 40 ]
+      .TIP CARR
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CUARTEL_TASCA
+      .MACRO CUARTEL
+      .XYZ [ 1046 1078 0 ]
+      .BOXSELECCIONREL [ -21 -45 20 40 ]
+      .NumRegenSoldiers 16
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CASA_TASCA
+      .MACRO CASA
+      .XYZ [ 939 1117 0 ]
+      .BOXSELECCIONREL [ -17 -55 21 50 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CASA_NO
+      .MACRO CASA
+      .XYZ [ 584 595 14 ]
+      .BOXSELECCIONREL [ -5 -50 22 45 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CUARTEL_NO
+      .MACRO CUARTEL
+      .XYZ [ 348 548 20 ]
+      .BOXSELECCIONREL [ -5 -35 20 30 ]
+      .NumRegenSoldiers 16
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CASA_ESTABLO
+      .MACRO CASA
+      .XYZ [ 1930 956 0 ]
+      .BOXSELECCIONREL [ -5 -50 28 50 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CUARTEL_INICIO
+      .MACRO CUARTEL
+      .XYZ [ 2053 2529 0 ]
+      .BOXSELECCIONREL [ -21 -43 28 40 ]
+      .NumRegenSoldiers 16
+      .NIVEL TODOS
+      .PuntoSalida [ 2053 2529 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_KUBEL
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .VEL 1.5
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 1783 1470 0 ]
+                  .ANGULO 123
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1568 1327 0 ]
+                  .ANGULO 276
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 1704 1426 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 0
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_JARDIN_SUR
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 1295 1025 0 ]
+                  .ANGULO 156
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1357 1034 0 ] ]
+                [ .XYZ [ 1424 1029 0 ] ]
+                [
+                  .XYZ [ 1488 1015 0 ]
+                  .ANGULO 44
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 1.7
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 1348 1015 0 ]
+      .Angulo 0
+      .AngBarrido 40
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_KUBEL
+      .MACRO BANPE2
+      .XYZ [ 1539 1344 0 ]
+      .Angulo 33
+      .Grafico ALEMAN2
+      .TENGOTABACO 0
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_JARDIN_ESTE
+      .MACRO BANPE2
+      .XYZ [ 1539 622 0 ]
+      .Angulo 95
+      .Grafico ALEMAN2
+      .TENGOTABACO 0
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN LEON_ESTATICO
+      .MACRO LEON
+      .XYZ [ 347 1744 -35 ]
+      .Angulo 206
+      .Grafico LEON
+      .ZonaRecinto ZONA_RECLEONES
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN LEON_OESTE
+      .MACRO LEON
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA LOOP
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 164 1717 -33 ]
+                  .ANGULO 308
+                  .ESPERA 70
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 126 1735 -33 ]
+                  .ANGULO 225
+                  .ESPERA 60
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 112 1772 -33 ]
+                  .VEL 1.0
+                  .ANGULO 199
+                  .ESPERA 50
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 118 1869 -33 ] ]
+                [
+                  .XYZ [ 143 1873 -33 ]
+                  .ANGULO 44
+                  .ESPERA 15
+                  .ENLAZAR 0
+                  .CASA 0
+                  .VEL 1.0
+                ]
+                [ .XYZ [ 144 1774 -33 ] .VEL 1.0 ]
+                [
+                  .XYZ [ 135 1722 -33 ]
+                  .ANGULO 261
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 1.5
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 134 1773 -33 ]
+      .Angulo 0
+      .Grafico LEON
+      .ZonaRecinto ZONA_RECLEONES
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN LEON_CIRCULAR
+      .MACRO LEON
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA LOOP
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [ .XYZ [ 350 2009 -68 ] ]
+                [ .XYZ [ 412 2043 -68 ] .VEL 1.0 ]
+                [ .XYZ [ 527 2029 -68 ] .VEL 1.0 ]
+                [ .XYZ [ 623 2051 -68 ] ]
+                [ .XYZ [ 654 2030 -68 ] ]
+                [ .XYZ [ 655 2011 -68 ] .ENLAZAR 0 .CASA 0 ]
+                [ .XYZ [ 575 1927 -35 ] ]
+                [
+                  .XYZ [ 567 1904 -35 ]
+                  .ANGULO 297
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 539 1922 -35 ]
+                  .ANGULO 156
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 574 1927 -35 ] ]
+                [ .XYZ [ 638 1995 -68 ] ]
+                [ .XYZ [ 674 1996 -68 ] ]
+                [ .XYZ [ 686 1966 -68 ] ]
+                [ .XYZ [ 662 1908 -68 ] .VEL 1.0 ]
+                [ .XYZ [ 670 1774 -68 ] .VEL 2.0 ]
+                [ .XYZ [ 635 1698 -68 ] .VEL 2.0 ]
+                [
+                  .XYZ [ 660 1649 -68 ]
+                  .ANGULO 323
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 628 1601 -68 ] ]
+                [
+                  .XYZ [ 532 1584 -68 ]
+                  .ANGULO 265
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 448 1602 -68 ] ]
+                [ .XYZ [ 381 1603 -68 ] ]
+                [ .XYZ [ 304 1648 -68 ] ]
+                [ .XYZ [ 251 1686 -68 ] ]
+                [
+                  .XYZ [ 190 1654 -68 ]
+                  .ANGULO 221
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                  .VEL 2.0
+                ]
+                [ .XYZ [ 232 1706 -68 ] .VEL 2.0 ]
+                [ .XYZ [ 246 1747 -68 ] .VEL 2.0 ]
+                [ .XYZ [ 240 1785 -68 ] .VEL 2.0 ]
+                [ .XYZ [ 244 1858 -68 ] .VEL 2.0 ]
+                [ .XYZ [ 278 1949 -68 ] ]
+              ]
+              .VEL 1.5
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 307 1984 -68 ]
+      .Angulo 0
+      .Grafico LEON
+      .ZonaRecinto ZONA_RECLEONES
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_ESTABLO
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .VEL 1.7
+              .TIPORUTA LOOP
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 1977 1334 0 ]
+                  .ANGULO 87
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1980 1331 0 ] ]
+                [
+                  .XYZ [ 1775 1040 0 ]
+                  .ANGULO 232
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1777 1037 0 ] ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 1838 1176 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 0
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP2_JARDIN_CENTRO
+      .MACRO BAP2
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .VEL 1.7
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 1430 832 0 ]
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1382 843 0 ] ]
+                [
+                  .XYZ [ 1319 835 0 ]
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 1376 844 0 ]
+      .Angulo 0
+      .Grafico ALEMAN2
+      .TENGOTABACO 0
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_CIERRA_CENTRO
+      .MACRO BANPE2
+      .XYZ [ 1398 1316 0 ]
+      .Angulo 194
+      .AngBarrido 40
+      .Grafico ALEMAN2
+      .TENGOTABACO 0
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BAP1_PUERTA_ZOO
+      .MACRO BAP1
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA PINGPONG
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [
+                  .XYZ [ 1481 2220 0 ]
+                  .ANGULO 225
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1482 2221 0 ]
+                  .ANGULO 51
+                  .ESPERA 80
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 1495 2235 0 ]
+      .Angulo 180
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CASA_PUERTA_OESTE
+      .MACRO CASA
+      .XYZ [ 374 1115 0 ]
+      .BOXSELECCIONREL [ 5 -55 16 50 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN CASA_AGUJERO_PIS
+      .MACRO CASA
+      .XYZ [ 1099 628 0 ]
+      .BOXSELECCIONREL [ -19 -35 14 32 ]
+      .TIP ESCD
+      .NIVEL TODOS
+      .TocarWav 0
+    ]
+    [
+      .CLASS BICHOALIADO
+      .BANDO ALIADO
+      .TOKEN FUSILADO
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .MASA 100
+      .GRAPH [ .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] .ANIM BROJA ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ACCIONES [
+        [ AcMuerte [ .CARISMA 999 ] ]
+        [ AcUsaHab [ .CARISMA 300 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuUsar [ .CARISMA 200 ] ]
+        [ AuCoger [ .CARISMA 200 ] ]
+        [ AuBeHome [ .CARISMA 200 ] ]
+        [ AuUsarVehiculo [ .CARISMA 200 ] ]
+        [ AuEscalar [ .CARISMA 200 ] ]
+        [ AuGoTo [ .CARISMA 200 ] ]
+        [
+          AuDisparar
+          [ .CARISMA 200 .ARMAS PIEDRA .PIEDRAS 50 ]
+        ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AutomarControlAleman [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+      ]
+      .SEHUNDE 1
+      .CONTENEDOR 0
+      .XYZ [ 1897 252 0 ]
+      .NOAGACHA 0
+      .ANGULO 135
+      .ANMESTATICODINAMICO NO
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN AVESTRUZ1
+      .MACRO AVESTRUZ
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA LOOP
+              .NOMBRE NAV1
+              .RUTA [
+                [ .XYZ [ 2185 868 0 ] .ENLAZAR 0 .CASA 0 ]
+                [ .XYZ [ 2224 780 0 ] .ENLAZAR 0 .CASA 0 ]
+                [
+                  .XYZ [ 2113 608 0 ]
+                  .ANGULO 291
+                  .ESPERA 50
+                  .ENLAZAR 0
+                  .CASA 0
+                  .VEL 1
+                ]
+                [
+                  .XYZ [ 2054 602 0 ]
+                  .VEL 1
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 2022 723 0 ] .ENLAZAR 0 .CASA 0 ]
+                [
+                  .XYZ [ 1978 729 0 ]
+                  .ANGULO 147
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 2010 712 0 ]
+                  .VEL 3.0
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1965 611 0 ]
+                  .ANGULO 11
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1912 584 0 ] .ENLAZAR 0 .CASA 0 ]
+                [
+                  .XYZ [ 1861 611 0 ]
+                  .ANGULO 147
+                  .ESPERA 70
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1894 690 0 ]
+                  .VEL 4.0
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 2133 658 0 ]
+                  .ANGULO 272
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 2182 704 0 ] .ENLAZAR 0 .CASA 0 ]
+                [
+                  .XYZ [ 2258 836 0 ]
+                  .ANGULO 94
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                  .VEL 1
+                ]
+                [
+                  .XYZ [ 2186 945 0 ]
+                  .VEL 1
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 2139 978 0 ]
+                  .VEL 1
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 2095 911 0 ]
+                  .VEL 1
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 2036 955 0 ]
+                  .VEL 1
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 2005 1000 0 ]
+                  .ANGULO 53
+                  .ESPERA 70
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1950 1025 0 ] ]
+                [ .XYZ [ 1924 1115 0 ] .ENLAZAR 1 .CASA 0 ]
+                [
+                  .XYZ [ 1846 961 0 ]
+                  .ANGULO 132
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1824 910 0 ] .ENLAZAR 0 .CASA 0 ]
+                [ .XYZ [ 1894 833 0 ] .ENLAZAR 0 .CASA 0 ]
+                [
+                  .XYZ [ 1849 749 0 ]
+                  .ANGULO 197
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1964 756 0 ] .ENLAZAR 0 .CASA 0 ]
+                [
+                  .XYZ [ 2060 840 0 ]
+                  .ENLAZAR 0
+                  .CASA 0
+                  .ANGULO 102
+                  .ESPERA 100
+                ]
+              ]
+              .VEL 6
+            ]
+            [
+              .VEL 6
+              .TIPORUTA LOOP
+              .NOMBRE SALE
+              .RUTA [
+                [ .XYZ [ 1865 1177 0 ] ]
+                [ .XYZ [ 1838 1213 0 ] ]
+                [ .XYZ [ 1881 1331 0 ] ]
+                [
+                  .XYZ [ 1764 1566 0 ]
+                  .ANGULO 60
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1702 1597 0 ] ]
+                [
+                  .XYZ [ 1579 1846 0 ]
+                  .ANGULO 147
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1502 1868 0 ] ]
+                [
+                  .XYZ [ 1381 1779 0 ]
+                  .ANGULO 265
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1279 1722 0 ] ]
+                [ .XYZ [ 1096 1664 0 ] ]
+                [ .XYZ [ 966 1781 0 ] ]
+                [
+                  .XYZ [ 863 1703 0 ]
+                  .ANGULO 155
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                  .VEL 10
+                ]
+                [ .XYZ [ 961 1614 0 ] .VEL 10 ]
+                [ .XYZ [ 919 1470 0 ] .VEL 10 ]
+                [ .XYZ [ 884 1428 0 ] .VEL 10 ]
+                [ .XYZ [ 1001 1294 0 ] ]
+                [
+                  .XYZ [ 943 1171 0 ]
+                  .ANGULO 208
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 842 1246 0 ] ]
+                [ .XYZ [ 823 1300 0 ] ]
+                [ .XYZ [ 775 1305 0 ] ]
+                [ .XYZ [ 674 1165 0 ] ]
+                [ .XYZ [ 677 1001 0 ] ]
+                [ .XYZ [ 647 930 0 ] ]
+                [ .XYZ [ 670 877 0 ] ]
+                [ .XYZ [ 753 813 0 ] .VEL 10 ]
+                [ .XYZ [ 822 808 0 ] .VEL 10 ]
+                [ .XYZ [ 812 916 0 ] .VEL 10 ]
+                [ .XYZ [ 684 1034 0 ] .VEL 10 ]
+                [ .XYZ [ 644 1149 0 ] ]
+                [ .XYZ [ 799 1359 0 ] ]
+                [ .XYZ [ 1003 1345 0 ] ]
+                [
+                  .XYZ [ 1111 1258 0 ]
+                  .ANGULO 295
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1301 1305 0 ] ]
+                [
+                  .XYZ [ 1618 1538 0 ]
+                  .ANGULO 102
+                  .ESPERA 15
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1820 1768 0 ]
+                  .ANGULO 113
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1968 1597 0 ] ]
+                [ .XYZ [ 2000 1493 0 ] ]
+                [ .XYZ [ 1931 1327 0 ] ]
+                [
+                  .XYZ [ 1892 1232 0 ]
+                  .ANGULO 310
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1727 1006 0 ]
+                  .ANGULO 272
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1602 1129 0 ] ]
+                [ .XYZ [ 1575 1299 0 ] ]
+                [ .XYZ [ 1348 1880 0 ] ]
+                [ .XYZ [ 1273 1919 0 ] ]
+                [ .XYZ [ 1054 1621 0 ] ]
+                [ .XYZ [ 947 1678 0 ] ]
+                [ .XYZ [ 863 2198 0 ] ]
+                [ .XYZ [ 908 2286 0 ] .VEL 3 ]
+                [
+                  .XYZ [ 927 2402 0 ]
+                  .ANGULO 314
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                  .VEL 3
+                ]
+                [ .XYZ [ 1097 2409 0 ] .VEL 3 ]
+                [ .XYZ [ 1171 2355 0 ] .VEL 3 ]
+                [ .XYZ [ 1153 2223 0 ] .VEL 3 ]
+                [
+                  .XYZ [ 1071 2164 0 ]
+                  .ANGULO 106
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                  .VEL 3
+                ]
+                [
+                  .XYZ [ 936 2258 0 ]
+                  .ANGULO 38
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                  .VEL 5
+                ]
+                [ .XYZ [ 901 2266 0 ] ]
+                [ .XYZ [ 841 2145 0 ] ]
+                [ .XYZ [ 887 1736 0 ] ]
+                [
+                  .XYZ [ 773 1448 0 ]
+                  .ANGULO 125
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1062 1218 0 ] ]
+                [ .XYZ [ 1273 1412 0 ] ]
+                [ .XYZ [ 1700 1565 0 ] ]
+                [
+                  .XYZ [ 1773 1509 0 ]
+                  .ANGULO 242
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1928 1281 0 ] ]
+              ]
+            ]
+            [
+              .VEL 6
+              .TIPORUTA LOOP
+              .NOMBRE NOSA
+              .RUTA [
+                [ .XYZ [ 1926 1037 0 ] ]
+                [ .XYZ [ 1999 995 0 ] ]
+                [
+                  .XYZ [ 2119 897 0 ]
+                  .ENLAZAR 1
+                  .CASA 0
+                  .EVENTO NAV1
+                ]
+                [ .XYZ [ 2130 857 0 ] .ENLAZAR 1 .CASA 0 ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 2101 967 0 ]
+      .Angulo 180
+      .ZonaRecinto ZONA_RECAVESTRUCES
+      .Reactividades [ SALE NOSA NAV1 ]
+      .PosComedero1 [ 2060 838 0 ]
+      .PosComedero2 [ 2255 835 0 ]
+      .PosComedero3 [ 1577 1843 0 ]
+      .PosComedero4 [ 1378 1778 0 ]
+      .PosComedero5 [ 925 2400 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN AVESTRUZ2
+      .MACRO AVESTRUZ
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA LOOP
+              .NOMBRE NAV2
+              .RUTA [
+                [
+                  .XYZ [ 1888 801 0 ]
+                  .ANGULO 136
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1921 771 0 ] .VEL 2 ]
+                [ .XYZ [ 1934 728 0 ] .VEL 2 ]
+                [ .XYZ [ 1935 684 0 ] ]
+                [
+                  .XYZ [ 1860 693 0 ]
+                  .ANGULO 185
+                  .ESPERA 60
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1969 679 0 ] ]
+                [ .XYZ [ 2026 712 0 ] ]
+                [ .XYZ [ 2087 822 0 ] ]
+                [ .XYZ [ 2026 970 0 ] ]
+                [
+                  .XYZ [ 1953 1050 0 ]
+                  .ANGULO 125
+                  .ESPERA 50
+                  .ENLAZAR 1
+                  .CASA 0
+                  .VEL 1
+                ]
+                [ .XYZ [ 1933 1006 0 ] .VEL 1 ]
+                [ .XYZ [ 1907 962 0 ] .VEL 1 ]
+                [ .XYZ [ 1874 931 0 ] .VEL 1 ]
+                [
+                  .XYZ [ 1842 934 0 ]
+                  .ANGULO 144
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1886 944 0 ] ]
+                [ .XYZ [ 1947 998 0 ] ]
+                [ .XYZ [ 1984 1006 0 ] ]
+                [ .XYZ [ 2123 902 0 ] ]
+                [
+                  .XYZ [ 2258 855 0 ]
+                  .ANGULO 72
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                  .VEL 1
+                ]
+                [ .XYZ [ 2238 804 0 ] .VEL 1 ]
+                [ .XYZ [ 2200 785 0 ] .VEL 1 ]
+                [ .XYZ [ 2172 732 0 ] ]
+                [ .XYZ [ 2101 785 0 ] ]
+                [ .XYZ [ 2042 768 0 ] ]
+                [ .XYZ [ 1985 690 0 ] ]
+                [
+                  .XYZ [ 1974 626 0 ]
+                  .ANGULO 208
+                  .ESPERA 57
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 6
+            ]
+            [
+              .VEL 6
+              .TIPORUTA LOOP
+              .NOMBRE AVE1
+              .RUTA [
+                [ .XYZ [ 1848 1185 0 ] ]
+                [
+                  .XYZ [ 1727 1003 0 ]
+                  .ANGULO 306
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1604 1093 0 ] ]
+                [ .XYZ [ 1554 1401 0 ] ]
+                [
+                  .XYZ [ 1390 1737 0 ]
+                  .ANGULO 49
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1442 1521 0 ] ]
+                [ .XYZ [ 1351 1269 0 ] ]
+                [
+                  .XYZ [ 1207 1249 0 ]
+                  .ANGULO 128
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1101 1095 0 ] ]
+                [ .XYZ [ 1074 1096 0 ] ]
+                [
+                  .XYZ [ 907 1409 0 ]
+                  .ANGULO 189
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 937 1518 0 ] ]
+                [ .XYZ [ 910 1893 0 ] ]
+                [ .XYZ [ 807 2170 0 ] ]
+                [
+                  .XYZ [ 535 2380 0 ]
+                  .ANGULO 132
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 508 2342 0 ]
+                  .ANGULO 257
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 676 2304 0 ] ]
+                [ .XYZ [ 928 2036 0 ] ]
+                [ .XYZ [ 964 1849 0 ] ]
+                [ .XYZ [ 766 1457 0 ] ]
+                [
+                  .XYZ [ 553 1328 0 ]
+                  .ANGULO 147
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 622 1141 0 ] ]
+                [
+                  .XYZ [ 505 987 0 ]
+                  .ANGULO 227
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 413 863 0 ] ]
+                [ .XYZ [ 452 793 0 ] ]
+                [ .XYZ [ 559 756 0 ] ]
+                [
+                  .XYZ [ 599 692 0 ]
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 532 679 0 ] ]
+                [ .XYZ [ 345 799 0 ] ]
+                [
+                  .XYZ [ 310 931 0 ]
+                  .ANGULO 193
+                  .ESPERA 75
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 387 658 0 ] ]
+                [
+                  .XYZ [ 213 547 0 ]
+                  .ANGULO 280
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 491 972 0 ] ]
+                [
+                  .XYZ [ 852 1381 0 ]
+                  .ANGULO 94
+                  .ESPERA 35
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 949 1367 0 ] ]
+                [ .XYZ [ 1135 1244 0 ] ]
+                [
+                  .XYZ [ 1620 1580 0 ]
+                  .ANGULO 87
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1744 1582 0 ] ]
+                [
+                  .XYZ [ 1894 1281 0 ]
+                  .ANGULO 34
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+            [
+              .VEL 6
+              .TIPORUTA LOOP
+              .NOMBRE SALE
+              .RUTA [
+                [ .XYZ [ 1927 1081 0 ] .ENLAZAR 1 .CASA 0 ]
+                [ .XYZ [ 1923 1129 0 ] ]
+                [
+                  .XYZ [ 1868 1168 0 ]
+                  .EVENTO AVE1
+                  .ENLAZAR 1
+                  .CASA 0
+                ]
+              ]
+            ]
+            [
+              .VEL 6
+              .TIPORUTA LOOP
+              .NOMBRE NOSA
+              .RUTA [
+                [ .XYZ [ 1938 1037 0 ] ]
+                [ .XYZ [ 1854 955 0 ] ]
+                [ .XYZ [ 1881 836 0 ] ]
+                [
+                  .XYZ [ 1941 704 0 ]
+                  .ENLAZAR 1
+                  .CASA 0
+                  .EVENTO NAV2
+                ]
+                [ .XYZ [ 1968 665 0 ] .ENLAZAR 1 .CASA 0 ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 1913 766 0 ]
+      .Angulo 180
+      .ZonaRecinto ZONA_RECAVESTRUCES
+      .Reactividades [ SALE AVE1 NOSA NAV2 ]
+      .PosComedero1 [ 1878 805 0 ]
+      .PosComedero2 [ 1388 1737 0 ]
+      .PosComedero3 [ 308 927 0 ]
+      .PosComedero4 [ 598 692 0 ]
+      .PosComedero5 [ 1727 1001 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN AVESTRUZ3
+      .MACRO AVESTRUZ
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA LOOP
+              .NOMBRE NAV3
+              .RUTA [
+                [ .XYZ [ 1982 600 0 ] ]
+                [ .XYZ [ 1932 675 0 ] ]
+                [
+                  .XYZ [ 1956 738 0 ]
+                  .ANGULO 140
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 2109 790 0 ] ]
+                [
+                  .XYZ [ 2186 731 0 ]
+                  .ANGULO 30
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 2236 819 0 ] ]
+                [
+                  .XYZ [ 2211 903 0 ]
+                  .ANGULO 76
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 2142 841 0 ] ]
+                [
+                  .XYZ [ 2045 864 0 ]
+                  .ANGULO 193
+                  .ESPERA 15
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 2151 704 0 ] ]
+                [ .XYZ [ 2107 591 0 ] ]
+                [ .XYZ [ 1899 581 0 ] ]
+                [
+                  .XYZ [ 1851 619 0 ]
+                  .ANGULO 185
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1909 799 0 ] ]
+                [
+                  .XYZ [ 1830 922 0 ]
+                  .ANGULO 136
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1959 1034 0 ]
+                  .ANGULO 57
+                  .ESPERA 60
+                  .ENLAZAR 1
+                  .CASA 0
+                ]
+                [ .XYZ [ 2058 945 0 ] ]
+                [ .XYZ [ 2121 994 0 ] ]
+                [
+                  .XYZ [ 2267 850 0 ]
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1855 743 0 ]
+                  .ANGULO 132
+                  .ESPERA 35
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 2119 614 0 ]
+                  .ANGULO 4
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 6
+            ]
+            [
+              .VEL 6
+              .TIPORUTA LOOP
+              .NOMBRE SALE
+              .RUTA [
+                [ .XYZ [ 1928 1120 0 ] ]
+                [
+                  .XYZ [ 1862 1176 0 ]
+                  .EVENTO AVE2
+                  .ENLAZAR 1
+                  .CASA 0
+                ]
+              ]
+            ]
+            [
+              .VEL 6
+              .TIPORUTA LOOP
+              .NOMBRE AVE2
+              .RUTA [
+                [ .XYZ [ 1879 1263 0 ] ]
+                [ .XYZ [ 1980 1439 0 ] ]
+                [ .XYZ [ 1988 1526 0 ] ]
+                [
+                  .XYZ [ 1894 1691 0 ]
+                  .ANGULO 49
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1683 1625 0 ] ]
+                [ .XYZ [ 1637 1658 0 ] ]
+                [ .XYZ [ 1555 1877 0 ] ]
+                [
+                  .XYZ [ 1606 1915 0 ]
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1447 1888 0 ] ]
+                [ .XYZ [ 1364 2049 0 ] ]
+                [
+                  .XYZ [ 1232 2025 0 ]
+                  .ANGULO 117
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1277 1910 0 ] ]
+                [ .XYZ [ 1260 1868 0 ] ]
+                [ .XYZ [ 1131 1717 0 ] ]
+                [ .XYZ [ 1179 1577 0 ] ]
+                [ .XYZ [ 1317 1390 0 ] ]
+                [
+                  .XYZ [ 1220 1246 0 ]
+                  .ANGULO 140
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1171 1093 0 ]
+                  .ANGULO 302
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 993 1316 0 ] ]
+                [ .XYZ [ 836 1395 0 ] ]
+                [ .XYZ [ 706 1252 0 ] ]
+                [
+                  .XYZ [ 474 1222 0 ]
+                  .ANGULO 193
+                  .ESPERA 50
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 212 1378 0 ]
+                  .ANGULO 68
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 473 1193 0 ] ]
+                [ .XYZ [ 651 1389 0 ] ]
+                [ .XYZ [ 900 1418 0 ] ]
+                [ .XYZ [ 962 1350 0 ] ]
+                [ .XYZ [ 1017 1169 0 ] ]
+                [
+                  .XYZ [ 1095 1079 0 ]
+                  .ANGULO 276
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1430 1446 0 ] ]
+                [
+                  .XYZ [ 1462 1544 0 ]
+                  .ANGULO 113
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1383 1726 0 ] ]
+                [ .XYZ [ 1392 1834 0 ] ]
+                [
+                  .XYZ [ 1541 1933 0 ]
+                  .ANGULO 132
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1658 1683 0 ] ]
+                [ .XYZ [ 1623 1597 0 ] ]
+                [ .XYZ [ 1698 1580 0 ] ]
+                [ .XYZ [ 1780 1502 0 ] ]
+                [ .XYZ [ 1914 1272 0 ] ]
+                [ .XYZ [ 1772 1045 0 ] ]
+                [ .XYZ [ 1707 1009 0 ] ]
+                [
+                  .XYZ [ 1565 1148 0 ]
+                  .ANGULO 231
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1596 1230 0 ] ]
+                [ .XYZ [ 1565 1323 0 ] ]
+                [
+                  .XYZ [ 1593 1350 0 ]
+                  .ANGULO 340
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1517 1404 0 ]
+                  .ANGULO 238
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1429 1518 0 ] ]
+                [ .XYZ [ 1131 1258 0 ] ]
+                [
+                  .XYZ [ 1053 1379 0 ]
+                  .ANGULO 83
+                  .ESPERA 100
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 949 1347 0 ] ]
+                [ .XYZ [ 866 1432 0 ] ]
+                [ .XYZ [ 1029 1622 0 ] ]
+                [
+                  .XYZ [ 1233 1705 0 ]
+                  .ANGULO 238
+                  .ESPERA 60
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1346 1775 0 ] ]
+                [ .XYZ [ 1408 1742 0 ] ]
+                [ .XYZ [ 1438 1579 0 ] ]
+                [
+                  .XYZ [ 1503 1523 0 ]
+                  .ANGULO 249
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1826 1700 0 ] ]
+                [ .XYZ [ 1948 1653 0 ] ]
+                [ .XYZ [ 2015 1547 0 ] ]
+                [
+                  .XYZ [ 1873 1241 0 ]
+                  .ANGULO 306
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+            [
+              .VEL 6
+              .TIPORUTA LOOP
+              .NOMBRE NOSA
+              .RUTA [
+                [ .XYZ [ 1937 1043 0 ] ]
+                [ .XYZ [ 2014 983 0 ] ]
+                [ .XYZ [ 2112 864 0 ] ]
+                [
+                  .XYZ [ 2140 729 0 ]
+                  .ENLAZAR 1
+                  .CASA 0
+                  .EVENTO NAV3
+                ]
+                [ .XYZ [ 2109 619 0 ] .ENLAZAR 1 .CASA 0 ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 2018 606 0 ]
+      .Angulo 180
+      .ZonaRecinto ZONA_RECAVESTRUCES
+      .Reactividades [ SALE AVE2 NOSA NAV3 ]
+      .PosComedero1 [ 1955 737 0 ]
+      .PosComedero2 [ 1564 1146 0 ]
+      .PosComedero3 [ 1053 1378 0 ]
+      .PosComedero4 [ 473 1221 0 ]
+      .PosComedero5 [ 1232 1702 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN AVESTRUZ4
+      .MACRO AVESTRUZ
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA LOOP
+              .NOMBRE NAV4
+              .RUTA [
+                [ .XYZ [ 2179 721 0 ] ]
+                [ .XYZ [ 2151 805 0 ] ]
+                [ .XYZ [ 2084 850 0 ] ]
+                [
+                  .XYZ [ 2166 885 0 ]
+                  .ANGULO 42
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 2097 975 0 ] ]
+                [
+                  .XYZ [ 2047 942 0 ]
+                  .ANGULO 144
+                  .ESPERA 30
+                  .ENLAZAR 1
+                  .CASA 0
+                ]
+                [ .XYZ [ 2210 793 0 ] ]
+                [
+                  .XYZ [ 1938 729 0 ]
+                  .ANGULO 310
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1846 939 0 ]
+                  .ANGULO 151
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1966 1141 0 ] ]
+                [ .XYZ [ 2077 1045 0 ] ]
+                [
+                  .XYZ [ 2199 760 0 ]
+                  .ANGULO 340
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 2086 614 0 ] ]
+                [
+                  .XYZ [ 2030 706 0 ]
+                  .ANGULO 49
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1937 584 0 ] ]
+                [ .XYZ [ 1888 586 0 ] ]
+                [
+                  .XYZ [ 1859 637 0 ]
+                  .ANGULO 166
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1892 738 0 ] ]
+                [
+                  .XYZ [ 2050 805 0 ]
+                  .ANGULO 132
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 6
+            ]
+            [
+              .VEL 6
+              .TIPORUTA PINGPONG
+              .NOMBRE SALE
+              .RUTA [
+                [ .XYZ [ 1935 1046 0 ] ]
+                [ .XYZ [ 1919 1096 0 ] ]
+                [ .XYZ [ 1927 1122 0 ] ]
+                [ .XYZ [ 1927 1122 0 ] ]
+                [
+                  .XYZ [ 1859 1181 0 ]
+                  .EVENTO AVE3
+                  .ENLAZAR 1
+                  .CASA 0
+                ]
+              ]
+            ]
+            [
+              .VEL 6
+              .TIPORUTA LOOP
+              .NOMBRE AVE3
+              .RUTA [
+                [ .XYZ [ 1876 1288 0 ] ]
+                [ .XYZ [ 1980 1437 0 ] ]
+                [
+                  .XYZ [ 2001 1543 0 ]
+                  .ANGULO 30
+                  .ESPERA 80
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1902 1649 0 ] ]
+                [ .XYZ [ 1764 1630 0 ] ]
+                [
+                  .XYZ [ 1295 1339 0 ]
+                  .ANGULO 147
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1417 1155 0 ] ]
+                [ .XYZ [ 1466 1127 0 ] ]
+                [ .XYZ [ 1553 1146 0 ] ]
+                [ .XYZ [ 1589 1345 0 ] ]
+                [
+                  .XYZ [ 1371 1751 0 ]
+                  .ANGULO 45
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1133 1737 0 ] ]
+                [
+                  .XYZ [ 884 1426 0 ]
+                  .ANGULO 125
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 933 1361 0 ] ]
+                [ .XYZ [ 1092 1275 0 ] ]
+                [ .XYZ [ 1240 1376 0 ] ]
+                [ .XYZ [ 1255 1490 0 ] ]
+                [ .XYZ [ 1152 1591 0 ] ]
+                [
+                  .XYZ [ 1183 1695 0 ]
+                  .ANGULO 136
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 986 1608 0 ] ]
+                [
+                  .XYZ [ 870 1683 0 ]
+                  .ANGULO 162
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 800 1561 0 ] ]
+                [
+                  .XYZ [ 856 1313 0 ]
+                  .ANGULO 314
+                  .ESPERA 25
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 691 1404 0 ] ]
+                [
+                  .XYZ [ 604 1330 0 ]
+                  .ANGULO 159
+                  .ESPERA 15
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 701 1151 0 ] ]
+                [ .XYZ [ 675 1056 0 ] ]
+                [
+                  .XYZ [ 701 986 0 ]
+                  .ANGULO 340
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 623 894 0 ] ]
+                [
+                  .XYZ [ 522 995 0 ]
+                  .ANGULO 223
+                  .ESPERA 75
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 770 1323 0 ] ]
+                [ .XYZ [ 830 1292 0 ] ]
+                [ .XYZ [ 840 1250 0 ] ]
+                [ .XYZ [ 934 1192 0 ] ]
+                [
+                  .XYZ [ 1051 1342 0 ]
+                  .ANGULO 136
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1158 1225 0 ] ]
+                [
+                  .XYZ [ 1475 1501 0 ]
+                  .ANGULO 306
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [
+                  .XYZ [ 1336 1778 0 ]
+                  .ANGULO 166
+                  .ESPERA 80
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1461 1911 0 ] ]
+                [ .XYZ [ 1567 1899 0 ] ]
+                [
+                  .XYZ [ 1673 1633 0 ]
+                  .ANGULO 268
+                  .ESPERA 70
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1776 1568 0 ] ]
+                [
+                  .XYZ [ 1735 1437 0 ]
+                  .ANGULO 238
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1801 1463 0 ] ]
+                [ .XYZ [ 1916 1267 0 ] ]
+                [
+                  .XYZ [ 1808 1127 0 ]
+                  .ANGULO 291
+                  .ESPERA 20
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+            ]
+            [
+              .VEL 6
+              .TIPORUTA LOOP
+              .NOMBRE NOSA
+              .RUTA [
+                [ .XYZ [ 1942 1059 0 ] ]
+                [
+                  .XYZ [ 2048 945 0 ]
+                  .ENLAZAR 1
+                  .CASA 0
+                  .EVENTO NAV4
+                ]
+                [ .XYZ [ 2077 892 0 ] .ENLAZAR 1 .CASA 0 ]
+              ]
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 2137 678 0 ]
+      .Angulo 180
+      .ZonaRecinto ZONA_RECAVESTRUCES
+      .Reactividades [ SALE AVE3 NOSA NAV4 ]
+      .PosComedero1 [ 2214 745 0 ]
+      .PosComedero2 [ 2000 1543 0 ]
+      .PosComedero3 [ 521 994 0 ]
+      .PosComedero4 [ 1335 1775 0 ]
+      .PosComedero5 [ 1671 1633 0 ]
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN GUARDA
+      .MACRO GUARDA
+      .AcPatrulla [
+        AcPatrulla
+        [
+          .PATRULLA [
+            [
+              .TIPORUTA LOOP
+              .NOMBRE PATRULLA_1
+              .RUTA [
+                [ .XYZ [ 1632 2335 0 ] ]
+                [ .XYZ [ 1533 2213 0 ] ]
+                [ .XYZ [ 1253 1860 0 ] ]
+                [ .XYZ [ 1004 1622 0 ] ]
+                [
+                  .XYZ [ 853 1684 0 ]
+                  .ANGULO 147
+                  .ESPERA 40
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 884 1866 0 ] ]
+                [
+                  .XYZ [ 874 2218 0 ]
+                  .ANGULO 42
+                  .ESPERA 30
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 853 2031 0 ] ]
+                [ .XYZ [ 1007 1726 0 ] ]
+                [ .XYZ [ 1089 1675 0 ] ]
+                [ .XYZ [ 1614 2311 0 ] ]
+                [ .XYZ [ 1595 2524 0 ] ]
+                [
+                  .XYZ [ 1656 2668 0 ]
+                  .ANGULO 151
+                  .ESPERA 80
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1711 2698 0 ] ]
+                [ .XYZ [ 1741 2695 0 ] ]
+                [ .XYZ [ 1854 2705 0 ] .ENLAZAR 0 .CASA 0 ]
+                [ .XYZ [ 1999 2604 0 ] ]
+                [
+                  .XYZ [ 2103 2574 0 ]
+                  .ENLAZAR 0
+                  .CASA 0
+                  .ANGULO 49
+                  .ESPERA 30
+                ]
+                [ .XYZ [ 1997 2604 0 ] ]
+                [ .XYZ [ 1853 2703 0 ] ]
+                [ .XYZ [ 1741 2696 0 ] ]
+                [ .XYZ [ 1711 2697 0 ] ]
+                [
+                  .XYZ [ 1654 2666 0 ]
+                  .ANGULO 151
+                  .ESPERA 60
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+                [ .XYZ [ 1597 2523 0 ] ]
+                [
+                  .XYZ [ 1640 2349 0 ]
+                  .ANGULO 223
+                  .ESPERA 60
+                  .ENLAZAR 0
+                  .CASA 0
+                ]
+              ]
+              .VEL 1.5
+            ]
+          ]
+          .ESPERAEVENTO 0
+        ]
+      ]
+      .XYZ [ 1670 2367 0 ]
+      .Angulo 180
+      .Contacto BANPE2_ENTRADA_ZOO
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN EMPUJE_FURGO_DEL
+      .MACRO PEMPUJE
+      .XYZ [ 1867 1277 0 ]
+      .BOXSELECCIONREL [ -15 -15 30 30 ]
+      .Vehiculo FURGO_HUIDA
+      .DireccionEmpuje DELANTE
+      .TIP 3FUR
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN EMPUJE_FURGO_DET
+      .MACRO PEMPUJE
+      .XYZ [ 1903 1333 0 ]
+      .BOXSELECCIONREL [ -15 -15 30 30 ]
+      .Vehiculo FURGO_HUIDA
+      .DireccionEmpuje DETRAS
+      .TIP 3FUR
+      .NIVEL TODOS
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_JARDIN_TONTOS_F
+      .MACRO BANPE2
+      .NIVEL FACIL
+      .XYZ [ 1183 298 0 ]
+      .Angulo 180
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+    [
+      .CLASS MACRO
+      .TOKEN BANPE2_PARA_TONTOS_F
+      .MACRO BANPE2
+      .NIVEL FACIL
+      .XYZ [ 250 480 0 ]
+      .Angulo 180
+      .Grafico ALEMAN2
+      .TENGOTABACO 1
+    ]
+  ]
+  .PATRULLAS [
+    [
+      .TOKEN PAT_ENTRADA
+      .NSOLDIERS 2
+      .RUTADEF [
+        [
+          .NOMBRE RUTA1
+          .TIPORUTA LOOP
+          .RUTA [
+            [ .XYZ [ 1324 2159 0 ] ]
+            [ .XYZ [ 1367 2168 0 ] ]
+            [ .XYZ [ 1516 2018 0 ] ]
+            [ .XYZ [ 1525 1985 0 ] ]
+            [ .XYZ [ 1502 1950 0 ] ]
+            [ .XYZ [ 1461 1943 0 ] ]
+            [ .XYZ [ 1302 2066 0 ] ]
+            [ .XYZ [ 1298 2128 0 ] ]
+          ]
+          .VEL 1.7
+        ]
+      ]
+      .ANIMCABO CABO
+      .XYZ [ 1250 2000 0 ]
+      .NCOLUMNS 1
+      .REGENERATEPATROL 0
+      .SIGUEHUELLAS 0
+      .REGENERATE 0
+      .NONSTOP 1
+      .STARTATHOME 0
+      .ANIMPAL -1
+      .VIGILARDEF [ .ANGBARRIDO 50 .DEMORA 50 ]
+      .DISPARARCABO PISTOLA
+      .DISPARARSOLDADO METRALLETA
+      .ANIMSOLDADO GRANADER
+    ]
+    [
+      .TOKEN PAT_INICIO
+      .NSOLDIERS 2
+      .RUTADEF [
+        [
+          .NOMBRE RUTA1
+          .TIPORUTA LOOP
+          .RUTA [
+            [ .XYZ [ 1459 2380 0 ] ]
+            [ .XYZ [ 1798 2104 0 ] ]
+            [ .XYZ [ 1984 1901 0 ] ]
+            [ .XYZ [ 2178 1728 0 ] ]
+            [ .XYZ [ 2224 1737 0 ] ]
+            [ .XYZ [ 2253 1792 0 ] ]
+            [ .XYZ [ 2231 1877 0 ] ]
+            [ .XYZ [ 1942 2033 0 ] ]
+            [ .XYZ [ 1808 2170 0 ] ]
+            [ .XYZ [ 1546 2496 0 ] ]
+            [ .XYZ [ 1490 2489 0 ] ]
+            [ .XYZ [ 1459 2437 0 ] ]
+          ]
+          .VEL 1.7
+        ]
+      ]
+      .ANIMCABO CABO
+      .XYZ [ 1600 2350 0 ]
+      .REGENERATEPATROL 0
+      .SIGUEHUELLAS 0
+      .REGENERATE 0
+      .NONSTOP 1
+      .STARTATHOME 0
+      .ANIMPAL -1
+      .VIGILARDEF [ .ANGBARRIDO 50 .DEMORA 50 ]
+      .DISPARARCABO PISTOLA
+      .DISPARARSOLDADO METRALLETA
+      .ANIMSOLDADO GRANADER
+    ]
+    [
+      .TOKEN PAT_JARDIN
+      .NSOLDIERS 2
+      .RUTADEF [
+        [
+          .NOMBRE RUTA1
+          .TIPORUTA LOOP
+          .RUTA [
+            [ .XYZ [ 1273 554 0 ] ]
+            [ .XYZ [ 1276 900 0 ] ]
+            [ .XYZ [ 1293 924 0 ] ]
+            [ .XYZ [ 1454 920 0 ] ]
+            [ .XYZ [ 1469 878 0 ] ]
+            [ .XYZ [ 1478 743 0 ] ]
+            [ .XYZ [ 1479 480 0 ] ]
+            [ .XYZ [ 1448 407 0 ] ]
+            [ .XYZ [ 1292 413 0 ] ]
+            [ .XYZ [ 1273 462 0 ] ]
+          ]
+          .VEL 1.5
+        ]
+      ]
+      .ANIMCABO CABO
+      .NCOLUMNS 1
+      .REGENERATEPATROL 0
+      .SIGUEHUELLAS 0
+      .REGENERATE 0
+      .NONSTOP 1
+      .STARTATHOME 0
+      .ANIMPAL -1
+      .VIGILARDEF [ .ANGBARRIDO 50 .DEMORA 50 ]
+      .DISPARARCABO PISTOLA
+      .DISPARARSOLDADO METRALLETA
+      .XYZ [ 1274 580 0 ]
+      .ANIMSOLDADO GRANADER
+    ]
+    [
+      .TOKEN PAT_REACT_NO
+      .NSOLDIERS 3
+      .RUTADEF [
+        [
+          .NOMBRE INICIO
+          .TIPORUTA LOOP
+          .RUTA [
+            [ .XYZ [ 332 542 20 ] ]
+            [ .XYZ [ 319 532 0 ] ]
+            [
+              .XYZ [ 170 415 0 ]
+              .EVENTO BUC1
+              .ENLAZAR 1
+              .CASA 0
+            ]
+          ]
+          .VEL 2
+        ]
+        [
+          .NOMBRE BUC1
+          .TIPORUTA LOOP
+          .VEL 2
+          .RUTA [
+            [ .XYZ [ 151 392 0 ] ]
+            [ .XYZ [ 93 384 0 ] ]
+            [ .XYZ [ 48 429 0 ] ]
+            [ .XYZ [ 41 521 0 ] ]
+            [ .XYZ [ 155 584 0 ] ]
+            [ .XYZ [ 307 776 0 ] ]
+            [ .XYZ [ 330 854 0 ] ]
+            [ .XYZ [ 386 871 0 ] ]
+            [ .XYZ [ 448 827 0 ] ]
+            [ .XYZ [ 464 748 0 ] ]
+            [ .XYZ [ 425 676 0 ] ]
+            [ .XYZ [ 311 603 0 ] ]
+            [ .XYZ [ 201 486 0 ] ]
+          ]
+        ]
+      ]
+      .NCOLUMNS 1
+      .REGENERATEPATROL 1
+      .SIGUEHUELLAS 0
+      .REGENERATE 1
+      .NONSTOP 1
+      .STARTATHOME 1
+      .ANIMPAL -1
+      .VIGILARDEF [ .ANGBARRIDO 50 .DEMORA 50 ]
+      .DISPARARCABO PISTOLA
+      .DISPARARSOLDADO METRALLETA
+      .REACT_EVENTS BUC1
+      .HOME CUARTEL_NO
+      .ANIMCABO CABO
+      .EXITHOME_EVENTS [ ZOJA ZONO ]
+      .ANIMSOLDADO ALEGABAR
+    ]
+    [
+      .TOKEN PAT_REACT_JARDIN
+      .NSOLDIERS 2
+      .RUTADEF [
+        [
+          .NOMBRE INICIO
+          .TIPORUTA LOOP
+          .RUTA [
+            [ .XYZ [ 1066 1087 0 ] ]
+            [ .XYZ [ 1129 1093 0 ] ]
+            [ .XYZ [ 1190 1157 0 ] ]
+            [
+              .XYZ [ 1247 1236 0 ]
+              .EVENTO BUC2
+              .ENLAZAR 1
+              .CASA 0
+            ]
+          ]
+          .VEL 2
+        ]
+        [
+          .NOMBRE BUC2
+          .TIPORUTA LOOP
+          .VEL 2
+          .RUTA [
+            [ .XYZ [ 1295 1277 0 ] ]
+            [ .XYZ [ 1375 1238 0 ] ]
+            [ .XYZ [ 1398 1162 0 ] ]
+            [ .XYZ [ 1564 1133 0 ] ]
+            [ .XYZ [ 1588 1097 0 ] ]
+            [ .XYZ [ 1536 1026 0 ] ]
+            [ .XYZ [ 1485 1019 0 ] ]
+            [ .XYZ [ 1339 1053 0 ] ]
+            [ .XYZ [ 1236 1028 0 ] ]
+            [ .XYZ [ 1203 1029 0 ] ]
+            [ .XYZ [ 1156 1124 0 ] ]
+            [ .XYZ [ 1211 1218 0 ] ]
+          ]
+        ]
+      ]
+      .HOME CUARTEL_TASCA
+      .ANIMCABO CABO
+      .NCOLUMNS 1
+      .REGENERATEPATROL 1
+      .SIGUEHUELLAS 0
+      .REGENERATE 1
+      .NONSTOP 1
+      .STARTATHOME 1
+      .ANIMPAL -1
+      .VIGILARDEF [ .ANGBARRIDO 50 .DEMORA 50 ]
+      .DISPARARCABO PISTOLA
+      .DISPARARSOLDADO METRALLETA
+      .EXITHOME_EVENTS ZOJA
+      .REACT_EVENTS BUC2
+      .ANIMSOLDADO ALEGABAR
+    ]
+    [
+      .TOKEN PAT_REACT_FUSILA
+      .NSOLDIERS 2
+      .RUTADEF [
+        [
+          .NOMBRE INICIO
+          .TIPORUTA LOOP
+          .RUTA [
+            [ .XYZ [ 1064 1096 0 ] ]
+            [ .XYZ [ 1124 1112 0 ] ]
+            [ .XYZ [ 1160 1091 0 ] ]
+            [ .XYZ [ 1208 1035 0 ] ]
+            [ .XYZ [ 1252 1025 0 ] ]
+            [ .XYZ [ 1324 1036 0 ] ]
+            [ .XYZ [ 1351 999 0 ] ]
+            [ .XYZ [ 1381 885 0 ] ]
+            [ .XYZ [ 1418 843 0 ] ]
+            [ .XYZ [ 1695 694 0 ] ]
+            [ .XYZ [ 1757 604 0 ] ]
+            [ .XYZ [ 1744 520 0 ] ]
+            [ .XYZ [ 1712 470 0 ] ]
+            [ .XYZ [ 1714 440 0 ] ]
+            [ .XYZ [ 1818 381 0 ] ]
+            [
+              .XYZ [ 1888 429 0 ]
+              .EVENTO BUC3
+              .ENLAZAR 1
+              .CASA 0
+            ]
+          ]
+          .VEL 2.5
+        ]
+        [
+          .NOMBRE BUC3
+          .TIPORUTA LOOP
+          .VEL 2
+          .RUTA [
+            [ .XYZ [ 1948 463 0 ] ]
+            [ .XYZ [ 2050 500 0 ] ]
+            [ .XYZ [ 2128 471 0 ] ]
+            [ .XYZ [ 2147 382 0 ] ]
+            [ .XYZ [ 2125 297 0 ] ]
+            [ .XYZ [ 2034 275 0 ] ]
+            [ .XYZ [ 1952 289 0 ] ]
+            [ .XYZ [ 1855 192 0 ] ]
+            [ .XYZ [ 1806 118 0 ] ]
+            [ .XYZ [ 1766 98 0 ] ]
+            [ .XYZ [ 1727 133 0 ] ]
+            [ .XYZ [ 1733 216 0 ] ]
+            [ .XYZ [ 1790 286 0 ] ]
+            [ .XYZ [ 1799 383 0 ] ]
+            [ .XYZ [ 1709 443 0 ] ]
+            [ .XYZ [ 1561 462 0 ] ]
+            [ .XYZ [ 1449 586 0 ] ]
+            [ .XYZ [ 1311 605 0 ] ]
+            [ .XYZ [ 1263 677 0 ] ]
+            [ .XYZ [ 1343 743 0 ] ]
+            [ .XYZ [ 1471 720 0 ] ]
+            [ .XYZ [ 1573 623 0 ] ]
+            [ .XYZ [ 1665 574 0 ] ]
+            [ .XYZ [ 1721 552 0 ] ]
+            [ .XYZ [ 1739 512 0 ] ]
+            [ .XYZ [ 1701 463 0 ] ]
+            [ .XYZ [ 1710 439 0 ] ]
+            [ .XYZ [ 1831 379 0 ] ]
+          ]
+        ]
+      ]
+      .HOME CUARTEL_TASCA
+      .ANIMCABO CABO
+      .NCOLUMNS 1
+      .REGENERATEPATROL 1
+      .SIGUEHUELLAS 0
+      .REGENERATE 1
+      .NONSTOP 1
+      .STARTATHOME 1
+      .ANIMPAL -1
+      .VIGILARDEF [ .ANGBARRIDO 50 .DEMORA 50 ]
+      .DISPARARCABO PISTOLA
+      .DISPARARSOLDADO METRALLETA
+      .EXITHOME_EVENTS [ ZOFO ZOJA ZONO ]
+      .REACT_EVENTS BUC3
+      .ANIMSOLDADO ALEGABAR
+    ]
+    [
+      .TOKEN PAT_REACT_INICIO_FOSO
+      .NSOLDIERS 2
+      .RUTADEF [
+        [
+          .NOMBRE INICIO
+          .TIPORUTA LOOP
+          .VEL 2.5
+          .RUTA [
+            [ .XYZ [ 2056 2551 0 ] ]
+            [ .XYZ [ 1840 2731 0 ] ]
+            [ .XYZ [ 1816 2717 0 ] ]
+            [ .XYZ [ 1795 2672 0 ] ]
+            [ .XYZ [ 1769 2671 0 ] ]
+            [ .XYZ [ 1689 2745 0 ] ]
+            [ .XYZ [ 1635 2703 0 ] ]
+            [ .XYZ [ 1542 2484 0 ] ]
+            [ .XYZ [ 1558 2307 0 ] ]
+            [ .XYZ [ 1558 2252 0 ] ]
+            [ .XYZ [ 1147 1761 0 ] ]
+            [
+              .XYZ [ 1050 1775 0 ]
+              .EVENTO BUC5
+              .ENLAZAR 1
+              .CASA 0
+            ]
+          ]
+        ]
+        [
+          .NOMBRE BUC5
+          .TIPORUTA LOOP
+          .VEL 2
+          .RUTA [
+            [ .XYZ [ 917 1891 0 ] ]
+            [ .XYZ [ 850 2092 0 ] ]
+            [ .XYZ [ 884 2241 0 ] ]
+            [ .XYZ [ 963 2378 0 ] ]
+            [ .XYZ [ 1091 2391 0 ] ]
+            [ .XYZ [ 1128 2375 0 ] ]
+            [ .XYZ [ 1155 2318 0 ] ]
+            [ .XYZ [ 1139 2232 0 ] ]
+            [ .XYZ [ 1075 2168 0 ] ]
+            [ .XYZ [ 975 2210 0 ] ]
+            [ .XYZ [ 938 2263 0 ] ]
+            [ .XYZ [ 885 2252 0 ] ]
+            [ .XYZ [ 829 2083 0 ] ]
+            [ .XYZ [ 927 1663 0 ] ]
+            [ .XYZ [ 979 1619 0 ] ]
+            [ .XYZ [ 1036 1624 0 ] ]
+            [ .XYZ [ 1080 1701 0 ] ]
+            [ .XYZ [ 1065 1771 0 ] ]
+            [ .XYZ [ 986 1804 0 ] ]
+          ]
+        ]
+      ]
+      .HOME CUARTEL_INICIO
+      .ANIMCABO CABO
+      .REGENERATEPATROL 1
+      .SIGUEHUELLAS 0
+      .REGENERATE 1
+      .NONSTOP 1
+      .STARTATHOME 1
+      .ANIMPAL -1
+      .VIGILARDEF [ .ANGBARRIDO 50 .DEMORA 50 ]
+      .DISPARARCABO PISTOLA
+      .DISPARARSOLDADO METRALLETA
+      .EXITHOME_EVENTS [ ZOFO ZOIN ]
+      .NCOLUMNS 1
+      .REACT_EVENTS BUC5
+      .ANIMSOLDADO ALEGABAR
+    ]
+    [
+      .TOKEN PAT_REACT_INICIO
+      .NSOLDIERS 2
+      .RUTADEF [
+        [
+          .NOMBRE INICIO
+          .TIPORUTA LOOP
+          .RUTA [
+            [ .XYZ [ 2066 2542 0 ] ]
+            [ .XYZ [ 2153 2652 0 ] ]
+            [ .XYZ [ 2199 2649 0 ] ]
+            [ .XYZ [ 2263 2562 0 ] ]
+            [ .XYZ [ 2279 2439 0 ] ]
+            [
+              .XYZ [ 2257 1764 0 ]
+              .EVENTO BUC6
+              .ENLAZAR 1
+              .CASA 0
+            ]
+          ]
+          .VEL 2.5
+        ]
+        [
+          .NOMBRE BUC6
+          .TIPORUTA LOOP
+          .VEL 2.5
+          .RUTA [
+            [ .XYZ [ 2216 1692 0 ] ]
+            [ .XYZ [ 2166 1691 0 ] ]
+            [ .XYZ [ 1113 2699 0 ] ]
+            [ .XYZ [ 401 2713 0 ] ]
+            [ .XYZ [ 216 2442 0 ] ]
+            [ .XYZ [ 151 2447 0 ] ]
+            [ .XYZ [ 101 2509 0 ] ]
+            [ .XYZ [ 104 2587 0 ] ]
+            [ .XYZ [ 177 2683 0 ] ]
+            [ .XYZ [ 1212 2717 0 ] ]
+            [ .XYZ [ 2243 1810 0 ] ]
+            [ .XYZ [ 2245 1743 0 ] ]
+          ]
+        ]
+      ]
+      .ANIMCABO CABO
+      .NCOLUMNS 1
+      .REGENERATEPATROL 1
+      .SIGUEHUELLAS 0
+      .REGENERATE 1
+      .NONSTOP 1
+      .STARTATHOME 1
+      .ANIMPAL -1
+      .VIGILARDEF [ .ANGBARRIDO 50 .DEMORA 50 ]
+      .DISPARARCABO PISTOLA
+      .DISPARARSOLDADO METRALLETA
+      .EXITHOME_EVENTS ZOIN
+      .HOME CUARTEL_INICIO
+      .REACT_EVENTS BUC6
+      .ANIMSOLDADO ALEGABAR
+    ]
+  ]
+  .SENSORES_SND_ZONA [
+    [ .ZONA ZONA_FOSO .MENSAJE ZOFO ]
+    [ .ZONA ZONA_NO .MENSAJE ZONO ]
+    [ .ZONA ZONA_INICIO .MENSAJE ZOIN ]
+    [ .ZONA ZONA_JARDIN .MENSAJE ZOJA ]
+  ]
+  .INTERFACE [
+    .SUBINTERFACES [
+      [
+        SUBINTERFACEMULTIPLE
+        [
+          .TOKEN MULTIPLE
+          .ELEMUSABLES [
+            BARRIGA_ELEFANTE
+            CASA_BONITA_1
+            CASA_BONITA_2
+            CASA_CARRICOCHE
+            CASA_TASCA
+            CASA_NO
+            CASA_ESTABLO
+            ESCALA_CASA_NO
+            ESCALA_LEONES
+            ESCALA_FOSO_1
+            CASA_AGUJERO_PIS
+            CASA_PUERTA_OESTE
+            FURGO_HUIDA
+            PUERTAAVESTRUCES
+          ]
+        ]
+      ]
+      [
+        SUBINTERFACEALIADO
+        [
+          .TOKEN COMANDO
+          .CARETO CARA0001.RLE
+          .ITEMS [
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_CUCHILLO ]
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_SEGNUELO ]
+            [ .TOKEN IT_ACTSENUELOOFF .DISPONIBLE NO ]
+            [ .TOKEN IT_ACTSENUELOON .DISPONIBLE NO ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_ESPOSAS ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+            [ .TOKEN IT_GOLPEAR ]
+          ]
+        ]
+      ]
+      [
+        SUBINTERFACEALIADO
+        [
+          .TOKEN FRANCOT
+          .CARETO CARA0005.RLE
+          .ITEMS [
+            [ .TOKEN IT_MIRILLA ]
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+          ]
+        ]
+      ]
+      [
+        SUBINTERFACEALIADO
+        [
+          .TOKEN ESPIA
+          .ITEMS [
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_INSIGNIA .DISPONIBLE NO ]
+            [ .TOKEN IT_JERINGUILLALETAL ]
+            [ .TOKEN IT_QUITAUNIFORME ]
+            [ .TOKEN IT_ESPOSAS ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+            [ .TOKEN IT_CLOROFORMO ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_MP38 .DISPONIBLE NO ]
+            [ .TOKEN IT_MAUSER .DISPONIBLE NO ]
+            [ .TOKEN IT_LUGER .DISPONIBLE NO ]
+            [ .TOKEN IT_ESPIAA .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA3 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA5 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA7 .DISPONIBLE NO .IDGRUPO 1 ]
+          ]
+        ]
+      ]
+      [
+        SUBINTERFACEALIADO
+        [
+          .TOKEN CONDUC
+          .ITEMS [
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_BOTIQUIN ]
+            [ .TOKEN IT_METRALLETA ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_ESCOPETA ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_CACHIPORRA ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+          ]
+        ]
+      ]
+      [
+        SUBINTERFACEALIADO
+        [
+          .TOKEN FUSILADO
+          .ITEMS [
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PISTOLA .DISPONIBLE NO ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_PIEDRA ]
+          ]
+        ]
+      ]
+    ]
+    .INFOCARAS [
+      [ CARA [ .TOKEN COMANDO .ACCESIBLE 1 ] ]
+      [ CARA [ .TOKEN FRANCOT .ACCESIBLE 1 ] ]
+      [ CARA [ .TOKEN CONDUC .ACCESIBLE 1 ] ]
+      [ CARA [ .TOKEN ESPIA .ACCESIBLE 1 ] ]
+      [ CARA [ .TOKEN FUSILADO .ACCESIBLE 1 ] ]
+    ]
+  ]
+]

@@ -1,0 +1,196 @@
+{
+;*****************************************************************************
+;* MAPA DE VOLUMENES ESTATICOS
+;*****************************************************************************
+
+MAPDIMXY 2300,1800
+MAPTABPOLYS
+{
+	POLY "NONAME",643,1054,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         635, 587,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",988,1706,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         980,1006,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",1304,1852,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1296,1100,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",806,1247,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         798, 711,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",679,1340,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         671, 771,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",1113,1617,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1105, 949,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",1185,1942,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1177,1158,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",1356,2135,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1348,1283,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",2133,1683,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2125, 992,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",1873,1901,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1865,1132,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",1619,2169,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1611,1304,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",1434,2326,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1426,1405,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",1151,2501,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1143,1517,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",844,2644,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         836,1609,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",584,2643,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         576,1608,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",283,2444,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         275,1481,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",75,2182,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE          67,1312,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",519,1143,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         511, 644,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",428,1725,5,37,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		6				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         418,1076,  21,  36,  83, 123, 0,"FOSO0023.RLE","   "
+	POLY "NONAME",602,981,0,131,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         553, 499,  98, 135,   0,   0, 0,"ASEC0001.RLE","   "
+	POLY "NONAME",874,768,0,129,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         828, 367,  90, 130,   0,   0, 0,"ASEC0000.RLE","   "
+	POLY "NONAME",1436,1181,0,135,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1375, 625, 133, 145,   0,   0, 0,"VERD0004.RLE","X  "
+	POLY "NONAME",882,1597,0,96,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         835, 928,  96, 113,   0,   0, 0,"VERD0007.RLE","   "
+	POLY "NONAME",403,1334,0,122,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         331, 722, 133, 145,   0,   0, 0,"VERD0004.RLE","   "
+	POLY "NONAME",2038,1482,0,99,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1991, 854,  96, 113,   0,   0, 0,"VERD0007.RLE","   "
+	POLY "NONAME",442,2634,0,78,0,3			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         431,1634,  22,  69,  60,  76, 0,"VERD0004.RLE","   "
+	TILE         453,1669,  51,  34,  82, 111, 0,"VERD0004.RLE","   "
+	TILE         371,1673,  60,  30,   0, 115, 0,"VERD0004.RLE","   "
+	POLY "NONAME",729,2641,0,66,0,3			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         715,1648,  28,  60,  33,  53, 0,"VERD0007.RLE","   "
+	TILE         743,1680,  35,  28,  61,  85, 0,"VERD0007.RLE","   "
+	TILE         682,1681,  33,  27,   2,  86, 0,"VERD0007.RLE","   "
+	POLY "NONAME",981,2639,0,79,0,3			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         967,1636,  28,  70,  58,  75, 0,"VERD0004.RLE","   "
+	TILE         995,1669,  47,  37,  86, 108, 0,"VERD0004.RLE","   "
+	TILE         909,1669,  58,  37,   0, 108, 0,"VERD0004.RLE","   "
+	POLY "NONAME",1289,2385,0,77,0,3			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1279,1474,  21,  73,  70,  89, 0,"VERD0005.RLE","   "
+	TILE        1300,1509,  53,  38,  91, 124, 0,"VERD0005.RLE","   "
+	TILE        1209,1509,  70,  38,   0, 124, 0,"VERD0005.RLE","   "
+	POLY "NONAME",1720,2016,0,77,0,3			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1709,1237,  22,  69,  60,  76, 0,"VERD0004.RLE","   "
+	TILE        1731,1269,  51,  37,  82, 108, 0,"VERD0004.RLE","   "
+	TILE        1649,1271,  60,  35,   0, 110, 0,"VERD0004.RLE","   "
+	POLY "NONAME",2009,1777,0,82,0,3			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1994,1080,  30,  72,  59,  71, 0,"VERD0003.RLE","   "
+	TILE        1935,1116,  59,  36,   0, 107, 0,"VERD0003.RLE","   "
+	TILE        2024,1117,  44,  35,  89, 108, 0,"VERD0003.RLE","   "
+	POLY "NONAME",2084,429,0,124,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2012, 142, 133, 145,   0,   0, 0,"VERD0004.RLE","   "
+	POLY "NONAME",264,194,0,101,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         207,  31,  96, 113,   0,   0, 0,"VERD0007.RLE","   "
+	POLY "NONAME",830,363,0,121,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE         742, 142, 133, 145,   0,   0, 0,"VERD0004.RLE","   "
+	POLY "NONAME",71,1396,0,52,0,3			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		5				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE          54, 857,  34,  55,  30,  58, 0,"VERD0007.RLE","   "
+	TILE          24, 883,  30,  29,   0,  84, 0,"VERD0007.RLE","   "
+	TILE          88, 884,  32,  28,  64,  85, 0,"VERD0007.RLE","   "
+	POLY "NONAME",2226,1969,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2125, 992,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",2227,2554,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2125, 992,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",2023,2731,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2125, 992,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",1347,2761,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2125, 992,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",2085,713,0,99,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1991, 854,  96, 113,   0,   0, 0,"VERD0007.RLE","   "
+	POLY "NONAME",1901,626,0,99,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1991, 854,  96, 113,   0,   0, 0,"VERD0007.RLE","   "
+	POLY "NONAME",2201,1566,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        2125, 992,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+	POLY "NONAME",2277,1274,0,113,0,1			;Nombre,CentroX,CentroY,CentroZ,Altura,#vertices,#Tiles
+	RADIO		4				;Radio
+	EXTRAINFO		0,0,0,0,0,0,0,0                 ;Extra Info Bytes
+	TILE        1105, 949,  16,  96,   0,   0, 0,"FARO0001.RLE","   "
+}
+}
