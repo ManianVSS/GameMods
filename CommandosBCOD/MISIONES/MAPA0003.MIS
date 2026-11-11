@@ -1202,6 +1202,65 @@
       .NOAGACHA 0
       .XYZ [ 57 3029 -105 ]
     ]
+    [
+      .CLASS BICHOALIADO
+      .BANDO ALIADO
+      .TOKEN ESPIA
+      .LISTAS [ EJEC CHOC VISI SELE ]
+      .VOLCOLISION [ CILINDRO [ .R 10 .H 40 ] ]
+      .MASA 100
+      .GRAPH [ .RENDERVOL [ CILINDRO [ .R 10 .H 40 ] ] .ANIM ESPIA ]
+      .ORGANOS [ .MOTOR [ MotorAliado [ ] ] ]
+      .ACCIONES [
+        [ AcMuerte [ .CARISMA 999 ] ]
+        [ AcUsaHab [ .CARISMA 300 ] ]
+        [ AcDetenido [ .CARISMA 100 ] ]
+        [ AuUsar [ .CARISMA 200 ] ]
+        [ AuCoger [ .CARISMA 200 ] ]
+        [ AuBeHome [ .CARISMA 200 ] ]
+        [ AuUsarVehiculo [ .CARISMA 200 ] ]
+        [ AuEscalar [ .CARISMA 200 .ESCALAMUROS NO ] ]
+        [ AuQuitaUniforme [ .CARISMA 200 ] ]
+        [ AuGoTo [ .CARISMA 200 ] ]
+        [
+          AuDisparar
+          [
+            .CARISMA 200
+            .ARMAS [ PISTOLA PIEDRA ESCOPETA METRALLETA ]
+            .PIEDRAS 50
+            .MUNMETRA 50
+          ]
+        ]
+        [
+          AcSerEspia
+          [
+            .CARISMA 1
+            .EMPIEZADISFRAZADO 0
+            .DISFRAZ ESPIAA
+            .INSIGNIA 0
+            .PRECARGAANMS [ ESPIAA3 ESPIAA5 ESPIAA ESPIAA7 ]
+          ]
+        ]
+        [
+          AuJeringar
+          [ .CARISMA 200 .TIPOJERINGA LETAL .DOSIS 5 ]
+        ]
+        [ AuDisfraz [ .CARISMA 200 ] ]
+        [ AuGarfio [ .CARISMA 200 .ESPIADES NO ] ]
+        [ AuInsignia [ .CARISMA 200 .USOS 8 ] ]
+        [ AuEsposas [ .CARISMA 200 ] ]
+        [ AuQuieto [ .CARISMA 200 ] ]
+        [ AuCogeTabacoDeMuerto [ .CARISMA 200 ] ]
+        [ AuTabaco [ .CARISMA 200 ] ]
+        [ AuTomarControlAleman [ .CARISMA 200 ] ]
+        [ AuCachiporra [ .CARISMA 200 ] ]
+      ]
+      .SEHUNDE 1
+      .CONTENEDOR 1
+      .XYZ [ 34 3036 -105 ]
+      .ANGULO 45
+      .NOAGACHA 0
+    ]
     [ 
       .CLASS MACRO
       .TOKEN BAP2_INICIO
@@ -3186,11 +3245,37 @@
           ]
         ]
       ]
+      [
+        SUBINTERFACEALIADO
+        [
+          .TOKEN ESPIA
+          .ITEMS [
+            [ .TOKEN IT_MANO ]
+            [ .TOKEN IT_PISTOLA ]
+            [ .TOKEN IT_INSIGNIA .DISPONIBLE NO ]
+            [ .TOKEN IT_JERINGUILLALETAL ]
+            [ .TOKEN IT_QUITAUNIFORME ]
+            [ .TOKEN IT_ESPOSAS ]
+            [ .TOKEN IT_TABACO .DISPONIBLE NO ]
+            [ .TOKEN IT_CONTROLALEMAN ]
+            [ .TOKEN IT_CLOROFORMO ]
+            [ .TOKEN IT_PIEDRA ]
+            [ .TOKEN IT_MP38 .DISPONIBLE NO ]
+            [ .TOKEN IT_MAUSER .DISPONIBLE NO ]
+            [ .TOKEN IT_LUGER .DISPONIBLE NO ]
+            [ .TOKEN IT_ESPIAA .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA3 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA5 .DISPONIBLE NO .IDGRUPO 1 ]
+            [ .TOKEN IT_ESPIAA7 .DISPONIBLE NO .IDGRUPO 1 ]
+          ]
+        ]
+      ]
     ]
     .INFOCARAS [ 
       [ CARA [ .TOKEN COMANDO .ACCESIBLE 1 ] ]
       [ CARA [ .TOKEN FRANCOT .ACCESIBLE 1 ] ]
       [ CARA [ .TOKEN ARTIFIC .ACCESIBLE 1 ] ]
+      [ CARA [ .TOKEN ESPIA .ACCESIBLE 1 ] ]
     ]
   ]
   .TRIPLINES [ ]
